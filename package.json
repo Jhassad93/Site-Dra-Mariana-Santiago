@@ -9,7 +9,8 @@
     "lint": "eslint",
     "prints": "node scripts/prints.mjs",
     "preview": "next build && node scripts/preview.mjs",
-    "teste-layout": "node scripts/teste-layout.mjs"
+    "teste-layout": "node scripts/teste-layout.mjs",
+    "contraste": "node scripts/contraste-fotos.mjs"
   },
   "dependencies": {
     "@fontsource/host-grotesk": "^5.3.0",
@@ -30,6 +31,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.28",
     "playwright-core": "1.56",
+    "pngjs": "^7.0.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

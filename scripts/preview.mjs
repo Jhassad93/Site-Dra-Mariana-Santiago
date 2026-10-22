@@ -33,7 +33,9 @@ async function relativizar(dir) {
 }
 await relativizar(join(dest, "assets"));
 
-const html = (await readFile(join(out, "index.html"), "utf8")).replaceAll("./_next/", "./assets/").replaceAll("/_next/", "./assets/").replace(/<script src="[^"]*polyfills-[^"]*"[^>]*><\/script>/, "");
+// Rota opcional: node scripts/preview.mjs /componentes/  (padrão: a home)
+const rotaPrevia = (process.argv[2] || "/").replace(/^\/|\/$/g, "");
+const html = (await readFile(join(out, rotaPrevia, "index.html"), "utf8")).replaceAll("./_next/", "./assets/").replaceAll("/_next/", "./assets/").replace(/<script src="[^"]*polyfills-[^"]*"[^>]*><\/script>/, "");
 const head = html.match(/<head>([\s\S]*?)<\/head>/)?.[1] ?? "";
 const body = html.match(/<body[^>]*>([\s\S]*?)<\/body>/)?.[1] ?? "";
 const htmlClass = html.match(/<html[^>]*class="([^"]*)"/)?.[1] ?? "";
@@ -58,7 +60,7 @@ window.addEventListener("click", function (e) {
   if (!t) { t = document.createElement("div"); t.id = "aviso-previa"; t.setAttribute("role", "status");
     t.style.cssText = "position:fixed;left:50%;top:84px;transform:translateX(-50%);z-index:70;background:#1c1813;color:#efeeea;padding:10px 16px;border-radius:12px;font:15px/1.4 var(--font-host-grotesk),system-ui;max-width:calc(100% - 32px)";
     document.body.appendChild(t); }
-  t.textContent = "Na prévia, só a home está publicada. " + a.textContent.trim() + " (" + a.getAttribute("href") + ") funciona no site completo.";
+  t.textContent = "Na prévia, só esta página está publicada. " + a.textContent.trim() + " (" + a.getAttribute("href") + ") funciona no site completo.";
   clearTimeout(t._h); t._h = setTimeout(function () { t.remove(); }, 3200);
 }, true);
 </script>

@@ -118,7 +118,7 @@ Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem mod
 - **Card de procedimento grande:** retrato 3:4, raio de 20px, foto em tela cheia, **faixa de dados no topo** (número em Host Grotesk 300 a 33px + rótulo a 13px, separados por linha fina Areia), legenda de indicação embaixo (Gesso sobre véu Tinta), pílula de vidro "Entender o procedimento". Sem sombra; no hover só a foto escala 1,02 em 300ms.
 - **Card compacto:** fundo Areia a 40% sobre Gesso, raio de 14px, nome + seta em traço desenhado como ícone (não o caractere "→"), altura de 72px.
 - **Régua do tempo:** linha de 1px Ouro, marcadores quadrados de 8px, rótulos em Host Grotesk 13px (Tinta 72% ou Areia). No celular, fica vertical.
-- **Acordeão do FAQ:** linhas finas Tinta a 12%, ícone "+" que vira "−", abertura com altura animada em 200ms.
+- **Acordeão do FAQ:** linhas finas Tinta a 12%, ícone "+" que vira "−" (200ms). A altura abre na hora e a resposta entra com opacidade e 4px em 200ms (animar a altura recalcula o layout a cada quadro; revisão de animação da Etapa 3).
 - **Seção de assinatura:** gradiente Areia → Gesso, foto recortada à direita, frase em Libre Caslon itálico a 33px, assinatura (SVG) e bloco de identificação R1.
 - **Raios por hierarquia:** cards grandes 20px · cabeçalho 16px · cards compactos 14px · campos 10px · botões 999px. Não é um raio único para tudo.
 - **Ícones:** traço de 1,25px em Ouro ou Tinta, desenhados como SVG. Sem pacotes de ícone preenchido.
@@ -177,7 +177,7 @@ Os cards compactos (contorno facial, skinbooster, peelings) não levam foto.
 
 ## Movimento
 - **Um momento orquestrado só:** na entrada da home, o título do hero aparece em 600ms com opacidade e deslocamento de 8px, e a régua do tempo se desenha da esquerda para a direita em 900ms. Mais nada anima sozinho.
-- **Movimento como resposta:** hover dos cards (só a foto, escala 1,02, 300ms), acordeão (200ms) e o cabeçalho que vira vidro claro ao passar do hero (200ms).
+- **Movimento como resposta:** hover dos cards (só a foto, escala 1,02, 300ms), acordeão (resposta em 200ms, só opacidade e deslocamento), botão comprimido para 0,97 ao toque (160ms) e o cabeçalho que vira vidro claro ao passar do hero (200ms).
 - Só `transform` e `opacity`. Curva `cubic-bezier(0.22, 1, 0.36, 1)` nas entradas.
 - `prefers-reduced-motion: reduce`: sem entrada animada, régua já desenhada, **vídeos trocados pela imagem de capa**.
 - Vídeos: `muted`, `playsinline`, `loop`, `preload="none"`, tocam só quando visíveis e pausam fora da tela. Até 2 por página (limite do kit).

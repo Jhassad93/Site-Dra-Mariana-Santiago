@@ -28,11 +28,11 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - Pronto quando: a navegação funciona, uma URL inexistente mostra a 404, o cabeçalho troca de estado ao rolar e passa pelo teclado
 
 ## Etapa 3 — Componentes de assinatura
-- [ ] **Régua do tempo** (horizontal e vertical; desenho animado só na entrada da home; estática com `prefers-reduced-motion`)
-- [ ] Botão principal (sólido e de vidro), link secundário, pílula de vidro
-- [ ] Card grande de procedimento (retrato 3:4, faixa de dados, legenda, pílula) e card compacto
-- [ ] Acordeão do FAQ; bloco de identificação R1; bloco "voz da Dra." (Libre Caslon itálico)
-- [ ] Página interna `/componentes` (noindex, **removida antes da prévia**) para revisar tudo junto; `review-animations` nas animações
+- [x] **Régua do tempo** (horizontal e vertical; desenho animado só na entrada da home; estática com `prefers-reduced-motion`). Lista ordenada; no celular a linha termina no último marcador
+- [x] Botão principal (sólido e de vidro), link secundário, pílula de vidro (`components/marca/botao.tsx`)
+- [x] Card grande de procedimento (retrato 3:4, 4:5 no celular, faixa de dados, legenda, pílula; o card inteiro é clicável) e card compacto (`components/marca/cards.tsx`). Contraste do texto sobre a foto medido por pixel com `npm run contraste` (pior caso 4,55:1 com o gradiente provisório; **repetir na Etapa 10 com as fotos reais**)
+- [x] Acordeão do FAQ (`<details>` nativo, texto no HTML); bloco de identificação R1; bloco "voz da Dra." (Libre Caslon itálico) (`components/marca/blocos.tsx`). Rodapé e menu passam a usar o mesmo bloco R1
+- [x] Página interna `/componentes` (noindex, **removida antes da prévia**) para revisar tudo junto; `review-animations` nas animações (corrigido: altura do acordeão deixou de ser animada; hover limitado a mouse com `pointer: fine`)
 - Pronto quando: todos os componentes aparecem em `/componentes` nos 3 tamanhos, com contraste AA conferido e prints revisados
 
 ## Etapa 4 — Copy (documento, sem código)

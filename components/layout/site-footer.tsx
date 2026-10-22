@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { endereco, horarios, identificacao, legais, navegacao, redes, telefoneVisivel, whatsappHref } from "@/lib/site";
 import { GerenciarCookies } from "./gerenciar-cookies";
+import { IdentificacaoR1 } from "@/components/marca/blocos";
 
 // Rodapé de todas as páginas. R1: identificação com nome e registro na mesma fonte, tamanho e cor, sem negrito.
 export function SiteFooter() {
@@ -10,11 +11,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-[1200px] gap-12 px-4 pb-[max(64px,env(safe-area-inset-bottom))] pt-20 sm:px-6 lg:grid-cols-12 lg:gap-6 lg:px-6">
         <div className="grid content-start gap-6 lg:col-span-4">
           <p className="font-voz text-2xl italic leading-[1.35] text-areia">Mariana Santiago</p>
-          <p className="text-sm text-gesso">
-            {identificacao.nome}
-            <br />
-            {identificacao.registro}
-          </p>
+          <IdentificacaoR1 sobre="escuro" />
         </div>
 
         <div className="grid content-start gap-3 text-sm lg:col-span-3">

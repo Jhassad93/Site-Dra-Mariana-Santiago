@@ -33,6 +33,7 @@ for (const rota of rotas) {
   for (const w of larguras) {
     const page = await browser.newPage({ viewport: { width: w, height: 900 } });
     await page.goto(`http://localhost:4173${rota}`, { waitUntil: "networkidle" });
+    await page.waitForTimeout(1200); // deixa as animações de entrada terminarem
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     const nome = `${rota.replace(/\//g, "_") || "_"}-${w}.png`;
     await page.screenshot({ path: join(DEST, nome), fullPage: true });

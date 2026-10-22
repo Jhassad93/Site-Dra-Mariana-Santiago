@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { IdentificacaoR1 } from "@/components/marca/blocos";
 import { endereco, horarios, identificacao, navegacao, whatsappHref } from "@/lib/site";
 
 type Tema = "escuro" | "claro";
@@ -171,11 +172,7 @@ export function SiteHeader() {
               <br />
               {endereco.linha2}
             </p>
-            <p className="text-tinta">
-              {identificacao.nome}
-              <br />
-              {identificacao.registro}
-            </p>
+            <IdentificacaoR1 />
           </div>
         </div>
       </dialog>
