@@ -42,9 +42,9 @@ export function CardProcedimento({
       <span aria-hidden="true" className="absolute inset-x-0 top-0 -z-10 h-1/2 bg-gradient-to-b from-tinta/75 via-tinta/55 via-30% to-transparent" />
       <span aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-3/5 bg-gradient-to-t from-tinta/80 via-tinta/45 to-transparent" />
 
-      <div className="flex items-end gap-4 border-b border-areia/60 pb-3">
+      <div className="flex flex-wrap items-end gap-x-4 gap-y-1.5 border-b border-areia/60 pb-3">
         <span className="shrink-0 whitespace-nowrap text-[2.0625rem] font-light leading-none tracking-[-0.01em]">{dado.valor}</span>
-        <span className="text-xs leading-[1.3] text-gesso">{dado.rotulo}</span>
+        <span className="min-w-[17ch] flex-1 text-xs leading-[1.3] text-gesso">{dado.rotulo}</span>
       </div>
 
       <div className="grid gap-4">

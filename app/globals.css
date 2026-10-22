@@ -431,5 +431,41 @@
     transition: transform 200ms var(--ease-entrada);
   }
   .acordeao details[open] .sinal-vertical { transform: scaleY(0); }
+
+  /* ---------- Home (Etapa 5) ---------- */
+
+  /* Luz de fim de tarde sobre linho, desenhada em CSS até o vídeo 1 (Etapa 10) */
+  .hero-luz {
+    /* um feixe de luz lateral entrando pela janela, sobre fundo Tinta (sem brilho radial) */
+    background:
+      linear-gradient(112deg, transparent 40%, rgb(201 163 95 / 0.2) 54%, rgb(235 212 173 / 0.08) 62%, transparent 70%),
+      linear-gradient(200deg, #3b2f22 0%, #241e17 45%, var(--tinta) 80%);
+  }
+  .hero-luz::after {
+    /* véu para o texto: escurece a base e a esquerda, onde fica o título */
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(0deg, rgb(28 24 19 / 0.7) 0%, transparent 55%),
+      linear-gradient(90deg, rgb(28 24 19 / 0.45) 0%, transparent 60%);
+  }
+
+  /* Entrada da home: o único momento orquestrado (título 600ms; régua 900ms) */
+  @keyframes hero-entra { from { opacity: 0; transform: translateY(8px); } }
+  .hero-titulo { animation: hero-entra 600ms var(--ease-entrada) both; }
+
+  .planejamento-luz {
+    background:
+      linear-gradient(118deg, transparent 30%, rgb(235 212 173 / 0.55) 46%, rgb(201 163 95 / 0.25) 58%, transparent 72%),
+      linear-gradient(180deg, #d9d2c4 0%, #b9ab92 100%);
+  }
+
+  .fechamento {
+    background: linear-gradient(180deg, rgb(235 212 173 / 0.55) 0%, var(--gesso) 100%);
+  }
+
+  .carrossel { scrollbar-width: none; }
+  .carrossel::-webkit-scrollbar { display: none; }
 }
 

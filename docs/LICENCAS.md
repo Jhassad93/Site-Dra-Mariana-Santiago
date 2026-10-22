@@ -1,13 +1,17 @@
-# Licenças de terceiros — [Nome do cliente]
+# Licenças de terceiros — Dra. Mariana Santiago
 
-Preencher durante o projeto com cada componente de terceiros efetivamente usado. Este arquivo alimenta o Anexo III do contrato.
+Preenchido durante o projeto com cada componente de terceiros efetivamente usado. Este arquivo alimenta o Anexo III do contrato.
 
 | Componente ou recurso | Origem | Licença | Observação |
 | --- | --- | --- | --- |
-| shadcn/ui | ui.shadcn.com | MIT | — |
-| [componente] | [Spell UI / Cult UI / Componentry] | MIT | Manter aviso de licença no código |
-| [componente] | React Bits | MIT + Commons Clause | Uso livre no site; vedada a revenda dos componentes |
-| [componente] | 21st.dev / [autor] | [conforme autor] | Conferido em [data] |
-| [GSAP, se usado] | gsap.com | [licença vigente] | Conferir uso comercial |
-| Fontes | [Google Fonts] | [SIL Open Font License] | — |
-| Imagens (uma linha por origem) | [cliente / sessão de fotos / gerada por IA: ferramenta / banco curado] | [direito de uso, licença ou termos da ferramenta] | Nenhuma foto genérica de banco (item 30 de produção) |
+| Next.js | nextjs.org | MIT | — |
+| Tailwind CSS | tailwindcss.com | MIT | — |
+| shadcn/ui (configuração e utilitário `cn`) | ui.shadcn.com | MIT | Nenhum componente copiado até a Etapa 5 |
+| class-variance-authority, clsx, tailwind-merge | npm | Apache-2.0 / MIT / MIT | Variantes dos botões |
+| Fonte Host Grotesk | @fontsource/host-grotesk (Google Fonts) | SIL Open Font License 1.1 | Servida pelo próprio site |
+| Fonte Libre Caslon Text | @fontsource/libre-caslon-text (Google Fonts) | SIL Open Font License 1.1 | Servida pelo próprio site |
+| playwright-core, pngjs (só ferramentas de verificação, fora do site publicado) | npm | Apache-2.0 / MIT | — |
+| Ícones (seta, menu, fechar, +/−) | Desenhados no projeto (SVG) | — | Sem pacote de ícones |
+| Imagens do hero, da seção de planejamento e dos cards | Gradientes em CSS (placeholders) | — | Substituídos na Etapa 10 |
+| Foto da Dra. (seção de fechamento) | Pendente: o post de apresentação do Instagram tem textos sobrepostos ("Dermatologia estética", "melhor versão") vedados pelo harness (R2, R4) | Uso exclusivo na prévia privada apresentada à retratada | Usar foto sem texto; substituir por sessão profissional antes de publicar |
+| Vídeos (Higgsfield) | Pendente (Etapa 10) | Termos da ferramenta | — |

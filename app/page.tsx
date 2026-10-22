@@ -1,107 +1,26 @@
-// RASCUNHO — Etapas 1 e 2. Folha de tokens para conferir fontes e cores, com uma faixa escura no topo
-// para testar o cabeçalho de vidro e o CTA fixo. Será substituída pela home na Etapa 5.
-import { whatsappHref } from "@/lib/site";
+import {
+  ComoTrabalho,
+  Fechamento,
+  Hero,
+  OndeQuando,
+  OndeQuandoCelular,
+  PerguntasHome,
+  Planejamento,
+  Procedimentos,
+} from "@/components/home/secoes";
 
-const cores = [
-  { nome: "Tinta", hex: "#1C1813", papel: "Texto, seções escuras e botão principal", classe: "bg-tinta text-gesso" },
-  { nome: "Gesso", hex: "#EFEEEA", papel: "Fundo da página", classe: "bg-gesso text-tinta ring-1 ring-border" },
-  { nome: "Areia", hex: "#EBD4AD", papel: "Texto sobre escuro e painéis", classe: "bg-areia text-tinta" },
-  { nome: "Ouro", hex: "#C9A35F", papel: "Só ornamento: régua, marcadores, linhas", classe: "bg-ouro text-tinta" },
-  { nome: "Bronze", hex: "#7A5A2B", papel: "Links e destaques de texto sobre Gesso", classe: "bg-bronze text-gesso" },
-];
-
-const escala = [
-  { px: 81, classe: "text-6xl" },
-  { px: 65, classe: "text-5xl" },
-  { px: 52, classe: "text-4xl" },
-  { px: 41.5, classe: "text-3xl" },
-  { px: 33, classe: "text-2xl" },
-  { px: 26.5, classe: "text-xl" },
-  { px: 21, classe: "text-lg" },
-  { px: 17, classe: "text-base" },
-];
-
-export default function Page() {
+// Home (Etapa 5). Ordem do DESIGN.md; no celular, a faixa de horários sobe para logo depois do hero.
+export default function Home() {
   return (
     <>
-      <section data-tema="escuro" className="tema-escuro bg-tinta text-areia">
-        <div className="mx-auto max-w-[1200px] px-4 pb-20 pt-36 sm:px-6 md:pb-28 lg:pt-44">
-          <h1 className="text-[clamp(2.75rem,7vw,5.25rem)] font-light">Fim de tarde na Paulista</h1>
-          <div className="mt-8 flex max-w-[640px] items-center gap-0" aria-hidden="true">
-            <span className="h-2 w-2 bg-ouro" />
-            <span className="h-px flex-1 bg-ouro" />
-          </div>
-          <p className="mt-8 max-w-[56ch] text-lg text-gesso">
-            Folha de tokens do protótipo. Esta faixa escura serve para testar o cabeçalho de vidro, que fica
-            claro quando passa para as seções de fundo Gesso.
-          </p>
-          <div className="mt-10" data-cta>
-            <a
-              href={whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="botao-vidro inline-flex h-12 items-center rounded-full px-6 font-medium"
-            >
-              Agendar consulta
-              <span className="sr-only"> pelo WhatsApp (abre em nova aba)</span>
-            </a>
-          </div>
-          <p className="mt-12 font-voz text-3xl italic text-areia">Mariana Santiago</p>
-          <p className="mt-2 text-sm text-gesso">
-            Dra. Mariana Passos Santiago
-            <br />
-            MÉDICA: CRM-SP 227636
-          </p>
-        </div>
-      </section>
-
-      <div className="mx-auto max-w-[1200px] px-4 pb-24 sm:px-6">
-      <section className="mt-20" aria-labelledby="cores">
-        <h2 id="cores" className="text-3xl">Cores</h2>
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-          {cores.map((c) => (
-            <li key={c.nome} className={`${c.classe} flex min-h-40 flex-col justify-end rounded-[var(--radius-compact)] p-5`}>
-              <span className="text-lg">{c.nome}</span>
-              <span className="text-sm">{c.hex}</span>
-              <span className="mt-2 text-sm">{c.papel}</span>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-6 max-w-[68ch] text-muted-foreground">
-          Ouro sobre Gesso tem contraste de 2,04:1. Por isso o Ouro nunca é usado para texto em fundo
-          claro, só para linhas e marcadores. Links usam{" "}
-          <a href="#cores" className="text-bronze underline underline-offset-4">Bronze</a>.
-        </p>
-      </section>
-
-      <section className="mt-20" aria-labelledby="tipografia">
-        <h2 id="tipografia" className="text-3xl">Tipografia</h2>
-        <div className="mt-8 grid gap-10 lg:grid-cols-2">
-          <div>
-            <p className="text-sm text-muted-foreground">Host Grotesk: informação</p>
-            <p className="mt-3 text-4xl font-light">Planejamento no tempo certo</p>
-            <p className="mt-4 max-w-[68ch]">
-              Corpo de texto em Host Grotesk 400, 17px, entrelinha 1,55. Antes de qualquer procedimento, uma
-              avaliação individual.
-            </p>
-          </div>
-          <div>
-            <p className="text-sm text-muted-foreground">Libre Caslon itálico: a voz da Dra.</p>
-            <p className="mt-3 max-w-[56ch] font-voz text-3xl italic leading-[1.35]">
-              Antes de qualquer procedimento, eu quero entender o que incomoda você.
-            </p>
-          </div>
-        </div>
-        <ul className="mt-12 space-y-3 border-t border-border pt-8">
-          {escala.map((e) => (
-            <li key={e.px} className="flex items-baseline gap-6">
-              <span className="w-16 shrink-0 text-xs text-muted-foreground">{e.px}px</span>
-              <span className={`${e.classe} min-w-0 font-light leading-tight [overflow-wrap:anywhere]`}>Avenida Paulista</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-      </div>
+      <Hero />
+      <OndeQuandoCelular />
+      <ComoTrabalho />
+      <Procedimentos />
+      <Planejamento />
+      <PerguntasHome />
+      <OndeQuando />
+      <Fechamento />
     </>
   );
 }

@@ -1,0 +1,255 @@
+import { Botao, LinkSecundario } from "@/components/marca/botao";
+import { ReguaDoTempo, ReguaOrnamento } from "@/components/marca/regua";
+import { CardCompacto, CardProcedimento } from "@/components/marca/cards";
+import { Acordeao, IdentificacaoR1, VozDaDra } from "@/components/marca/blocos";
+import { whatsappHref, horarios } from "@/lib/site";
+import {
+  comoTrabalho,
+  faqHome,
+  fechamento,
+  hero,
+  ondeQuando,
+  perfilGoogle,
+  planejamento,
+  procedimentosCompactos,
+  procedimentosDestaque,
+} from "@/lib/conteudo";
+
+const caixa = "mx-auto max-w-[1200px] px-4 sm:px-6";
+
+/** Hero: tela escura de ponta a ponta. Até a Etapa 10, a "luz no linho" é desenhada em CSS (sem foto). */
+export function Hero() {
+  return (
+    <section data-tema="escuro" aria-labelledby="titulo-hero" className="hero tema-escuro relative isolate overflow-hidden bg-tinta text-areia">
+      <div aria-hidden="true" className="hero-luz absolute inset-0 -z-10" />
+      <div className={`${caixa} flex min-h-[max(640px,100svh)] flex-col justify-end pb-12 pt-28 md:min-h-[max(720px,92svh)] md:pb-16 lg:pt-36`}>
+        <h1 id="titulo-hero" className="hero-titulo max-w-[17ch] text-[clamp(2.5rem,5.4vw,4.0625rem)] font-light">
+          {hero.titulo}
+        </h1>
+        <ReguaOrnamento animada className="mt-8" />
+        <p className="mt-8 max-w-[52ch] text-lg text-gesso">{hero.apoio}</p>
+        <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3" data-cta>
+          <Botao href={whatsappHref} externo variante="vidro">
+            Agendar consulta
+          </Botao>
+          <LinkSecundario href="/agendar/#agenda" sobre="escuro">
+            Ver horários disponíveis
+          </LinkSecundario>
+        </div>
+        <div className="mt-10 flex flex-col gap-6 border-t border-areia/20 pt-6 sm:flex-row sm:items-end sm:justify-between">
+          <div className="grid gap-2">
+            <p className="font-voz text-2xl italic leading-none text-areia">Mariana Santiago</p>
+            <IdentificacaoR1 sobre="escuro" />
+          </div>
+          <p className="hidden max-w-[34ch] text-sm text-gesso sm:block sm:text-right">{hero.horario}</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/** Faixa "Onde e quando" curta, só no celular, logo depois do hero (crença U6). */
+export function OndeQuandoCelular() {
+  return (
+    <section aria-label="Horários e endereço" className="border-b border-border md:hidden">
+      <div className={`${caixa} grid gap-3 py-6 text-sm`}>
+        <dl className="grid gap-1">
+          {horarios.map((h) => (
+            <div key={h.dias} className="flex flex-wrap gap-x-2">
+              <dt className="text-tinta">{h.dias}</dt>
+              <dd className="text-muted-foreground">{h.horas}</dd>
+            </div>
+          ))}
+        </dl>
+        <p className="text-muted-foreground">Av. Paulista, 1048, 18º andar. A uma quadra do metrô Trianon-Masp.</p>
+      </div>
+    </section>
+  );
+}
+
+export function ComoTrabalho() {
+  return (
+    <section aria-labelledby="como-trabalho" className="py-20 md:py-32">
+      <div className={caixa}>
+        <div className="grid gap-6 lg:grid-cols-12">
+          <h2 id="como-trabalho" className="text-3xl md:text-4xl lg:col-span-5">
+            {comoTrabalho.titulo}
+          </h2>
+          <p className="max-w-[46ch] text-lg text-muted-foreground lg:col-span-6 lg:col-start-7 lg:pt-3">{comoTrabalho.apoio}</p>
+        </div>
+        <ol className="mt-14 grid gap-px overflow-hidden rounded-[var(--radius-compact)] border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+          {comoTrabalho.etapas.map((e, i) => (
+            <li key={e.titulo} className="grid content-start gap-3 bg-gesso p-6">
+              <span className="flex items-center gap-3 text-sm text-muted-foreground">
+                <span aria-hidden="true" className="size-2 bg-ouro" />
+                {i + 1}
+              </span>
+              <h3 className="text-xl font-normal tracking-[-0.015em]">{e.titulo}</h3>
+              <p className="text-muted-foreground">{e.texto}</p>
+            </li>
+          ))}
+        </ol>
+        <div className="mt-8">
+          <LinkSecundario href="/como-funciona/">Entender como funciona a consulta</LinkSecundario>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function Procedimentos() {
+  return (
+    <section aria-labelledby="procedimentos" className="pb-20 md:pb-32">
+      <div className={caixa}>
+        <div className="grid gap-6 lg:grid-cols-12">
+          <h2 id="procedimentos" className="text-3xl md:text-4xl lg:col-span-5">
+            Procedimentos
+          </h2>
+          <p className="max-w-[52ch] text-lg text-muted-foreground lg:col-span-6 lg:col-start-7 lg:pt-3">
+            Cada página explica para que serve, como é feito, quanto tempo leva para responder e quais são os riscos. A
+            indicação é sempre individual, definida na consulta.
+          </p>
+        </div>
+      </div>
+      {/* No celular, os cards grandes viram uma faixa com deslize horizontal */}
+      <div className="carrossel mt-12 snap-x snap-mandatory scroll-px-4 overflow-x-auto sm:scroll-px-6 md:overflow-visible">
+        <ul className="flex w-max gap-4 px-4 sm:px-6 md:mx-auto md:grid md:w-auto md:max-w-[1200px] md:grid-cols-3 md:gap-5">
+          {procedimentosDestaque.map((p) => (
+            <li key={p.href} className="w-[78vw] shrink-0 snap-start sm:w-[56vw] md:w-auto">
+              <CardProcedimento {...p} />
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className={caixa}>
+        <ul className="mt-5 grid gap-3 md:grid-cols-3 md:gap-5">
+          {procedimentosCompactos.map((p) => (
+            <li key={p.href}>
+              <CardCompacto {...p} />
+            </li>
+          ))}
+        </ul>
+        <div className="mt-8">
+          <LinkSecundario href="/procedimentos/">Ver todos os procedimentos</LinkSecundario>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function Planejamento() {
+  return (
+    <section data-tema="escuro" aria-labelledby="planejamento" className="tema-escuro bg-tinta text-areia">
+      <div className={`${caixa} grid gap-12 py-20 md:py-32 lg:grid-cols-12 lg:gap-6`}>
+        <div className="lg:col-span-6">
+          <h2 id="planejamento" className="max-w-[16ch] text-3xl md:text-4xl">
+            {planejamento.titulo}
+          </h2>
+          <p className="mt-8 max-w-[52ch] text-lg text-gesso">{planejamento.texto}</p>
+        </div>
+        {/* Lugar do vídeo 2 (luz no gesso), Etapa 10. Até lá, a luz é desenhada em CSS. */}
+        <div aria-hidden="true" className="planejamento-luz hidden min-h-72 rounded-[var(--radius-card)] lg:col-span-5 lg:col-start-8 lg:block" />
+        <div className="lg:col-span-12">
+          <ReguaDoTempo rotulo="Linha do tempo de um plano" marcos={planejamento.regua} sobre="escuro" />
+          <p className="mt-10 max-w-[68ch] text-sm text-gesso">{planejamento.nota}</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function PerguntasHome() {
+  return (
+    <section aria-labelledby="perguntas" className="py-20 md:py-32">
+      <div className={`${caixa} grid gap-10 lg:grid-cols-12 lg:gap-6`}>
+        <div className="lg:col-span-4">
+          <h2 id="perguntas" className="text-3xl md:text-4xl">
+            Perguntas frequentes
+          </h2>
+          <div className="mt-6">
+            <LinkSecundario href="/perguntas-frequentes/">Ver todas as perguntas</LinkSecundario>
+          </div>
+        </div>
+        <Acordeao itens={faqHome.map((f) => ({ pergunta: f.pergunta, resposta: <p>{f.resposta}</p> }))} className="lg:col-span-8" />
+      </div>
+    </section>
+  );
+}
+
+export function OndeQuando() {
+  return (
+    <section aria-labelledby="onde-quando" className="border-t border-border py-20 md:py-28">
+      <div className={`${caixa} grid gap-10 lg:grid-cols-12 lg:gap-6`}>
+        <h2 id="onde-quando" className="text-3xl md:text-4xl lg:col-span-4">
+          {ondeQuando.titulo}
+        </h2>
+        <div className="grid gap-8 lg:col-span-8 lg:grid-cols-2">
+          <div className="grid content-start gap-3">
+            <p className="text-lg">
+              Av. Paulista, 1048, 18º andar
+              <br />
+              Bela Vista, São Paulo
+            </p>
+            <p className="text-muted-foreground">A uma quadra do metrô Trianon-Masp. {ondeQuando.comoChegar}</p>
+            <div className="flex flex-wrap gap-x-6">
+              <LinkSecundario href={ondeQuando.mapa} externo>
+                Abrir no mapa
+              </LinkSecundario>
+              {perfilGoogle ? (
+                <LinkSecundario href={perfilGoogle} externo>
+                  Ver no Google
+                </LinkSecundario>
+              ) : null}
+            </div>
+          </div>
+          <dl className="grid content-start gap-3">
+            {horarios.map((h) => (
+              <div key={h.dias} className="grid gap-0.5 border-t border-border pt-3">
+                <dt className="text-muted-foreground">{h.dias}</dt>
+                <dd className="text-xl tracking-[-0.01em]">{h.horas}</dd>
+              </div>
+            ))}
+            <p className="pt-2 text-muted-foreground">Horários pensados para quem trabalha durante o dia.</p>
+          </dl>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/** Fechamento: gradiente Areia → Gesso, voz da Dra., assinatura e foto (só na prévia privada; Etapa 10). */
+export function Fechamento() {
+  return (
+    <section aria-labelledby="fechamento" className="fechamento overflow-hidden">
+      <div className={`${caixa} grid items-end gap-10 pt-20 md:pt-28 lg:grid-cols-12 lg:gap-6`}>
+        <div className="pb-20 md:pb-28 lg:col-span-7">
+          <h2 id="fechamento" className="sr-only">
+            Agende sua consulta
+          </h2>
+          <VozDaDra comIdentificacao={false}>{fechamento.frase}</VozDaDra>
+          <p className="mt-8 font-voz text-3xl italic leading-none text-tinta">Mariana Santiago</p>
+          <IdentificacaoR1 className="mt-3" />
+          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3" data-cta>
+            <Botao href={whatsappHref} externo>
+              Agendar consulta
+            </Botao>
+            <LinkSecundario href="/agendar/#agenda">Ver horários disponíveis</LinkSecundario>
+          </div>
+        </div>
+        <div className="fechamento-foto relative mx-auto aspect-[4/5] w-full max-w-[420px] lg:col-span-5 lg:mx-0 lg:justify-self-end">
+          <FotoDra />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FotoDra() {
+  const src = process.env.NEXT_PUBLIC_FOTO_DRA_PREVIA;
+  if (src) {
+    // eslint-disable-next-line @next/next/no-img-element
+    return <img src={src} alt="Dra. Mariana Passos Santiago" className="size-full rounded-t-[var(--radius-card)] object-cover object-top" />;
+  }
+  return <div aria-hidden="true" className="size-full rounded-t-[var(--radius-card)] bg-[linear-gradient(170deg,#e9dcc4_0%,#cdb48c_55%,#a98a5e_100%)]" />;
+}
+

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { endereco, horarios, identificacao, legais, navegacao, redes, telefoneVisivel, whatsappHref } from "@/lib/site";
 import { GerenciarCookies } from "./gerenciar-cookies";
 import { IdentificacaoR1 } from "@/components/marca/blocos";
+import { perfilGoogle } from "@/lib/conteudo";
 
 // Rodapé de todas as páginas. R1: identificação com nome e registro na mesma fonte, tamanho e cor, sem negrito.
 export function SiteFooter() {
@@ -33,6 +34,12 @@ export function SiteFooter() {
             WhatsApp {telefoneVisivel}
             <span className="sr-only"> (abre em nova aba)</span>
           </a>
+          {perfilGoogle ? (
+            <a href={perfilGoogle} target="_blank" rel="noopener noreferrer" className="link-escuro justify-self-start">
+              Ver no Google
+              <span className="sr-only"> (abre em nova aba)</span>
+            </a>
+          ) : null}
         </div>
 
         <nav aria-label="Rodapé" className="grid content-start gap-3 text-sm lg:col-span-2">
