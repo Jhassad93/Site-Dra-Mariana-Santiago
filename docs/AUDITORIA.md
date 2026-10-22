@@ -31,8 +31,8 @@ Legenda: **OK** · **falha** (corrigida nesta etapa, salvo indicação) · **n/a
 | --- | --- | --- | --- |
 | 1 | Página 404 personalizada | OK | `app/not-found.tsx`; `out/404.html` com o visual do site e links para a home e para agendar |
 | 2 | CTA acima da dobra | OK | Prints 375/768/1280 (`.verificacao/`): "Agendar consulta" visível sem rolar; repetido no cabeçalho, no fechamento e no CTA fixo |
-| 3 | Meta title por página | **falha leve, aguarda decisão** | 16 títulos únicos, mas 12 passam de 60 caracteres (64–87) porque o sufixo aprovado no COPY.md é longo. Proposta abaixo; só muda com aprovação, porque os títulos estão no COPY.md aprovado |
-| 4 | Meta description por página | **falha leve, aguarda decisão** | Únicas, mas 13 passam de 155 caracteres (156–190). Mesma situação do item 3 |
+| 3 | Meta title por página | **adiado para a Etapa 15** (decisão de 22/10/2026) | 16 títulos únicos, mas 12 passam de 60 caracteres (64–87) porque o sufixo aprovado no COPY.md é longo. Proposta abaixo; só muda com aprovação, porque os títulos estão no COPY.md aprovado |
+| 4 | Meta description por página | **adiado para a Etapa 15** (decisão de 22/10/2026) | Únicas, mas 13 passam de 155 caracteres (156–190). Mesma situação do item 3 |
 | 5 | Imagem Open Graph | OK | `public/og.png` 1200×630 com identificação R1; `og:image` e `twitter:card` em todas as páginas (`lib/seo.ts`). Teste no WhatsApp/LinkedIn só com URL pública: pós-aceite |
 | 6 | Favicons | OK | `app/favicon.ico` (16/32/48), `app/icon.png` (512), `app/apple-icon.png` (180) |
 | 7 | robots.txt | OK | `out/robots.txt`; na prévia fecha tudo; com `NEXT_PUBLIC_INDEXAR=1` aplica a política aprovada e aponta para o sitemap |
@@ -141,7 +141,7 @@ Legenda: **OK** · **falha** (corrigida nesta etapa, salvo indicação) · **n/a
 
 ## Pendências que saem desta etapa
 
-- Decidir os títulos e descriptions encurtados (itens 3 e 4 de produção).
+- Títulos e descriptions acima do tamanho (itens 3 e 4 de produção): **decisão de 22/10/2026: manter como estão na prévia e decidir antes da publicação definitiva** (Etapa 15). Opção intermediária registrada: manter "médica" e tirar "na Av. Paulista" dos títulos internos.
 - Conferência humana dos prints (item 27).
 - Pós-aceite: HTTPS/redirecionamentos, PageSpeed e securityheaders.com em URL pública, Search Console e Bing, Perfil do Google, teste dos robôs liberados, conta do GA4, fotos reais, reconsulta do CRM.
 - Com a Dra.: aprovação dos textos, e-mail do canal do titular, valor da consulta, política de robôs.

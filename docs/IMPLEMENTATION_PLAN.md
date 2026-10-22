@@ -103,7 +103,7 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 
 ## Etapa 13 — Auditorias do protótipo
 - [x] `/impeccable polish` e `/impeccable audit`; `npx impeccable detect` sem achados críticos; `break-ui`. Detector: 0 críticos em 16 rotas × 2 tamanhos; audit 20/20; break-ui (19 casos) sem quebra depois das correções de zoom de texto. Relatório em `docs/AUDITORIA.md`
-- [x] `checklists/producao.md`, `seguranca.md` e `seo-ia.md` (itens de domínio, contas e indexação marcados "pós-aceite"). Produção: 27 OK, 2 n/a, 2 aguardam decisão (títulos e descriptions acima do tamanho). Segurança: 8 OK, 10 n/a, 1 pós-aceite; headers criados em `public/_headers` e testados. SEO e IA: 12 OK, 4 pós-aceite
+- [x] `checklists/producao.md`, `seguranca.md` e `seo-ia.md` (itens de domínio, contas e indexação marcados "pós-aceite"). Produção: 27 OK, 2 n/a, 2 adiados para a Etapa 15 por decisão do responsável (títulos e descriptions acima do tamanho, sem efeito na prévia). Segurança: 8 OK, 10 n/a, 1 pós-aceite; headers criados em `public/_headers` e testados. SEO e IA: 12 OK, 4 pós-aceite
 - [x] **4ª auditoria: Anexo A do harness** (26 itens): 20 OK, 4 n/a, 1 pendente (aprovação dos textos pela Dra.), 1 🟡 pós-aceite (imagens de ambiente geradas por IA, não do consultório real)
 - [x] Remover `/componentes`; conferir o `LICENCAS.md` (acrescentados @next/third-parties, sharp, lighthouse, OG e ícones)
 - Pronto quando: todos os itens aplicáveis ao protótipo estão OK; os pendentes estão listados como "pós-aceite"
@@ -120,5 +120,6 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - [ ] Contas no nome da Dra.: domínio (titularidade de `dramarianasantiago.com.br`), Cloudflare, GA4, Search Console, Bing, Calendly (plano pago, sincronizado com a agenda da sala); repositório transferido
 - [ ] Correções nos outros canais (pendências 3, 4 e 11b do harness): Google Perfil da Empresa, tipos de agendamento da Clinovi, bio e posts do Instagram
 - [ ] Remover `noindex`, publicar no domínio, HTTPS e redirecionamentos, conferir os robôs de IA da Cloudflare, enviar o sitemap
+- [ ] Decidir títulos e descriptions acima de 60/155 caracteres (AUDITORIA.md, produção itens 3 e 4); opção intermediária: manter "médica" e tirar "na Av. Paulista" dos títulos internos
 - [ ] Reverificar o Anexo B do harness (R20) antes de publicar; reteste das 7 perguntas de IA após 60 a 90 dias
 - Pronto quando: todos os itens aplicáveis dos três checklists e do Anexo A estão OK no site publicado
