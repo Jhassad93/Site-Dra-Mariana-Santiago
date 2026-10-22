@@ -36,10 +36,10 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - Pronto quando: todos os componentes aparecem em `/componentes` nos 3 tamanhos, com contraste AA conferido e prints revisados
 
 ## Etapa 4 — Copy (documento, sem código)
-- [ ] `docs/COPY.md` com o texto de todas as páginas, a partir de BRIEF, PERSONAS (crenças e banco de copy) e DESIGN, **marcado RASCUNHO**
-- [ ] Páginas de procedimento na estrutura obrigatória: indicação · como é feito · régua do tempo (faixas + "varia de pessoa para pessoa" + fonte) · o que esperar depois · possíveis efeitos e complicações · "Na consulta, eu…" · perguntas
+- [x] `docs/COPY.md` com o texto de todas as páginas, a partir de BRIEF, PERSONAS (crenças e banco de copy) e DESIGN, **marcado RASCUNHO**
+- [x] Páginas de procedimento na estrutura obrigatória: indicação · como é feito · régua do tempo (faixas + "varia de pessoa para pessoa" + fonte) · o que esperar depois · possíveis efeitos e complicações · "Na consulta, eu…" · perguntas
 - [ ] Decidir os 🟡 pendentes: menção à residência; redação do retorno ("retorno de avaliação em 15 dias incluído"); frase de fechamento; link para o perfil do Google (registrar no Anexo D do harness)
-- [ ] Rodar o harness linha a linha (léxico A2 + R1–R11) e listar o resultado
+- [x] Rodar o harness linha a linha (léxico A2 + R1–R11) e listar o resultado (nenhum 🔴; fontes dos prazos em `docs/FONTES_PROCEDIMENTOS.md`)
 - Pronto quando: COPY.md aprovado por você, sem nenhum 🔴 e com todos os 🟡 decididos e registrados
 
 ## Etapa 5 — Home
