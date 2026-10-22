@@ -10,7 +10,8 @@
     "prints": "node scripts/prints.mjs",
     "preview": "next build && node scripts/preview.mjs",
     "teste-layout": "node scripts/teste-layout.mjs",
-    "contraste": "node scripts/contraste-fotos.mjs"
+    "contraste": "node scripts/contraste-fotos.mjs",
+    "teste-agendar": "node scripts/teste-agendar.mjs"
   },
   "dependencies": {
     "@fontsource/host-grotesk": "^5.3.0",

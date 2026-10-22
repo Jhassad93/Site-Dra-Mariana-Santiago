@@ -48,8 +48,8 @@ await page.goto(base + "/nao-existe/", { waitUntil: "networkidle" });
 ok("URL inexistente mostra a 404", (await page.textContent("h1")) === "Esta página não existe");
 await page.click("text=Ir para o início"); await page.waitForURL(base + "/"); ok("404 volta ao início", page.url() === base + "/");
 await page.click('nav[aria-label="Principal"] >> text=Sobre'); await page.waitForURL(/sobre/);
-await page.waitForSelector("h1:has-text('Sobre a Dra. Mariana')", { timeout: 5000 }).catch(() => {}); await espera(page);
-ok("Navegação do cabeçalho", (await page.textContent("h1")) === "Sobre a Dra. Mariana", page.url() + " " + (await page.locator("h1").allTextContents()).join("/"));
+await page.waitForSelector("h1:has-text('Sobre mim')", { timeout: 5000 }).catch(() => {}); await espera(page);
+ok("Navegação do cabeçalho", (await page.textContent("h1")) === "Sobre mim", page.url() + " " + (await page.locator("h1").allTextContents()).join("/"));
 ok("aria-current na página atual", (await page.getAttribute('nav[aria-label="Principal"] a[href="/sobre/"]', "aria-current")) === "page");
 await page.close();
 

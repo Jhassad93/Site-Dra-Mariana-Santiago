@@ -70,10 +70,11 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - Pronto quando: as 3 páginas estão completas, com CTA, e o FAQ abre e fecha pelo teclado
 
 ## Etapa 9 — Agendar e Obrigado
-- [ ] `/agendar`: botão principal do WhatsApp (mensagem neutra) + "Ver horários disponíveis" com o **Calendly incorporado só depois do clique**, carregamento com esqueleto, falha → link em nova aba + WhatsApp
-- [ ] Escuta do evento `calendly.event_scheduled` → `/obrigado?origem=agenda`; WhatsApp → `/obrigado?origem=whatsapp`; plano B quando o WhatsApp não abre (número + copiar + link wa.me)
-- [ ] `/obrigado` (noindex) com os próximos passos
-- [ ] Teste de todos os caminhos do APP_FLOW (com conta Calendly de demonstração do João e horários fictícios) `[link do Calendly a fornecer]`
+- [x] `/agendar`: botão principal do WhatsApp (mensagem neutra) + "Ver horários disponíveis" com o **Calendly incorporado só depois do clique**, carregamento com esqueleto, falha → link em nova aba + WhatsApp
+- [x] Escuta do evento `calendly.event_scheduled` → `/obrigado?origem=agenda`; WhatsApp → `/obrigado?origem=whatsapp`; plano B quando o WhatsApp não abre (número + copiar + link do WhatsApp Web)
+- [x] `/obrigado` (noindex) com os próximos passos
+- [x] Teste de todos os caminhos do APP_FLOW: **Calendly simulado** (decisão do responsável em 22/10/2026: sem conta conectada no protótipo). Com `NEXT_PUBLIC_CALENDLY_URL` vazio, `/agendar` mostra uma agenda de **demonstração** que não pede nem guarda dado nenhum; `?simular=erro|sem-horarios|ocupado|lento` força cada estado. `npm run teste-agendar`: 22 de 22 verificações OK
+- [ ] Quando houver o link do Calendly: preencher `NEXT_PUBLIC_CALENDLY_URL` e repetir o teste do caminho real (evento `calendly.event_scheduled`, idioma, nome do evento "Consulta")
 - Pronto quando: todos os caminhos e estados do APP_FLOW (carregando, erro, sem horário, horário ocupado, obrigado) foram testados no Playwright
 
 ## Etapa 10 — Imagens e vídeos

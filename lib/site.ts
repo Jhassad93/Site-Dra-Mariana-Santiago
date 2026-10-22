@@ -44,3 +44,11 @@ const mensagem =
 export const whatsappHref = numero
   ? `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
   : "/agendar/";
+
+// Plano B do WhatsApp (APP_FLOW): WhatsApp Web, para computador sem o aplicativo.
+export const whatsappWebHref = numero
+  ? `https://web.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensagem)}`
+  : "/agendar/";
+
+// Agenda online (Calendly). Vazio = modo demonstração (simulação, sem coletar dados).
+export const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? "";
