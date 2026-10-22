@@ -46,8 +46,8 @@ export default function Page() {
           {cores.map((c) => (
             <li key={c.nome} className={`${c.classe} flex min-h-40 flex-col justify-end rounded-[var(--radius-compact)] p-5`}>
               <span className="text-lg">{c.nome}</span>
-              <span className="text-sm opacity-80">{c.hex}</span>
-              <span className="mt-2 text-xs opacity-80">{c.papel}</span>
+              <span className="text-sm">{c.hex}</span>
+              <span className="mt-2 text-sm">{c.papel}</span>
             </li>
           ))}
         </ul>
