@@ -24,7 +24,7 @@ if (await v.count()) {
 for (let y = 0; y < 6000; y += 700) { await p.evaluate((yy) => window.scrollTo(0, yy), y); await p.waitForTimeout(150); }
 const imgs = await p.evaluate(() => [...document.querySelectorAll("picture img")].map((i) => ({ src: i.currentSrc, ok: i.complete && i.naturalWidth > 0 })));
 ok("Todas as imagens carregaram ao rolar", imgs.length > 0 && imgs.every((i) => i.ok), imgs.length + " imagens");
-const pesos = await p.evaluate(() => performance.getEntriesByType("resource").filter((e) => e.name.includes("/midia/")).map((e) => e.encodedBodySize || e.transferSize));
+const pesos = await p.evaluate(() => performance.getEntriesByType("resource").filter((e) => /\/midia\/.*\.(avif|webp)$/.test(e.name)).map((e) => e.encodedBodySize || e.transferSize));
 ok("Nenhuma imagem acima de 200 KB", pesos.every((b) => b < 200 * 1024), Math.round(Math.max(0, ...pesos) / 1024) + " KB a maior");
 ok("Imagem de capa com AVIF e WebP", (await p.locator("picture source[type='image/avif']").count()) > 0);
 await p.close();

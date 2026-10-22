@@ -4,10 +4,15 @@
       "larguras": [
         828,
         1280,
-        1536
+        1920,
+        2560
       ],
-      "largura": 1536,
-      "altura": 864
+      "largura": 2752,
+      "altura": 1536
+    },
+    "video": {
+      "mp4": "/midia/hero.mp4",
+      "webm": "/midia/hero.webm"
     }
   },
   "planejamento": {
@@ -16,8 +21,12 @@
         640,
         960
       ],
-      "largura": 1200,
-      "altura": 896
+      "largura": 2400,
+      "altura": 1792
+    },
+    "video": {
+      "mp4": "/midia/planejamento.mp4",
+      "webm": "/midia/planejamento.webm"
     }
   },
   "card-toxina-botulinica": {
@@ -27,8 +36,8 @@
         600,
         800
       ],
-      "largura": 896,
-      "altura": 1200
+      "largura": 1792,
+      "altura": 2400
     }
   },
   "card-bioestimuladores-de-colageno": {
@@ -38,8 +47,8 @@
         600,
         800
       ],
-      "largura": 896,
-      "altura": 1200
+      "largura": 1792,
+      "altura": 2400
     }
   },
   "card-preenchimento-labial": {
@@ -49,8 +58,8 @@
         600,
         800
       ],
-      "largura": 896,
-      "altura": 1200
+      "largura": 1792,
+      "altura": 2400
     }
   }
 }

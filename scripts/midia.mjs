@@ -13,9 +13,10 @@ const RAIZ = new URL("..", import.meta.url).pathname;
 const ORIG = join(RAIZ, "midia-original");
 const SAIDA = join(RAIZ, "public/midia");
 const LIMITE_VIDEO = 2 * 1024 * 1024;
+const PINGPONG = "[0:v]scale='min(1280,iw)':-2,fps=24,split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1:a=0[v]";
 
 const SLOTS = {
-  hero: { larguras: [828, 1280, 1920], video: "hero-video" },
+  hero: { larguras: [828, 1280, 1920, 2560], video: "hero-video" },
   planejamento: { larguras: [640, 960], video: "planejamento-video" },
   fechamento: { larguras: [], video: "fechamento-video" },
   "card-toxina-botulinica": { larguras: [400, 600, 800] },
@@ -73,13 +74,14 @@ function ffmpeg(args) {
 async function processaVideo(slot, origem) {
   const mp4 = join(SAIDA, `${slot}.mp4`);
   const webm = join(SAIDA, `${slot}.webm`);
-  // mudo, 1280 px de largura, 24 fps, início rápido; aumenta a compressão até caber em ~2 MB
+  // mudo, até 1280 px (sem ampliar), 24 fps, início rápido; ida e volta para o loop não dar salto;
+  // aumenta a compressão até caber em ~2 MB
   for (const crf of [26, 30, 34]) {
-    ffmpeg(["-i", origem, "-an", "-vf", "scale=1280:-2,fps=24", "-c:v", "libx264", "-preset", "slow", "-crf", String(crf), "-pix_fmt", "yuv420p", "-movflags", "+faststart", mp4]);
+    ffmpeg(["-i", origem, "-an", "-filter_complex", PINGPONG, "-map", "[v]", "-c:v", "libx264", "-preset", "slow", "-crf", String(crf), "-pix_fmt", "yuv420p", "-movflags", "+faststart", mp4]);
     if ((await stat(mp4)).size <= LIMITE_VIDEO) break;
   }
   for (const crf of [36, 42, 48]) {
-    ffmpeg(["-i", origem, "-an", "-vf", "scale=1280:-2,fps=24", "-c:v", "libvpx-vp9", "-b:v", "0", "-crf", String(crf), "-row-mt", "1", webm]);
+    ffmpeg(["-i", origem, "-an", "-filter_complex", PINGPONG, "-map", "[v]", "-c:v", "libvpx-vp9", "-b:v", "0", "-crf", String(crf), "-row-mt", "1", webm]);
     if ((await stat(webm)).size <= LIMITE_VIDEO) break;
   }
   relatorio.push({ arquivo: slot, mp4KB: await kb(mp4), webmKB: await kb(webm) });
