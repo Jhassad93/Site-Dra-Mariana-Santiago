@@ -19,7 +19,8 @@
     "teste-headers": "node scripts/teste-headers.mjs",
     "servir": "node scripts/servidor-gzip.mjs out 4181",
     "auditoria-a11y": "node scripts/auditoria-a11y.mjs",
-    "break-ui": "node scripts/break-ui.mjs"
+    "break-ui": "node scripts/break-ui.mjs",
+    "vercel-headers": "node scripts/vercel-headers.mjs"
   },
   "dependencies": {
     "@fontsource/host-grotesk": "^5.3.0",

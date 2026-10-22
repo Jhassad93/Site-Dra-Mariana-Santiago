@@ -2,6 +2,7 @@
 # CSP: o Next.js estático usa scripts inline para hidratar, por isso 'unsafe-inline' em script-src (sem nonce
 # em site estático). Terceiros liberados só os que o site usa: GA4 (depois do aceite) e o Calendly (depois do clique).
 # Teste local: scripts/servidor-gzip.mjs aplica este arquivo; npm run teste-headers procura violações no console.
+# Na Vercel (prévia), os mesmos headers vão em vercel.json: depois de mudar aqui, rode npm run vercel-headers.
 
 /*
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://assets.calendly.com; style-src 'self' 'unsafe-inline' https://assets.calendly.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; font-src 'self'; media-src 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://calendly.com https://*.calendly.com; frame-src https://calendly.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
