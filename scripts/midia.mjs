@@ -47,6 +47,15 @@ async function processaImagem(slot, origem, larguras) {
     saida.larguras.push(w);
     relatorio.push({ arquivo: `${slot}-${w}`, avifKB: await kb(avif), webpKB: await kb(webp) });
   }
+  // original entre duas larguras pedidas (ex.: 1536 px quando o maior pedido é 1920): usa também o tamanho original
+  const maiorPedida = Math.max(...larguras);
+  if (meta.width < maiorPedida && !saida.larguras.includes(meta.width) && saida.larguras.length) {
+    const w = meta.width;
+    await sharp(origem).rotate().avif({ quality: 50, effort: 5 }).toFile(join(SAIDA, `${slot}-${w}.avif`));
+    await sharp(origem).rotate().webp({ quality: 72 }).toFile(join(SAIDA, `${slot}-${w}.webp`));
+    saida.larguras.push(w);
+    relatorio.push({ arquivo: `${slot}-${w}`, avifKB: await kb(join(SAIDA, `${slot}-${w}.avif`)), webpKB: await kb(join(SAIDA, `${slot}-${w}.webp`)) });
+  }
   if (!saida.larguras.length) {
     // imagem menor que a menor largura: usa o tamanho original
     const w = meta.width;

@@ -13,6 +13,8 @@ await rm(dest, { recursive: true, force: true });
 await mkdir(dest, { recursive: true });
 // O serviço de artefatos reserva nomes iniciados por "_": _next vira assets.
 await cp(join(out, "_next"), join(dest, "assets"), { recursive: true });
+// Mídia (imagens e vídeos comprimidos), se houver
+await cp(join(out, "midia"), join(dest, "midia"), { recursive: true }).catch(() => {});
 
 // Caminhos absolutos (/_next/...) viram relativos, porque o artefato não fica na raiz do domínio.
 async function relativizar(dir) {
@@ -35,7 +37,7 @@ await relativizar(join(dest, "assets"));
 
 // Rota opcional: node scripts/preview.mjs /componentes/  (padrão: a home)
 const rotaPrevia = (process.argv[2] || "/").replace(/^\/|\/$/g, "");
-const html = (await readFile(join(out, rotaPrevia, "index.html"), "utf8")).replaceAll("./_next/", "./assets/").replaceAll("/_next/", "./assets/").replace(/<script src="[^"]*polyfills-[^"]*"[^>]*><\/script>/, "");
+const html = (await readFile(join(out, rotaPrevia, "index.html"), "utf8")).replaceAll("./_next/", "./assets/").replaceAll("/_next/", "./assets/").replaceAll("\"/midia/", "\"./midia/").replaceAll(" /midia/", " ./midia/").replace(/<script src="[^"]*polyfills-[^"]*"[^>]*><\/script>/, "");
 const head = html.match(/<head>([\s\S]*?)<\/head>/)?.[1] ?? "";
 const body = html.match(/<body[^>]*>([\s\S]*?)<\/body>/)?.[1] ?? "";
 const htmlClass = html.match(/<html[^>]*class="([^"]*)"/)?.[1] ?? "";
@@ -78,6 +80,6 @@ async function listar(dir) {
   }
   return arquivos;
 }
-const arquivos = (await listar(join(dest, "assets"))).map((p) => relative(dest, p));
+const arquivos = [...(await listar(join(dest, "assets"))), ...(await listar(join(dest, "midia")).catch(() => []))].map((p) => relative(dest, p));
 await writeFile(join(dest, "files.json"), JSON.stringify(arquivos, null, 2));
 console.log(`index.html + ${arquivos.length} arquivos em .preview/`);

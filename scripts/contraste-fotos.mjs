@@ -13,7 +13,7 @@ for (const largura of [375, 1280]) {
   const alvos = await page.evaluate((sel) => {
     const out = [];
     document.querySelectorAll(sel).forEach((card, c) => {
-      card.querySelectorAll("h3, p, span").forEach((el) => {
+      card.querySelectorAll("h1, h2, h3, p, span, a, dt, dd").forEach((el) => {
         if (!el.childNodes.length || [...el.childNodes].every((n) => n.nodeType !== 3 || !n.textContent.trim())) return;
         const cs = getComputedStyle(el);
         const r = el.getBoundingClientRect();

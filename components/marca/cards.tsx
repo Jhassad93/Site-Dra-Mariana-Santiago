@@ -40,8 +40,8 @@ export function CardProcedimento({
         )}
       </div>
       {/* Véus de Tinta para garantir contraste do texto sobre qualquer foto */}
-      <span aria-hidden="true" className="absolute inset-x-0 top-0 -z-10 h-3/5 bg-gradient-to-b from-tinta/80 via-tinta/60 via-40% to-transparent" />
-      <span aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-3/5 bg-gradient-to-t from-tinta/85 via-tinta/55 to-transparent" />
+      <span aria-hidden="true" className="absolute inset-x-0 top-0 -z-10 h-3/5 bg-gradient-to-b from-tinta/85 via-tinta/65 via-40% to-transparent" />
+      <span aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-4/5 bg-gradient-to-t from-tinta/90 via-tinta/80 via-45% to-transparent md:h-2/3 md:via-tinta/75" />
 
       <div className="flex flex-wrap items-end gap-x-4 gap-y-1.5 border-b border-areia/60 pb-3">
         <span className="shrink-0 whitespace-nowrap text-[2.0625rem] font-light leading-none tracking-[-0.01em]">{dado.valor}</span>

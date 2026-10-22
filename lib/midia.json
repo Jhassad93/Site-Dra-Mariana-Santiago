@@ -1,1 +1,56 @@
-{}
+{
+  "hero": {
+    "imagem": {
+      "larguras": [
+        828,
+        1280,
+        1536
+      ],
+      "largura": 1536,
+      "altura": 864
+    }
+  },
+  "planejamento": {
+    "imagem": {
+      "larguras": [
+        640,
+        960
+      ],
+      "largura": 1200,
+      "altura": 896
+    }
+  },
+  "card-toxina-botulinica": {
+    "imagem": {
+      "larguras": [
+        400,
+        600,
+        800
+      ],
+      "largura": 896,
+      "altura": 1200
+    }
+  },
+  "card-bioestimuladores-de-colageno": {
+    "imagem": {
+      "larguras": [
+        400,
+        600,
+        800
+      ],
+      "largura": 896,
+      "altura": 1200
+    }
+  },
+  "card-preenchimento-labial": {
+    "imagem": {
+      "larguras": [
+        400,
+        600,
+        800
+      ],
+      "largura": 896,
+      "altura": 1200
+    }
+  }
+}

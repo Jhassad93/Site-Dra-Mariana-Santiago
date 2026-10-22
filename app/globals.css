@@ -457,8 +457,8 @@
   /* Véu sobre a foto ou o vídeo do hero: garante contraste do texto (medir com npm run contraste) */
   .hero-veu {
     background:
-      linear-gradient(0deg, rgb(28 24 19 / 0.82) 0%, rgb(28 24 19 / 0.35) 55%, rgb(28 24 19 / 0.25) 100%),
-      linear-gradient(90deg, rgb(28 24 19 / 0.55) 0%, transparent 65%);
+      linear-gradient(0deg, rgb(28 24 19 / 0.9) 0%, rgb(28 24 19 / 0.72) 45%, rgb(28 24 19 / 0.38) 80%, rgb(28 24 19 / 0.3) 100%),
+      linear-gradient(90deg, rgb(28 24 19 / 0.6) 0%, rgb(28 24 19 / 0.2) 55%, transparent 75%);
   }
 
   /* Entrada da home: o único momento orquestrado (título 600ms; régua 900ms) */

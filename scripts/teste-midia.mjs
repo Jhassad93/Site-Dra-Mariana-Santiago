@@ -11,12 +11,21 @@ p.on("request", (q) => { if (/\.(mp4|webm)$/.test(q.url())) pedidos.push(q.url()
 await p.goto(base + "/", { waitUntil: "networkidle" });
 await p.waitForTimeout(1500);
 const v = p.locator("video.video-ambiente").first();
-ok("Desktop: vídeo do hero existe", (await v.count()) === 1);
-ok("Desktop: preload=none", (await v.getAttribute("preload")) === "none");
-ok("Desktop: toca quando visível", await v.evaluate((el) => !el.paused));
-await p.evaluate(() => window.scrollTo(0, 3000));
-await p.waitForTimeout(800);
-ok("Desktop: pausa fora da tela", await v.evaluate((el) => el.paused));
+if (await v.count()) {
+  ok("Desktop: preload=none", (await v.getAttribute("preload")) === "none");
+  ok("Desktop: toca quando visível", await v.evaluate((el) => !el.paused));
+  await p.evaluate(() => window.scrollTo(0, 3000));
+  await p.waitForTimeout(800);
+  ok("Desktop: pausa fora da tela", await v.evaluate((el) => el.paused));
+} else {
+  r.push({ teste: "Vídeos", resultado: "—", detalhe: "ainda sem vídeo em lib/midia.json" });
+}
+// imagens: carregam ao rolar (lazy) e nenhuma passa de ~200 KB
+for (let y = 0; y < 6000; y += 700) { await p.evaluate((yy) => window.scrollTo(0, yy), y); await p.waitForTimeout(150); }
+const imgs = await p.evaluate(() => [...document.querySelectorAll("picture img")].map((i) => ({ src: i.currentSrc, ok: i.complete && i.naturalWidth > 0 })));
+ok("Todas as imagens carregaram ao rolar", imgs.length > 0 && imgs.every((i) => i.ok), imgs.length + " imagens");
+const pesos = await p.evaluate(() => performance.getEntriesByType("resource").filter((e) => e.name.includes("/midia/")).map((e) => e.encodedBodySize || e.transferSize));
+ok("Nenhuma imagem acima de 200 KB", pesos.every((b) => b < 200 * 1024), Math.round(Math.max(0, ...pesos) / 1024) + " KB a maior");
 ok("Imagem de capa com AVIF e WebP", (await p.locator("picture source[type='image/avif']").count()) > 0);
 await p.close();
 
@@ -38,4 +47,4 @@ await p.close();
 
 await browser.close();
 console.table(r);
-console.log(r.every((x) => x.resultado === "OK") ? "TODOS OK" : "HÁ FALHAS");
+console.log(r.every((x) => x.resultado !== "FALHA") ? "TODOS OK" : "HÁ FALHAS");

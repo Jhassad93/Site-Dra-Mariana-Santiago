@@ -80,8 +80,9 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 ## Etapa 10 — Imagens e vídeos
 - [x] Estrutura pronta: `npm run midia` comprime o que estiver em `midia-original/` (fora do git) para `public/midia/` (AVIF + WebP em 2 ou 3 larguras; MP4 + WebM abaixo de 2 MB, mudos, 1280 px) e gera `lib/midia.json`; sem arquivo, cada lugar continua com o desenho em CSS. Componentes `Imagem`, `FundoMidia` e `VideoAmbiente` (preload="none", toca só visível, pausa fora da tela, sem vídeo no celular nem com movimento reduzido; entra por cima da capa sem piscar). Pipeline testado com mídia sintética (`npm run teste-midia`: 8 de 8 OK) e depois limpo
 - [x] Pacote de prompts para o Higgsfield publicado como artefato ("Mídia Dra. Mariana"): capa do hero, 3 cards, painel do planejamento, vídeos 1, 2 e 3 (opcional), com nomes de arquivo e formatos
-- [ ] **Aguardando os arquivos do responsável** em `site/midia-original/` (decisão de 22/10/2026: ele gera no Higgsfield); depois: rodar `npm run midia`, `npm run contraste` (texto sobre as fotos e sobre o hero), prints e `teste-midia`
-- [ ] Registrar cada imagem e vídeo em `docs/LICENCAS.md` (ferramenta, data; foto do Instagram como "só prévia privada", ligada por `NEXT_PUBLIC_FOTO_DRA_PREVIA=1` e fora do git)
+- [x] **Imagens recebidas** (pasta `Imagens/Adapta`, 22/10/2026): capa do hero, 3 cards e painel do planejamento, aprovadas no harness (sem pessoas, texto ou marca). Comprimidas (a maior tem 56 KB em WebP; AVIF ainda menor); véus do hero e dos cards reforçados até o contraste medido por pixel passar (texto ≥ 4,5:1, título grande ≥ 3:1)
+- [ ] **Vídeos (Higgsfield): aguardando o responsável** (combinado: no final). Basta salvar `hero-video.mp4` e `planejamento-video.mp4` em `site/midia-original/` e rodar `npm run midia`
+- [x] Registrar as imagens em `docs/LICENCAS.md` (ferramenta a confirmar); vídeos quando chegarem. Registrar (ferramenta, data; foto do Instagram como "só prévia privada", ligada por `NEXT_PUBLIC_FOTO_DRA_PREVIA=1` e fora do git)
 - Pronto quando: nenhuma imagem acima de cerca de 200 KB sem motivo, vídeos com capa e pausa fora da tela, LICENCAS.md completo
 
 ## Etapa 11 — Páginas legais e cookies
