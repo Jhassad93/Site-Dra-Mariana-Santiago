@@ -10,27 +10,28 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - [x] **Onde construir (PREMISSA):** código e build no ambiente de nuvem da sessão (Node 22, Chromium e Playwright disponíveis). O **código-fonte, sem `node_modules` e sem build, é sincronizado** com `Site - Dra. Mariana Passos/site/` no seu computador a cada etapa aprovada. Motivo: a pasta fica no iCloud, que sincroniza mal milhares de arquivos de `node_modules` e onde o Git não consegue apagar arquivos pela conexão.
 - [x] **Versionamento:** repositório **privado no GitHub do João** (`site-dra-mariana-santiago`), com commit por etapa aprovada. Transferir para a conta da Dra. depois do aceite (regra do kit). Repositório: https://github.com/Jhassad93/Site-Dra-Mariana-Santiago
 - [x] Next.js (App Router) + TypeScript + Tailwind CSS + shadcn/ui; `components.json` com os registros de `config/components.json`; **exportação estática** (`output: "export"`), porque o site não precisa de servidor (APP_FLOW/SCHEMA)
-- [x] Fontes **Geist** e **Instrument Serif** com `next/font` (servidas pelo próprio site, sem CDN do Google, conforme o SCHEMA)
+- [x] Fontes **Host Grotesk** e **Libre Caslon Text** com `next/font` (servidas pelo próprio site, sem CDN do Google, conforme o SCHEMA). Trocadas em 22/10/2026 (Geist e Instrument Serif saíram por serem marcadas como "fontes muito usadas" pelo Impeccable)
 - [x] Tokens do DESIGN.md no `globals.css` (5 cores, escala tipográfica, raios por hierarquia, curvas de animação)
 - [x] `.env.example` com `NEXT_PUBLIC_WHATSAPP_NUMBER`, `NEXT_PUBLIC_WHATSAPP_MESSAGE`, `NEXT_PUBLIC_CALENDLY_URL`, `NEXT_PUBLIC_GA4_ID` (não são segredos; ficam fora do código para trocar sem novo commit) e `.gitignore` do kit
-- [x] Skills de design (`scripts/setup-design.sh`), instaladas na segunda tentativa: Emil Kowalski (inclui `review-animations` e `break-ui`), Taste Skill, **Impeccable** (com o detector `impeccable detect`) e Frontend Design. Primeiro `detect` (22/10/2026): alertas de "fonte muito usada" (Geist, Instrument Serif) e "fundo creme" **mantidos**, porque vêm das referências aprovadas e o DESIGN.md tem prioridade sobre o Impeccable (CLAUDE.md, "Conflitos de regras")
+- [x] Skills de design (`scripts/setup-design.sh`), instaladas na segunda tentativa: Emil Kowalski (inclui `review-animations` e `break-ui`), Taste Skill, **Impeccable** (com o detector `impeccable detect`) e Frontend Design. `detect` com navegador real (22/10/2026): os alertas de "fonte muito usada" e "fundo creme" foram corrigidos (par A e fundo Gesso), e o detector ficou sem alertas
 - [x] shadcn/ui: `components.json` (registros do kit) e `lib/utils.ts`; `shadcn add` e o registro **@spell** funcionam (testados com `--dry-run`). @cult-ui e @componentry não respondem neste ambiente (não são necessários: biblioteca principal = Spell UI). Candidatos do Spell para o DESIGN.md: `signature` (assinatura animada) e `copy-button` (copiar o número do WhatsApp)
 - [x] Prévia em artefato: `scripts/preview.mjs` (build → `.preview/`); prints: `scripts/prints.mjs` (375/768/1280 + rolagem horizontal)
-- Pronto quando: página em branco roda localmente com Geist, Instrument Serif e as cores Tinta/Linho; `npm run build` gera a pasta estática sem erro; código sincronizado com a sua pasta
+- Pronto quando: página em branco roda localmente com Host Grotesk, Libre Caslon e as cores Tinta/Gesso; `npm run build` gera a pasta estática sem erro; código sincronizado com a sua pasta
 
 ## Etapa 2 — Layout base
-- [ ] Cabeçalho "liquid glass" com os dois estados (sobre o hero escuro e sobre seções claras), alternativas sem `backdrop-filter` e com `prefers-reduced-transparency`; menu do celular em folha cheia
-- [ ] Rodapé com bloco de identificação R1 ("Dra. Mariana Passos Santiago" / "MÉDICA: CRM-SP 227636", tipografia uniforme), endereço, horários, links legais, "Gerenciar cookies" e redes
-- [ ] CTA fixo no celular ("Agendar consulta", WhatsApp) que some quando o CTA da seção está visível
-- [ ] Página 404 e página de erro genérica (APP_FLOW); `lang="pt-BR"`; HTML semântico; link "pular para o conteúdo"; foco visível
-- [ ] Prints com Playwright em 375, 768 e 1280px
+- [x] Cabeçalho "liquid glass" com os dois estados (sobre o hero escuro e sobre seções claras), alternativas sem `backdrop-filter` e com `prefers-reduced-transparency`; menu do celular em folha cheia (`<dialog>`: prende o foco, fecha com Esc e devolve o foco ao botão)
+- [x] Rodapé com bloco de identificação R1 ("Dra. Mariana Passos Santiago" / "MÉDICA: CRM-SP 227636", tipografia uniforme), endereço, horários, links legais, "Gerenciar cookies" e redes. "Gerenciar cookies" leva a /privacidade/#cookies até o banner da Etapa 11
+- [x] CTA fixo no celular ("Agendar consulta", WhatsApp) que some quando o CTA da seção ou o rodapé está visível
+- [x] Página 404 e página de erro genérica (APP_FLOW); `lang="pt-BR"`; HTML semântico; link "pular para o conteúdo"; foco visível (anel Bronze no claro e Ouro no escuro, porque o Ouro sobre Gesso não chega a 3:1)
+- [x] Prints com Playwright em 375, 768 e 1280px; teste de interação em `scripts/teste-layout.mjs` (17 verificações)
+- [x] Páginas provisórias (RASCUNHO) nas rotas do menu e do rodapé, para a navegação funcionar até as etapas de cada uma
 - Pronto quando: a navegação funciona, uma URL inexistente mostra a 404, o cabeçalho troca de estado ao rolar e passa pelo teclado
 
 ## Etapa 3 — Componentes de assinatura
 - [ ] **Régua do tempo** (horizontal e vertical; desenho animado só na entrada da home; estática com `prefers-reduced-motion`)
 - [ ] Botão principal (sólido e de vidro), link secundário, pílula de vidro
 - [ ] Card grande de procedimento (retrato 3:4, faixa de dados, legenda, pílula) e card compacto
-- [ ] Acordeão do FAQ; bloco de identificação R1; bloco "voz da Dra." (Instrument Serif)
+- [ ] Acordeão do FAQ; bloco de identificação R1; bloco "voz da Dra." (Libre Caslon itálico)
 - [ ] Página interna `/componentes` (noindex, **removida antes da prévia**) para revisar tudo junto; `review-animations` nas animações
 - Pronto quando: todos os componentes aparecem em `/componentes` nos 3 tamanhos, com contraste AA conferido e prints revisados
 

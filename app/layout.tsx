@@ -1,6 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { hostGrotesk, libreCaslon } from "./fonts";
 import "./globals.css";
+import { SiteHeader } from "@/components/layout/site-header";
+import { SiteFooter } from "@/components/layout/site-footer";
+import { CtaFixo } from "@/components/layout/cta-fixo";
 
 export const metadata: Metadata = {
   title: "Dra. Mariana Santiago · Médica · Av. Paulista",
@@ -17,7 +20,17 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR" className={`${hostGrotesk.variable} ${libreCaslon.variable}`}>
-      <body>{children}</body>
+      <body>
+        <a href="#conteudo" className="pular">
+          Pular para o conteúdo
+        </a>
+        <SiteHeader />
+        <main id="conteudo" tabIndex={-1} className="outline-none">
+          {children}
+        </main>
+        <SiteFooter />
+        <CtaFixo />
+      </body>
     </html>
   );
 }

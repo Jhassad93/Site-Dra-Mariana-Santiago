@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "prints": "node scripts/prints.mjs",
-    "preview": "next build && node scripts/preview.mjs"
+    "preview": "next build && node scripts/preview.mjs",
+    "teste-layout": "node scripts/teste-layout.mjs"
   },
   "dependencies": {
     "@fontsource/host-grotesk": "^5.3.0",

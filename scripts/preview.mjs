@@ -47,6 +47,21 @@ const resto = head
 const pagina = `${titulo}
 ${resto}
 <script>document.documentElement.className += " ${htmlClass}"; document.documentElement.lang = "pt-BR";</script>
+<script>
+// Na prévia só existe a home: links internos mostram um aviso em vez de sair da página.
+window.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="/"]');
+  if (!a || a.getAttribute("href") === "/") { if (a) { e.preventDefault(); e.stopPropagation(); scrollTo(0, 0); var d = document.querySelector("dialog[open]"); if (d) d.close(); } return; }
+  e.preventDefault(); e.stopPropagation();
+  var d2 = document.querySelector("dialog[open]"); if (d2) d2.close();
+  var t = document.getElementById("aviso-previa");
+  if (!t) { t = document.createElement("div"); t.id = "aviso-previa"; t.setAttribute("role", "status");
+    t.style.cssText = "position:fixed;left:50%;top:84px;transform:translateX(-50%);z-index:70;background:#1c1813;color:#efeeea;padding:10px 16px;border-radius:12px;font:15px/1.4 var(--font-host-grotesk),system-ui;max-width:calc(100% - 32px)";
+    document.body.appendChild(t); }
+  t.textContent = "Na prévia, só a home está publicada. " + a.textContent.trim() + " (" + a.getAttribute("href") + ") funciona no site completo.";
+  clearTimeout(t._h); t._h = setTimeout(function () { t.remove(); }, 3200);
+}, true);
+</script>
 ${body}
 `;
 await writeFile(join(dest, "index.html"), pagina);

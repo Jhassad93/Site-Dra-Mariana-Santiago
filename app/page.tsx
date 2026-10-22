@@ -1,5 +1,6 @@
-// RASCUNHO — Etapa 1 (setup). Folha de tokens para conferir fontes e cores.
-// Será substituída pela home na Etapa 5.
+// RASCUNHO — Etapas 1 e 2. Folha de tokens para conferir fontes e cores, com uma faixa escura no topo
+// para testar o cabeçalho de vidro e o CTA fixo. Será substituída pela home na Etapa 5.
+import { whatsappHref } from "@/lib/site";
 
 const cores = [
   { nome: "Tinta", hex: "#1C1813", papel: "Texto, seções escuras e botão principal", classe: "bg-tinta text-gesso" },
@@ -22,24 +23,39 @@ const escala = [
 
 export default function Page() {
   return (
-    <main className="mx-auto max-w-[1200px] px-5 py-16 md:px-10 md:py-24">
-      <section className="rounded-[var(--radius-card)] bg-tinta px-6 py-14 text-areia md:px-14 md:py-20">
-        <h1 className="text-[clamp(2.75rem,7vw,5.25rem)] font-light">
-          Fim de tarde na Paulista
-        </h1>
-        <div className="mt-8 flex items-center gap-0" aria-hidden="true">
-          <span className="h-2 w-2 bg-ouro" />
-          <span className="h-px flex-1 bg-ouro" />
+    <>
+      <section data-tema="escuro" className="tema-escuro bg-tinta text-areia">
+        <div className="mx-auto max-w-[1200px] px-4 pb-20 pt-36 sm:px-6 md:pb-28 lg:pt-44">
+          <h1 className="text-[clamp(2.75rem,7vw,5.25rem)] font-light">Fim de tarde na Paulista</h1>
+          <div className="mt-8 flex max-w-[640px] items-center gap-0" aria-hidden="true">
+            <span className="h-2 w-2 bg-ouro" />
+            <span className="h-px flex-1 bg-ouro" />
+          </div>
+          <p className="mt-8 max-w-[56ch] text-lg text-gesso">
+            Folha de tokens do protótipo. Esta faixa escura serve para testar o cabeçalho de vidro, que fica
+            claro quando passa para as seções de fundo Gesso.
+          </p>
+          <div className="mt-10" data-cta>
+            <a
+              href={whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="botao-vidro inline-flex h-12 items-center rounded-full px-6 font-medium"
+            >
+              Agendar consulta
+              <span className="sr-only"> pelo WhatsApp (abre em nova aba)</span>
+            </a>
+          </div>
+          <p className="mt-12 font-voz text-3xl italic text-areia">Mariana Santiago</p>
+          <p className="mt-2 text-sm text-gesso">
+            Dra. Mariana Passos Santiago
+            <br />
+            MÉDICA: CRM-SP 227636
+          </p>
         </div>
-        <p className="mt-8 max-w-[56ch] text-lg text-gesso">
-          Folha de tokens da Etapa 1. Confere as fontes, as cores e a escala antes de construir as
-          páginas.
-        </p>
-        <p className="mt-10 font-voz text-3xl italic text-areia">Mariana Santiago</p>
-        <p className="mt-2 text-sm text-gesso">Dra. Mariana Passos Santiago</p>
-        <p className="text-sm text-gesso">MÉDICA: CRM-SP 227636</p>
       </section>
 
+      <div className="mx-auto max-w-[1200px] px-4 pb-24 sm:px-6">
       <section className="mt-20" aria-labelledby="cores">
         <h2 id="cores" className="text-3xl">Cores</h2>
         <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
@@ -85,6 +101,7 @@ export default function Page() {
           ))}
         </ul>
       </section>
-    </main>
+      </div>
+    </>
   );
 }

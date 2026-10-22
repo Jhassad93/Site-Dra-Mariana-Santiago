@@ -109,10 +109,11 @@ Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem mod
 - **Biblioteca principal:** **Spell UI** (site sóbrio e institucional, conforme a tabela do kit), com shadcn/ui na base. Outras bibliotecas só para lacunas, registradas em `LICENCAS.md`.
 - **Cabeçalho de vidro ("liquid glass"):**
   - Sobre o hero: `background: rgb(28 24 19 / 0.22)`, `backdrop-filter: blur(16px) saturate(140%)`, borda de 1px `rgb(235 212 173 / 0.24)`, brilho interno no topo `inset 0 1px 0 rgb(255 255 255 / 0.12)`, texto Gesso.
-  - Depois do hero (seções claras): `background: rgb(247 242 234 / 0.72)`, texto Tinta, borda `rgb(28 24 19 / 0.08)`.
+  - Depois do hero (seções claras): `background: rgb(239 238 234 / 0.72)`, texto Tinta, borda `rgb(28 24 19 / 0.08)`.
   - Desktop: cabeçalho flutuante com margem de 12px e raio de 16px. Celular: barra encostada no topo.
   - Alternativas: `@supports not (backdrop-filter: blur(1px))` → fundo sólido (Tinta 92% ou Gesso 96%); `prefers-reduced-transparency: reduce` → fundo sólido.
-- **Botão principal:** fundo Tinta, texto Gesso, Host Grotesk 500 a 16px, altura 48px, raio 999px, foco visível com anel Ouro de 2px e afastamento de 2px. No hero, versão de vidro (mesma receita do cabeçalho) com texto Gesso.
+  - O estado é escolhido pela seção que está sob o cabeçalho: seções escuras levam `data-tema="escuro"`.
+- **Botão principal:** fundo Tinta, texto Gesso, Host Grotesk 500 a 16px, altura 48px, raio 999px, foco visível com anel de 2px e afastamento de 2px: **Bronze** sobre fundo claro (5,44:1) e **Ouro** sobre fundo escuro (7,47:1). O Ouro sobre Gesso (2,04:1) não chega aos 3:1 exigidos para indicadores de foco. No hero, versão de vidro (mesma receita do cabeçalho) com texto Gesso.
 - **Botão secundário / link "Ver horários disponíveis":** texto Bronze sublinhado (sobre Gesso) ou Areia (sobre escuro).
 - **Card de procedimento grande:** retrato 3:4, raio de 20px, foto em tela cheia, **faixa de dados no topo** (número em Host Grotesk 300 a 33px + rótulo a 13px, separados por linha fina Areia), legenda de indicação embaixo (Gesso sobre véu Tinta), pílula de vidro "Entender o procedimento". Sem sombra; no hover só a foto escala 1,02 em 300ms.
 - **Card compacto:** fundo Areia a 40% sobre Gesso, raio de 14px, nome + seta em traço desenhado como ícone (não o caractere "→"), altura de 72px.

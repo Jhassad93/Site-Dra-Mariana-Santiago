@@ -31,6 +31,8 @@
 
   /* Movimento */
   --ease-entrada: cubic-bezier(0.22, 1, 0.36, 1);
+  /* Vidro. Não escrever -webkit-backdrop-filter à mão: o otimizador do Tailwind gera o prefixo, e a versão manual fazia ele descartar a sem prefixo (o Chrome ficava sem desfoque). */
+  --vidro: blur(16px) saturate(140%);
 }
 
 @theme inline {
@@ -70,55 +72,200 @@
   --ease-entrada: var(--ease-entrada);
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
+/* Estilos de elemento ficam na camada base, para as classes do Tailwind poderem sobrescrevê-los. */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  :focus-visible {
+    /* Anel de foco: Bronze sobre fundo claro (5,44:1) e Ouro sobre escuro (7,47:1); o Ouro sobre Gesso
+       daria 2,04:1, abaixo dos 3:1 exigidos para indicadores (WCAG 2.2, 1.4.11). */
+    outline: 2px solid var(--anel, var(--bronze));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: var(--areia);
+    color: var(--tinta);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
-  font-size: var(--text-base);
-  line-height: 1.55;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
+@layer components {
+  /* ---------- Layout base (Etapa 2) ---------- */
 
-h1,
-h2,
-h3 {
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  font-weight: 300;
-  text-wrap: balance;
-}
+  .tema-escuro,
+  [data-tema="escuro"],
+  [data-tema="vidro-escuro"] {
+    --anel: var(--ouro);
+  }
 
-p {
-  text-wrap: pretty;
-}
+  /* Pular para o conteúdo: aparece só no foco pelo teclado */
+  .pular {
+    position: fixed;
+    left: 12px;
+    top: 12px;
+    z-index: 60;
+    padding: 12px 18px;
+    border-radius: 999px;
+    background: var(--tinta);
+    color: var(--gesso);
+    --anel: var(--ouro);
+    transform: translateY(-160%);
+  }
+  .pular:focus-visible {
+    transform: none;
+  }
 
-a {
-  color: inherit;
-}
+  /* Cabeçalho de vidro: dois estados, com troca em 200ms */
+  .cabecalho {
+    transition:
+      background-color 200ms var(--ease-entrada),
+      border-color 200ms var(--ease-entrada),
+      color 200ms var(--ease-entrada);
+    backdrop-filter: var(--vidro);
+  }
+  .cabecalho[data-tema="vidro-escuro"] {
+    background: rgb(28 24 19 / 0.22);
+    border-color: rgb(235 212 173 / 0.24);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.12);
+  }
+  .cabecalho[data-tema="vidro-claro"] {
+    background: rgb(239 238 234 / 0.72);
+    border-color: rgb(28 24 19 / 0.08);
+  }
+  @supports not (backdrop-filter: blur(1px)) {
+    .cabecalho[data-tema="vidro-escuro"] { background: rgb(28 24 19 / 0.92); }
+    .cabecalho[data-tema="vidro-claro"] { background: rgb(239 238 234 / 0.96); }
+  }
+  @media (prefers-reduced-transparency: reduce) {
+    .cabecalho { --vidro: none; }
+    .cabecalho[data-tema="vidro-escuro"] { background: rgb(28 24 19 / 0.92); }
+    .cabecalho[data-tema="vidro-claro"] { background: rgb(239 238 234 / 0.96); }
+  }
 
-:focus-visible {
-  outline: 2px solid var(--ouro);
-  outline-offset: 2px;
-  border-radius: 4px;
-}
+  .monograma { border-color: currentColor; border-color: color-mix(in srgb, currentColor 35%, transparent); }
 
-::selection {
-  background: var(--areia);
-  color: var(--tinta);
-}
+  .link-cabecalho[aria-current="page"],
+  .link-folha[aria-current="page"] {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+  }
+  @media (hover: hover) {
+    [data-tema="vidro-escuro"] .link-cabecalho:hover { background: rgb(235 212 173 / 0.12); }
+    [data-tema="vidro-claro"] .link-cabecalho:hover { background: rgb(28 24 19 / 0.06); }
+    .link-escuro:hover { text-decoration-color: currentColor; }
+  }
 
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+  /* Botão de vidro (sobre o hero) e botão do menu */
+  .botao-vidro {
+    background: rgb(28 24 19 / 0.35);
+    border: 1px solid rgb(235 212 173 / 0.3);
+    color: var(--gesso);
+    backdrop-filter: var(--vidro);
+  }
+  .botao-menu {
+    background: rgb(28 24 19 / 0.88);
+    color: var(--gesso);
+    --anel: var(--ouro);
+  }
+  [data-tema="vidro-escuro"] .botao-menu {
+    background: rgb(28 24 19 / 0.35);
+    border: 1px solid rgb(235 212 173 / 0.3);
+  }
+  @media (prefers-reduced-transparency: reduce) {
+    .botao-vidro,
+    [data-tema="vidro-escuro"] .botao-menu {
+      background: var(--tinta);
+      --vidro: none;
+    }
+  }
+
+  /* Links sobre fundo escuro: Gesso com sublinhado discreto */
+  .link-escuro {
+    color: var(--gesso);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    text-decoration-color: rgb(239 238 234 / 0.35);
+    min-height: 24px;
+  }
+
+  /* Menu do celular: folha cheia em Gesso; entra com opacidade e 8px em 200ms */
+  .folha-menu {
+    opacity: 0;
+    transform: translateY(8px);
+    transition:
+      opacity 200ms var(--ease-entrada),
+      transform 200ms var(--ease-entrada),
+      overlay 200ms allow-discrete,
+      display 200ms allow-discrete;
+  }
+  .folha-menu[open] {
+    opacity: 1;
+    transform: none;
+  }
+  @starting-style {
+    .folha-menu[open] {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+  .folha-menu::backdrop {
+    background: transparent;
+  }
+  html:has(.folha-menu[open]) {
+    overflow: hidden;
+  }
+
+  /* CTA fixo do celular: sai para baixo quando um CTA de seção aparece */
+  .cta-fixo {
+    transition:
+      transform 200ms var(--ease-entrada),
+      opacity 200ms var(--ease-entrada);
+  }
+  .cta-fixo[data-oculto] {
+    transform: translateY(100%);
+    opacity: 0;
   }
 }
