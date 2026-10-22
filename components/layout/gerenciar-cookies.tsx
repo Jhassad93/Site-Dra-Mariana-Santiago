@@ -1,7 +1,6 @@
 "use client";
 
-// Reabre as preferências de cookies. O banner entra na Etapa 11 e escuta o evento "preferencias-cookies".
-// Enquanto ele não existir, o botão leva à seção de cookies da política de privacidade.
+// Reabre o banner de cookies (evento "preferencias-cookies"). Se o banner não responder, leva à seção de cookies da política.
 export function GerenciarCookies() {
   return (
     <button

@@ -87,9 +87,9 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - Pronto quando: nenhuma imagem acima de cerca de 200 KB sem motivo, vídeos com capa e pausa fora da tela, LICENCAS.md completo
 
 ## Etapa 11 — Páginas legais e cookies
-- [ ] `/privacidade` a partir do SCHEMA.md (7 itens, retenção de **12 meses a partir do último contato**, transferência internacional, operadores)
-- [ ] `/termos`
-- [ ] Banner de cookies com aceitar e recusar no mesmo nível; bloqueio de GA4 antes do aceite; "Gerenciar cookies"
+- [x] `/privacidade` a partir do SCHEMA.md (os 7 itens: controladora e canal, tabela de fluxos com base legal e retenção de **12 meses a partir do último contato**, dados de saúde, operadores, transferência internacional, cookies, direitos do art. 18, segurança, idade, atualização). **Rascunho para revisão jurídica.** Pendentes: e-mail do canal do titular (hoje só WhatsApp) e enquadramento como agente de pequeno porte
+- [x] `/termos` (finalidade, conteúdo informativo e atividade-meio, agendamento, urgências com SAMU 192, imagens de IA sem pacientes, links de terceiros, lei e foro do consumidor). **Rascunho para revisão jurídica**
+- [x] Banner de cookies com aceitar e recusar no mesmo nível (mesmo tamanho e estilo, testado); escolha guardada por 12 meses no navegador; GA4 via `@next/third-parties` só depois do aceite (recusa posterior apaga os cookies `_ga`); "Gerenciar cookies" no rodapé e na política. `npm run teste-cookies`: nenhum terceiro carrega antes do aceite; com ID de teste, o GA4 só carrega depois de "Aceitar"
 - Pronto quando: os textos estão prontos para revisão jurídica (você, como advogado, e depois a Dra.) e nenhum script não essencial carrega antes do aceite (conferido na aba de rede)
 
 ## Etapa 12 — SEO, IA e analytics

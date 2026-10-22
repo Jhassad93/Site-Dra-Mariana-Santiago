@@ -4,6 +4,8 @@ import "./globals.css";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { CtaFixo } from "@/components/layout/cta-fixo";
+import { BannerCookies } from "@/components/consentimento/banner-cookies";
+import { Analytics } from "@/components/consentimento/analytics";
 
 export const metadata: Metadata = {
   title: "Dra. Mariana Santiago · Médica · Av. Paulista",
@@ -30,6 +32,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <SiteFooter />
         <CtaFixo />
+        <BannerCookies />
+        <Analytics />
       </body>
     </html>
   );

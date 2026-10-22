@@ -539,5 +539,21 @@
   /* Vídeo de ambiente entra por cima da capa só quando começa a tocar (sem piscar) */
   .video-ambiente { opacity: 0; transition: opacity 600ms var(--ease-entrada); }
   .video-ambiente[data-tocando] { opacity: 1; }
+
+  /* Páginas legais: texto corrido com hierarquia simples */
+  .texto-legal { display: grid; gap: 1rem; }
+  .texto-legal h2 { margin-top: 2.5rem; font-size: var(--text-xl); font-weight: 400; letter-spacing: -0.015em; scroll-margin-top: 6rem; }
+  .texto-legal h3 { margin-top: 1rem; font-size: var(--text-base); font-weight: 500; letter-spacing: 0; }
+  .texto-legal p, .texto-legal li { color: rgb(28 24 19 / 0.8); }
+  .texto-legal ul { display: grid; gap: 0.5rem; padding-left: 1.25rem; list-style: "–\00a0\00a0"; }
+  .texto-legal a { color: var(--bronze); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+  .texto-legal table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+  .texto-legal th, .texto-legal td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--border); }
+  .texto-legal th { font-weight: 500; }
+  .tabela-rolagem { overflow-x: auto; }
+
+  /* Banner de cookies: entra com opacidade e 8px */
+  .banner-cookies { transition: opacity 200ms var(--ease-entrada), transform 200ms var(--ease-entrada); }
+  @starting-style { .banner-cookies { opacity: 0; transform: translateY(8px); } }
 }
 

@@ -13,11 +13,13 @@
     "contraste": "node scripts/contraste-fotos.mjs",
     "teste-agendar": "node scripts/teste-agendar.mjs",
     "midia": "node scripts/midia.mjs",
-    "teste-midia": "node scripts/teste-midia.mjs"
+    "teste-midia": "node scripts/teste-midia.mjs",
+    "teste-cookies": "node scripts/teste-cookies.mjs"
   },
   "dependencies": {
     "@fontsource/host-grotesk": "^5.3.0",
     "@fontsource/libre-caslon-text": "^5.3.0",
+    "@next/third-parties": "^15.5.28",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "next": "15.5.28",
