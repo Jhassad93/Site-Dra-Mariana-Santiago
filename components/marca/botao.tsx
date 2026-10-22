@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 // Botões e links de ação (docs/DESIGN.md, Componentes).
 // Sólido: fundo Tinta, texto Gesso. Vidro: sobre fotos e seções escuras. Raio 999px, altura 48px.
 const botao = cva(
-  "botao inline-flex h-12 shrink-0 items-center justify-center gap-2 rounded-full px-6 text-[1rem] font-medium whitespace-nowrap",
+  "botao inline-flex min-h-12 max-w-full shrink-0 items-center justify-center gap-2 rounded-full px-6 py-2 text-center text-[1rem] font-medium",
   {
     variants: {
       variante: {
@@ -79,7 +79,7 @@ export function LinkSecundario({
 /** Pílula de vidro: ação curta sobre foto ("Entender o procedimento"). */
 export function PilulaVidro({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <span className={cn("pilula-vidro inline-flex h-10 items-center rounded-full px-4 text-sm font-medium whitespace-nowrap", className)}>
+    <span className={cn("pilula-vidro inline-flex min-h-10 max-w-full items-center rounded-full px-4 py-1.5 text-center text-sm font-medium", className)}>
       {children}
     </span>
   );

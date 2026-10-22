@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { metadados } from "@/lib/seo";
-import { Migalhas } from "@/components/seo/json-ld";
+import { JsonLd, Migalhas } from "@/components/seo/json-ld";
 import Link from "next/link";
 import { Botao, LinkSecundario } from "@/components/marca/botao";
 import { ReguaOrnamento } from "@/components/marca/regua";
@@ -29,7 +29,7 @@ export default function PerguntasFrequentes() {
   return (
     <>
       <Migalhas itens={[["Perguntas frequentes", "/perguntas-frequentes/"]]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd dados={jsonLd} />
       <section className={`${caixa} pb-12 pt-32 md:pb-16 lg:pt-44`} aria-labelledby="titulo">
         <h1 id="titulo" className="text-[clamp(2.5rem,6vw,4.0625rem)]">
           Perguntas frequentes
@@ -67,7 +67,7 @@ export default function PerguntasFrequentes() {
                     <p>{i.resposta}</p>
                     {i.link ? (
                       <p className="mt-3">
-                        <Link href={i.link.href} className="text-bronze underline decoration-1 underline-offset-4">
+                        <Link href={i.link.href} className="link-solto text-bronze underline decoration-1 underline-offset-4">
                           {i.link.texto}
                         </Link>
                       </p>

@@ -102,10 +102,10 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
   - Medição em 22/10/2026 (Lighthouse 12, celular, servidor local com compressão como na Cloudflare): desempenho 93–98, acessibilidade 100, boas práticas 100 em home, toxina botulínica, agendar e sobre. SEO 100 no build indexável; na prévia fica 63 só por causa do `noindex`, que é intencional. O PageSpeed oficial só roda com o site num endereço público, então fica para a publicação
 
 ## Etapa 13 — Auditorias do protótipo
-- [ ] `/impeccable polish` e `/impeccable audit`; `npx impeccable detect` sem achados críticos; `break-ui`
-- [ ] `checklists/producao.md`, `seguranca.md` e `seo-ia.md` (itens de domínio, contas e indexação marcados "pós-aceite")
-- [ ] **4ª auditoria: Anexo A do harness** (26 itens)
-- [ ] Remover `/componentes`; conferir o `LICENCAS.md`
+- [x] `/impeccable polish` e `/impeccable audit`; `npx impeccable detect` sem achados críticos; `break-ui`. Detector: 0 críticos em 16 rotas × 2 tamanhos; audit 20/20; break-ui (19 casos) sem quebra depois das correções de zoom de texto. Relatório em `docs/AUDITORIA.md`
+- [x] `checklists/producao.md`, `seguranca.md` e `seo-ia.md` (itens de domínio, contas e indexação marcados "pós-aceite"). Produção: 27 OK, 2 n/a, 2 aguardam decisão (títulos e descriptions acima do tamanho). Segurança: 8 OK, 10 n/a, 1 pós-aceite; headers criados em `public/_headers` e testados. SEO e IA: 12 OK, 4 pós-aceite
+- [x] **4ª auditoria: Anexo A do harness** (26 itens): 20 OK, 4 n/a, 1 pendente (aprovação dos textos pela Dra.), 1 🟡 pós-aceite (imagens de ambiente geradas por IA, não do consultório real)
+- [x] Remover `/componentes`; conferir o `LICENCAS.md` (acrescentados @next/third-parties, sharp, lighthouse, OG e ícones)
 - Pronto quando: todos os itens aplicáveis ao protótipo estão OK; os pendentes estão listados como "pós-aceite"
 
 ## Etapa 14 — Prévia privada e oferta

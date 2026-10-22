@@ -62,9 +62,12 @@ export function SiteHeader() {
           tema === "escuro" ? "text-gesso" : "text-tinta",
         )}
       >
-        <Link href="/" className="flex min-h-11 items-center gap-3 rounded-md" aria-label={`${identificacao.marca}, página inicial`}>
+        <Link href="/" className="flex min-w-0 shrink items-center gap-3 rounded-md min-h-11">
           <Monograma />
-          <span className="text-base tracking-[-0.005em]">{identificacao.marca}</span>
+          <span className="truncate text-base tracking-[-0.005em]">
+            {identificacao.marca}
+            <span className="sr-only">, página inicial</span>
+          </span>
         </Link>
 
         <nav aria-label="Principal" className="hidden lg:block">
@@ -83,7 +86,7 @@ export function SiteHeader() {
           </ul>
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <a
             href={whatsappHref}
             target="_blank"
@@ -182,7 +185,7 @@ export function SiteHeader() {
 
 function Monograma() {
   return (
-    <span aria-hidden="true" className="monograma grid size-9 place-items-center rounded-[10px] border font-voz text-xl italic leading-none">
+    <span aria-hidden="true" className="monograma grid size-9 shrink-0 place-items-center rounded-[10px] border font-voz text-xl italic leading-none">
       M
     </span>
   );

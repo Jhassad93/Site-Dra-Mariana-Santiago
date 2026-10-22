@@ -44,7 +44,7 @@ export function CardProcedimento({
       <span aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-4/5 bg-gradient-to-t from-tinta/90 via-tinta/80 via-45% to-transparent md:h-2/3 md:via-tinta/75" />
 
       <div className="flex flex-wrap items-end gap-x-4 gap-y-1.5 border-b border-areia/60 pb-3">
-        <span className="shrink-0 whitespace-nowrap text-[2.0625rem] font-light leading-none tracking-[-0.01em]">{dado.valor}</span>
+        <span className="shrink-0 text-[2.0625rem] font-light leading-none tracking-[-0.01em]">{dado.valor}</span>
         <span className="min-w-[17ch] flex-1 text-xs leading-[1.3] text-gesso">{dado.rotulo}</span>
       </div>
 
@@ -68,11 +68,11 @@ export function CardCompacto({ href, nome, className }: { href: string; nome: st
     <Link
       href={href}
       className={cn(
-        "card-compacto flex min-h-[72px] items-center justify-between gap-4 rounded-[var(--radius-compact)] bg-areia/40 px-5 text-lg text-tinta",
+        "card-compacto flex min-h-[72px] items-center justify-between gap-4 rounded-[var(--radius-compact)] bg-areia/40 px-5 py-3 text-lg text-tinta",
         className,
       )}
     >
-      <span>{nome}</span>
+      <span className="min-w-0 [overflow-wrap:anywhere]">{nome}</span>
       <svg className="seta shrink-0" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
         <path d="M5 12h14M13 6l6 6-6 6" />
       </svg>

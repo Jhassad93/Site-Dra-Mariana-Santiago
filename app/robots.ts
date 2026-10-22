@@ -20,7 +20,7 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       ...treino.map((userAgent) => ({ userAgent, disallow: "/" })),
-      { userAgent: "*", allow: "/", disallow: ["/obrigado/", "/componentes/"] },
+      { userAgent: "*", allow: "/", disallow: "/obrigado/" },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,
   };

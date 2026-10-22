@@ -63,7 +63,7 @@ export function Acordeao({
       {itens.map((item) => (
         <details key={item.pergunta} className="border-b border-border">
           <summary className="flex min-h-16 items-center justify-between gap-6 py-4 text-lg">
-            <span>{item.pergunta}</span>
+            <span className="min-w-0 [overflow-wrap:anywhere]">{item.pergunta}</span>
             <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" className="shrink-0" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round">
               <path d="M5 12h14" />
               <path className="sinal-vertical" d="M12 5v14" />

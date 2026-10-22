@@ -37,7 +37,7 @@ export default function Procedimentos() {
           {procedimentos.map((p) => (
             <li key={p.slug} className="border-b border-border">
               <Link href={p.href} className="item-procedimento group grid gap-2 py-7 md:grid-cols-12 md:items-baseline md:gap-6">
-                <span className="text-2xl font-light tracking-[-0.015em] md:col-span-5 md:text-3xl">{p.nome}</span>
+                <span className="text-2xl font-light tracking-[-0.015em] [overflow-wrap:anywhere] md:col-span-5 md:text-3xl">{p.nome}</span>
                 <span className="text-muted-foreground md:col-span-6">{p.umaLinha}</span>
                 <svg className="seta hidden justify-self-end md:col-span-1 md:block" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 6l6 6-6 6" />

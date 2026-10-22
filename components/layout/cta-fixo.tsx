@@ -36,7 +36,8 @@ export function CtaFixo() {
   }, [pathname]);
 
   return (
-    <div
+    <aside
+      aria-label="Atalho para agendar"
       className="cta-fixo fixed inset-x-0 bottom-0 z-30 px-4 pb-[max(12px,env(safe-area-inset-bottom))] pt-3 md:hidden"
       data-oculto={oculto ? "" : undefined}
       aria-hidden={oculto ? true : undefined}
@@ -46,11 +47,11 @@ export function CtaFixo() {
         href={whatsappHref}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex h-12 w-full items-center justify-center rounded-full border border-areia/35 bg-tinta font-medium text-gesso"
+        className="flex min-h-12 w-full items-center justify-center rounded-full px-4 py-2 text-center border border-areia/35 bg-tinta font-medium text-gesso"
       >
         Agendar consulta
         <span className="sr-only"> pelo WhatsApp (abre em nova aba)</span>
       </a>
-    </div>
+    </aside>
   );
 }

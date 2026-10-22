@@ -34,6 +34,9 @@ export const redes = [
   { href: "https://www.tiktok.com/@dra.marianapsantiago", rotulo: "TikTok" },
 ] as const;
 
+// Data da última revisão dos textos educativos (visível nas páginas de procedimento e no guia: AEO, item 11).
+export const revisaoTextos = "22 de outubro de 2026";
+
 export const telefoneVisivel = "(11) 3192-2635";
 
 // WhatsApp: número e mensagem neutra vêm do ambiente (não são segredos). R12: a mensagem não pede queixa.

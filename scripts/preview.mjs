@@ -35,7 +35,7 @@ async function relativizar(dir) {
 }
 await relativizar(join(dest, "assets"));
 
-// Rota opcional: node scripts/preview.mjs /componentes/  (padrão: a home)
+// Rota opcional: node scripts/preview.mjs /sobre/  (padrão: a home)
 const rotaPrevia = (process.argv[2] || "/").replace(/^\/|\/$/g, "");
 const html = (await readFile(join(out, rotaPrevia, "index.html"), "utf8")).replaceAll("./_next/", "./assets/").replaceAll("/_next/", "./assets/").replaceAll("\"/midia/", "\"./midia/").replaceAll(" /midia/", " ./midia/").replace(/<script src="[^"]*polyfills-[^"]*"[^>]*><\/script>/, "");
 const head = html.match(/<head>([\s\S]*?)<\/head>/)?.[1] ?? "";

@@ -41,7 +41,7 @@ export function BotaoWhatsapp() {
         data-evento="clique_whatsapp"
         data-origem="agendar"
         disabled={estado === "abrindo"}
-        className="botao inline-flex h-12 items-center justify-center justify-self-start rounded-full bg-tinta px-6 text-[1rem] font-medium text-gesso disabled:opacity-80"
+        className="botao inline-flex min-h-12 max-w-full items-center justify-center justify-self-start rounded-full bg-tinta px-6 py-2 text-center text-[1rem] font-medium text-gesso disabled:opacity-80"
       >
         {estado === "abrindo" ? "Abrindo o WhatsApp…" : "Abrir o WhatsApp"}
       </button>

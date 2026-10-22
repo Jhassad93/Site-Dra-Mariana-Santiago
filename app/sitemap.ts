@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { procedimentos } from "@/lib/procedimentos";
 import { siteUrl } from "@/lib/seo";
 
-// Fora do mapa: /obrigado (noindex), /componentes (interna, sai antes da prévia da lead) e 404.
+// Fora do mapa: /obrigado (noindex) e 404.
 export const dynamic = "force-static";
 
 const atualizado = new Date("2026-10-22");

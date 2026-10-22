@@ -82,7 +82,7 @@ export default function Privacidade() {
         </p>
 
         <h2 id="dados">Quais dados, para quê e por quanto tempo</h2>
-        <div className="tabela-rolagem">
+        <div className="tabela-rolagem" tabIndex={0} aria-label="Tabela de dados tratados; rola na horizontal">
           <table>
             <thead>
               <tr>
@@ -144,7 +144,7 @@ export default function Privacidade() {
 
         <h2 id="cookies">Cookies</h2>
         <p>O site usa dois tipos de armazenamento no seu navegador:</p>
-        <div className="tabela-rolagem">
+        <div className="tabela-rolagem" tabIndex={0} aria-label="Tabela de cookies; rola na horizontal">
           <table>
             <thead>
               <tr>

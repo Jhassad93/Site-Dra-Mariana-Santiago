@@ -6,7 +6,7 @@ import { ReguaDoTempo, ReguaOrnamento } from "@/components/marca/regua";
 import { CardCompacto } from "@/components/marca/cards";
 import { Acordeao, VozDaDra } from "@/components/marca/blocos";
 import { maiuscula, porSlug, procedimentos } from "@/lib/procedimentos";
-import { whatsappHref } from "@/lib/site";
+import { revisaoTextos, whatsappHref } from "@/lib/site";
 import { metadados } from "@/lib/seo";
 import { Migalhas } from "@/components/seo/json-ld";
 
@@ -48,7 +48,7 @@ export default async function PaginaProcedimento({ params }: Props) {
       <Migalhas itens={[["Procedimentos", "/procedimentos/"], [p.nome, `/procedimentos/${p.slug}/`]]} />
       <section className={`${caixa} pb-14 pt-28 md:pb-20 lg:pt-40`} aria-labelledby="titulo">
         <nav aria-label="Você está em" className="text-sm text-muted-foreground">
-          <Link href="/procedimentos/" className="underline decoration-1 underline-offset-4 hover:text-tinta">
+          <Link href="/procedimentos/" className="link-solto underline decoration-1 underline-offset-4 hover:text-tinta">
             Procedimentos
           </Link>
         </nav>
@@ -168,7 +168,7 @@ export default async function PaginaProcedimento({ params }: Props) {
             <ul className="grid gap-2 text-sm text-muted-foreground">
               {p.fontes.map((f) => (
                 <li key={f.href}>
-                  <a href={f.href} target="_blank" rel="noopener noreferrer" className="underline decoration-1 underline-offset-4 hover:text-tinta">
+                  <a href={f.href} target="_blank" rel="noopener noreferrer" className="link-solto underline decoration-1 underline-offset-4 hover:text-tinta">
                     {f.texto}
                     <span className="sr-only"> (abre em nova aba)</span>
                   </a>
@@ -203,6 +203,7 @@ export default async function PaginaProcedimento({ params }: Props) {
                 </li>
               ))}
             </ul>
+            <p className="mt-4 text-sm text-muted-foreground">Texto revisado em {revisaoTextos}.</p>
           </div>
         </div>
       </section>

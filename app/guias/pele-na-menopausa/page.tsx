@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Botao, LinkSecundario } from "@/components/marca/botao";
 import { ReguaOrnamento } from "@/components/marca/regua";
 import { VozDaDra } from "@/components/marca/blocos";
-import { whatsappHref } from "@/lib/site";
+import { revisaoTextos, whatsappHref } from "@/lib/site";
 
 // Guia educativo (COPY.md). R3: sem oferta de tratamento; terapia hormonal fica com o ginecologista.
 // [A CONFIRMAR]: frase final em itálico (escrita para ela).
@@ -89,6 +89,7 @@ export default function GuiaMenopausa() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-4 text-sm text-muted-foreground">Texto revisado em {revisaoTextos}.</p>
             </section>
 
             <section aria-labelledby="medico" className="grid gap-4">
@@ -149,7 +150,7 @@ export default function GuiaMenopausa() {
               <ul className="mt-4 grid gap-2 text-sm text-muted-foreground">
                 {fontes.map((f) => (
                   <li key={f.href}>
-                    <a href={f.href} target="_blank" rel="noopener noreferrer" className="underline decoration-1 underline-offset-4 hover:text-tinta">
+                    <a href={f.href} target="_blank" rel="noopener noreferrer" className="link-solto underline decoration-1 underline-offset-4 hover:text-tinta">
                       {f.texto}
                       <span className="sr-only"> (abre em nova aba)</span>
                     </a>

@@ -1,7 +1,7 @@
 // Contraste do texto sobre fotos/gradientes: esconde o texto, fotografa o fundo e mede o pior pixel atrás de cada linha.
 // Uso: node scripts/contraste-fotos.mjs [rota] [seletor]   (servidor estático em :4180)
 import { chromium } from "playwright-core";
-const rota = process.argv[2] || "/componentes/";
+const rota = process.argv[2] || "/";
 const seletor = process.argv[3] || ".card-procedimento";
 const lum = ([r, g, b]) => [r, g, b].map((v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; }).reduce((a, v, i) => a + v * [0.2126, 0.7152, 0.0722][i], 0);
 const razao = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((m, n) => n - m); return (x + 0.05) / (y + 0.05); };
