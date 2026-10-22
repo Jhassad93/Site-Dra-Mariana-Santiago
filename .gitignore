@@ -1,0 +1,32 @@
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Dependências e build
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+.vercel/
+.wrangler/
+.open-next/
+*.tsbuildinfo
+next-env.d.ts
+
+# Prints de verificação (Playwright)
+.verificacao/
+
+# Sistema
+.DS_Store
+*.log
+*.pem
+
+# Skills de design de terceiros: instaladas por projeto (scripts/setup-design.sh), não versionadas.
+# Só a skill do kit (construir-site) fica no repositório.
+.claude/skills/*
+!.claude/skills/construir-site/
+skills-lock.json
+.preview/
