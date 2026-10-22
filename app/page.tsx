@@ -2,11 +2,11 @@
 // Será substituída pela home na Etapa 5.
 
 const cores = [
-  { nome: "Tinta", hex: "#1C1813", papel: "Texto, seções escuras e botão principal", classe: "bg-tinta text-linho" },
-  { nome: "Linho", hex: "#F7F2EA", papel: "Fundo da página", classe: "bg-linho text-tinta ring-1 ring-border" },
+  { nome: "Tinta", hex: "#1C1813", papel: "Texto, seções escuras e botão principal", classe: "bg-tinta text-gesso" },
+  { nome: "Gesso", hex: "#EFEEEA", papel: "Fundo da página", classe: "bg-gesso text-tinta ring-1 ring-border" },
   { nome: "Areia", hex: "#EBD4AD", papel: "Texto sobre escuro e painéis", classe: "bg-areia text-tinta" },
   { nome: "Ouro", hex: "#C9A35F", papel: "Só ornamento: régua, marcadores, linhas", classe: "bg-ouro text-tinta" },
-  { nome: "Bronze", hex: "#7A5A2B", papel: "Links e destaques de texto sobre Linho", classe: "bg-bronze text-linho" },
+  { nome: "Bronze", hex: "#7A5A2B", papel: "Links e destaques de texto sobre Gesso", classe: "bg-bronze text-gesso" },
 ];
 
 const escala = [
@@ -31,13 +31,13 @@ export default function Page() {
           <span className="h-2 w-2 bg-ouro" />
           <span className="h-px flex-1 bg-ouro" />
         </div>
-        <p className="mt-8 max-w-[56ch] text-lg text-linho">
+        <p className="mt-8 max-w-[56ch] text-lg text-gesso">
           Folha de tokens da Etapa 1. Confere as fontes, as cores e a escala antes de construir as
           páginas.
         </p>
         <p className="mt-10 font-voz text-3xl italic text-areia">Mariana Santiago</p>
-        <p className="mt-2 text-sm text-linho">Dra. Mariana Passos Santiago</p>
-        <p className="text-sm text-linho">MÉDICA: CRM-SP 227636</p>
+        <p className="mt-2 text-sm text-gesso">Dra. Mariana Passos Santiago</p>
+        <p className="text-sm text-gesso">MÉDICA: CRM-SP 227636</p>
       </section>
 
       <section className="mt-20" aria-labelledby="cores">
@@ -52,7 +52,7 @@ export default function Page() {
           ))}
         </ul>
         <p className="mt-6 max-w-[68ch] text-muted-foreground">
-          Ouro sobre Linho tem contraste de 2,12:1. Por isso o Ouro nunca é usado para texto em fundo
+          Ouro sobre Gesso tem contraste de 2,04:1. Por isso o Ouro nunca é usado para texto em fundo
           claro, só para linhas e marcadores. Links usam{" "}
           <a href="#cores" className="text-bronze underline underline-offset-4">Bronze</a>.
         </p>

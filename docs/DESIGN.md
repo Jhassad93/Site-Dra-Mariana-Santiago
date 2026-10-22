@@ -23,29 +23,29 @@
 | Papel | Nome | Valor | Uso |
 | --- | --- | --- | --- |
 | Texto | Tinta | `#1C1813` | Texto corrido, títulos sobre fundo claro, seções escuras (fundo), botão principal |
-| Fundo | Linho | `#F7F2EA` | Fundo da página e texto sobre fundos escuros |
-| Primária | Tinta | `#1C1813` | CTA principal ("Agendar consulta"): fundo Tinta com texto Linho em seções claras; no hero, vidro escuro com texto Linho |
+| Fundo | Gesso | `#EFEEEA` | Fundo da página e texto sobre fundos escuros. Off-white mineral, levemente frio: a página é a parede e o dourado é a luz do fim de tarde batendo nela. Substituiu o Linho `#F7F2EA`, que o Impeccable marcava como fundo creme típico de IA |
+| Primária | Tinta | `#1C1813` | CTA principal ("Agendar consulta"): fundo Tinta com texto Gesso em seções claras; no hero, vidro escuro com texto Gesso |
 | Secundária | Areia | `#EBD4AD` | Títulos e textos sobre o hero e as seções escuras; painéis e fundos de cards compactos |
 | Destaque | Ouro | `#C9A35F` | **Só ornamento e marcação**: régua do tempo, marcador quadrado, linhas finas, ícones. Nunca texto sobre fundo claro |
-| Destaque de texto | Bronze | `#7A5A2B` | Links e pequenos destaques de texto sobre Linho |
+| Destaque de texto | Bronze | `#7A5A2B` | Links e pequenos destaques de texto sobre Gesso |
 
-Texto secundário: Tinta a 72% de opacidade sobre Linho (cerca de 6,5:1). Não é uma cor nova.
+Texto secundário: Tinta a 72% de opacidade sobre Gesso (6,49:1). Não é uma cor nova.
 
 **Contrastes calculados (WCAG 2.x):**
 
 | Par | Razão | Uso permitido |
 | --- | --- | --- |
-| Tinta sobre Linho | 15,84 | Qualquer texto |
-| Bronze sobre Linho | 5,67 | Texto normal (AA) e links |
+| Tinta sobre Gesso | 15,21 | Qualquer texto |
+| Bronze sobre Gesso | 5,44 | Texto normal (AA) e links |
 | Areia sobre Tinta | 12,24 | Qualquer texto |
 | Ouro sobre Tinta | 7,47 | Texto e ornamento em seções escuras |
-| Linho sobre Tinta | 15,84 | Botão principal |
+| Gesso sobre Tinta | 15,21 | Botão principal |
 | Bronze sobre Areia | 4,38 | **Não usar para texto normal** (só ≥ 24px ou ícone) |
-| **Ouro sobre Linho** | **2,12** | **Proibido para texto.** Só linhas e marcadores |
+| **Ouro sobre Gesso** | **2,04** | **Proibido para texto.** Só linhas e marcadores |
 
 Sobre foto ou vídeo: o texto fica sempre sobre um véu de Tinta (gradiente de 0% a 55% de opacidade na área do texto), para manter AA em qualquer quadro. Conferir nos prints.
 
-Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem modo escuro dedicado no protótipo: as seções escuras são parte do layout. Se o modo escuro entrar depois, inverter Tinta e Linho e manter Ouro só como ornamento.
+Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem modo escuro dedicado no protótipo: as seções escuras são parte do layout. Se o modo escuro entrar depois, inverter Tinta e Gesso e manter Ouro só como ornamento.
 
 ## Tipografia
 > **Revisado em 22/10/2026** (par A "Carta", escolhido pelo responsável). Geist e Instrument Serif foram trocadas porque o Impeccable as marca como "fontes muito usadas", típicas de páginas geradas por IA. As novas foram testadas no detector, que não as sinalizou.
@@ -70,11 +70,11 @@ Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem mod
 │                                                              │
 │  Título em Host Grotesk 300, Areia, 2 linhas, alinhado à esquerda   │  VÍDEO 1 em tela cheia
 │  ───────────────────■───────────────  (régua, Ouro)          │  (luz no linho), véu Tinta
-│  Apoio curto em Linho          [Agendar consulta]  Ver horários │
+│  Apoio curto em Gesso          [Agendar consulta]  Ver horários │
 │  Mariana Santiago (Libre Caslon itálico) · MÉDICA: CRM-SP… │
 │  Ter e sex até 21h · Sáb de manhã · Av. Paulista, 1048        │
 ├──────────────────────────────────────────────────────────────┤
-│ Como eu trabalho: 4 colunas com linha fina, ícone de traço   │  fundo Linho
+│ Como eu trabalho: 4 colunas com linha fina, ícone de traço   │  fundo Gesso
 │ Conversa │ Avaliação │ Plano │ Retorno   (sequência real, numerada) │
 ├──────────────────────────────────────────────────────────────┤
 │ Procedimentos                                                │
@@ -93,7 +93,7 @@ Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem mod
 ├──────────────────────────────────────────────────────────────┤
 │ Onde e quando: mapa estático + horários + metrô              │
 ├──────────────────────────────────────────────────────────────┤
-│ Fechamento (gradiente Areia→Linho)                           │
+│ Fechamento (gradiente Areia→Gesso)                           │
 │ "Frase dela" (Libre Caslon itálico)      [foto da Dra.   │
 │  assinatura                                    recortada]    │
 │  Dra. Mariana Passos Santiago                                │
@@ -108,17 +108,17 @@ Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem mod
 ## Componentes
 - **Biblioteca principal:** **Spell UI** (site sóbrio e institucional, conforme a tabela do kit), com shadcn/ui na base. Outras bibliotecas só para lacunas, registradas em `LICENCAS.md`.
 - **Cabeçalho de vidro ("liquid glass"):**
-  - Sobre o hero: `background: rgb(28 24 19 / 0.22)`, `backdrop-filter: blur(16px) saturate(140%)`, borda de 1px `rgb(235 212 173 / 0.24)`, brilho interno no topo `inset 0 1px 0 rgb(255 255 255 / 0.12)`, texto Linho.
+  - Sobre o hero: `background: rgb(28 24 19 / 0.22)`, `backdrop-filter: blur(16px) saturate(140%)`, borda de 1px `rgb(235 212 173 / 0.24)`, brilho interno no topo `inset 0 1px 0 rgb(255 255 255 / 0.12)`, texto Gesso.
   - Depois do hero (seções claras): `background: rgb(247 242 234 / 0.72)`, texto Tinta, borda `rgb(28 24 19 / 0.08)`.
   - Desktop: cabeçalho flutuante com margem de 12px e raio de 16px. Celular: barra encostada no topo.
-  - Alternativas: `@supports not (backdrop-filter: blur(1px))` → fundo sólido (Tinta 92% ou Linho 96%); `prefers-reduced-transparency: reduce` → fundo sólido.
-- **Botão principal:** fundo Tinta, texto Linho, Host Grotesk 500 a 16px, altura 48px, raio 999px, foco visível com anel Ouro de 2px e afastamento de 2px. No hero, versão de vidro (mesma receita do cabeçalho) com texto Linho.
-- **Botão secundário / link "Ver horários disponíveis":** texto Bronze sublinhado (sobre Linho) ou Areia (sobre escuro).
-- **Card de procedimento grande:** retrato 3:4, raio de 20px, foto em tela cheia, **faixa de dados no topo** (número em Host Grotesk 300 a 33px + rótulo a 13px, separados por linha fina Areia), legenda de indicação embaixo (Linho sobre véu Tinta), pílula de vidro "Entender o procedimento". Sem sombra; no hover só a foto escala 1,02 em 300ms.
-- **Card compacto:** fundo Areia a 40% sobre Linho, raio de 14px, nome + seta em traço desenhado como ícone (não o caractere "→"), altura de 72px.
+  - Alternativas: `@supports not (backdrop-filter: blur(1px))` → fundo sólido (Tinta 92% ou Gesso 96%); `prefers-reduced-transparency: reduce` → fundo sólido.
+- **Botão principal:** fundo Tinta, texto Gesso, Host Grotesk 500 a 16px, altura 48px, raio 999px, foco visível com anel Ouro de 2px e afastamento de 2px. No hero, versão de vidro (mesma receita do cabeçalho) com texto Gesso.
+- **Botão secundário / link "Ver horários disponíveis":** texto Bronze sublinhado (sobre Gesso) ou Areia (sobre escuro).
+- **Card de procedimento grande:** retrato 3:4, raio de 20px, foto em tela cheia, **faixa de dados no topo** (número em Host Grotesk 300 a 33px + rótulo a 13px, separados por linha fina Areia), legenda de indicação embaixo (Gesso sobre véu Tinta), pílula de vidro "Entender o procedimento". Sem sombra; no hover só a foto escala 1,02 em 300ms.
+- **Card compacto:** fundo Areia a 40% sobre Gesso, raio de 14px, nome + seta em traço desenhado como ícone (não o caractere "→"), altura de 72px.
 - **Régua do tempo:** linha de 1px Ouro, marcadores quadrados de 8px, rótulos em Host Grotesk 13px (Tinta 72% ou Areia). No celular, fica vertical.
 - **Acordeão do FAQ:** linhas finas Tinta a 12%, ícone "+" que vira "−", abertura com altura animada em 200ms.
-- **Seção de assinatura:** gradiente Areia → Linho, foto recortada à direita, frase em Libre Caslon itálico a 33px, assinatura (SVG) e bloco de identificação R1.
+- **Seção de assinatura:** gradiente Areia → Gesso, foto recortada à direita, frase em Libre Caslon itálico a 33px, assinatura (SVG) e bloco de identificação R1.
 - **Raios por hierarquia:** cards grandes 20px · cabeçalho 16px · cards compactos 14px · campos 10px · botões 999px. Não é um raio único para tudo.
 - **Ícones:** traço de 1,25px em Ouro ou Tinta, desenhados como SVG. Sem pacotes de ícone preenchido.
 
@@ -183,10 +183,10 @@ Os cards compactos (contorno facial, skinbooster, peelings) não levam foto.
 
 ## Celular
 - **Hero:** o vídeo dá lugar à **imagem de capa** (economia de dados). O título vai a cerca de 44px em 3 linhas, e o CTA fica na primeira dobra. Logo abaixo do hero, a faixa **"Onde e quando"** (horários e metrô), que sobe de posição (crença U6).
-- **CTA fixo no rodapé da tela:** "Agendar consulta", em Tinta com texto Linho, sempre visível, com área de toque de 48px. Some quando o CTA da seção está visível, para não duplicar.
+- **CTA fixo no rodapé da tela:** "Agendar consulta", em Tinta com texto Gesso, sempre visível, com área de toque de 48px. Some quando o CTA da seção está visível, para não duplicar.
 - **Cards de procedimento:** carrossel horizontal com deslize (os 3 grandes) e lista dos 3 compactos. Fotos recortadas em 4:5.
 - **Régua do tempo:** vertical.
-- **Menu:** botão quadrado em vidro escuro que abre uma folha cheia em Linho com os links e o CTA.
+- **Menu:** botão quadrado em vidro escuro que abre uma folha cheia em Gesso com os links e o CTA.
 - **Seção de assinatura:** foto em cima (recorte vertical), frase e identificação embaixo.
 - **Tipografia:** corpo de 17px no celular (nunca menor) e citações a 26px.
 

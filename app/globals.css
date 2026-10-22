@@ -2,20 +2,20 @@
 
 /*
   Tokens do docs/DESIGN.md — "fim de tarde na Paulista".
-  5 cores, cada uma sempre no mesmo papel. Ouro NUNCA em texto sobre Linho (2,12:1).
+  5 cores, cada uma sempre no mesmo papel. Ouro NUNCA em texto sobre Gesso (2,04:1).
 */
 :root {
   --tinta: #1c1813; /* Texto, seções escuras, botão principal */
-  --linho: #f7f2ea; /* Fundo */
+  --gesso: #efeeea; /* Fundo: off-white mineral, levemente frio */
   --areia: #ebd4ad; /* Texto sobre escuro, painéis */
   --ouro: #c9a35f; /* Só ornamento: régua do tempo, marcadores, linhas */
-  --bronze: #7a5a2b; /* Links e destaques de texto sobre Linho (5,67:1) */
+  --bronze: #7a5a2b; /* Links e destaques de texto sobre Gesso (5,44:1) */
 
   /* Papéis no padrão shadcn */
-  --background: var(--linho);
+  --background: var(--gesso);
   --foreground: var(--tinta);
   --primary: var(--tinta);
-  --primary-foreground: var(--linho);
+  --primary-foreground: var(--gesso);
   --secondary: var(--areia);
   --secondary-foreground: var(--tinta);
   --accent: var(--bronze);
@@ -35,7 +35,7 @@
 
 @theme inline {
   --color-tinta: var(--tinta);
-  --color-linho: var(--linho);
+  --color-gesso: var(--gesso);
   --color-areia: var(--areia);
   --color-ouro: var(--ouro);
   --color-bronze: var(--bronze);
