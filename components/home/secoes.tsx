@@ -137,7 +137,7 @@ export function Procedimentos() {
   );
 }
 
-export function Planejamento() {
+export function Planejamento({ texto = planejamento.texto, comLuz = true }: { texto?: string; comLuz?: boolean } = {}) {
   return (
     <section data-tema="escuro" aria-labelledby="planejamento" className="tema-escuro bg-tinta text-areia">
       <div className={`${caixa} grid gap-12 py-20 md:py-32 lg:grid-cols-12 lg:gap-6`}>
@@ -145,7 +145,7 @@ export function Planejamento() {
           <h2 id="planejamento" className="max-w-[16ch] text-3xl md:text-4xl">
             {planejamento.titulo}
           </h2>
-          <p className="mt-8 max-w-[52ch] text-lg text-gesso">{planejamento.texto}</p>
+          <p className="mt-8 max-w-[52ch] text-lg text-gesso">{texto}</p>
           <div className="mt-8" data-cta>
             <LinkSecundario href={whatsappHref} externo sobre="escuro">
               Conversar sobre uma data
@@ -153,7 +153,9 @@ export function Planejamento() {
           </div>
         </div>
         {/* Lugar do vídeo 2 (luz no gesso), Etapa 10. Até lá, a luz é desenhada em CSS. */}
-        <div aria-hidden="true" className="planejamento-luz hidden min-h-72 rounded-[var(--radius-card)] lg:col-span-5 lg:col-start-8 lg:block" />
+        {comLuz ? (
+          <div aria-hidden="true" className="planejamento-luz hidden min-h-72 rounded-[var(--radius-card)] lg:col-span-5 lg:col-start-8 lg:block" />
+        ) : null}
         <div className="lg:col-span-12">
           <ReguaDoTempo rotulo="Linha do tempo de um plano" marcos={planejamento.regua} sobre="escuro" />
           <p className="mt-10 max-w-[68ch] text-sm text-gesso">{planejamento.nota}</p>

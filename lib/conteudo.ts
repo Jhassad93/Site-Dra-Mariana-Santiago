@@ -118,3 +118,79 @@ export const fechamento = {
 
 // Decisão 4 do harness: vazio = não aparece. Preencher só depois do ajuste do perfil no Google.
 export const perfilGoogle = process.env.NEXT_PUBLIC_GOOGLE_PERFIL_URL || "";
+
+// ---------- Como funciona a consulta (COPY.md) ----------
+// [A CONFIRMAR com a Dra.]: procedimento no mesmo dia, termo de consentimento, registro do lote,
+// protocolo para intercorrências e horário de resposta, "venha sem maquiagem", chegada 20 min antes.
+export const comoFunciona = {
+  titulo: "Como funciona a consulta",
+  apoio: "O que acontece em cada etapa, da primeira conversa ao retorno.",
+  etapas: [
+    {
+      id: "conversa",
+      titulo: "A conversa",
+      texto: [
+        "Começo pelo que incomoda você, com as suas palavras. Também quero saber o que você já tentou, o que espera e o que não quer de jeito nenhum.",
+        "Se você tem medo de ficar com o rosto diferente, me conte: é um bom ponto de partida.",
+      ],
+    },
+    {
+      id: "avaliacao",
+      titulo: "A avaliação",
+      texto: [
+        "Examino a pele e o rosto com calma: estrutura, expressão, qualidade da pele. Pergunto sobre saúde, medicamentos, alergias, gestação ou amamentação e procedimentos anteriores, porque tudo isso muda a indicação.",
+        "Nem toda queixa se resolve com injetável, e algumas pedem outro tipo de cuidado. Quando é o caso, eu digo.",
+      ],
+    },
+    {
+      id: "plano",
+      titulo: "O plano",
+      texto: ["Se fizer sentido seguir, monto um plano com você:"],
+      lista: [
+        "o que indico e por quê;",
+        "em que ordem e com que intervalo;",
+        "quanto tempo cada etapa costuma levar para responder;",
+        "os cuidados antes e depois;",
+        "os riscos de cada procedimento;",
+        "o investimento, apresentado antes de qualquer procedimento.",
+      ],
+      voz: "Nada é feito fora do que combinamos no plano.",
+    },
+    {
+      id: "decisao",
+      titulo: "A decisão é sua",
+      texto: [
+        "Você pode decidir na hora ou levar o plano para pensar. Quando a indicação é clara e você se sente segura, o procedimento pode ser feito no mesmo dia. Se preferir pensar, marcamos depois.",
+      ],
+    },
+    {
+      id: "procedimento",
+      titulo: "O procedimento",
+      texto: [
+        "No dia, revisamos o plano, você assina o termo de consentimento e eu explico de novo o que vai acontecer.",
+        "O nome do produto e o lote ficam registrados no seu prontuário, e você pode pedir essa informação.",
+      ],
+    },
+    {
+      id: "retorno",
+      titulo: "O retorno",
+      texto: [
+        "Cerca de 15 dias depois, você volta para avaliarmos juntas a resposta. É nesse momento que vemos se algo precisa de ajuste. O retorno já faz parte do procedimento.",
+      ],
+    },
+  ],
+  imprevisto: {
+    titulo: "Se algo fugir do esperado",
+    texto:
+      "Depois de qualquer procedimento, você tem um canal direto comigo pelo WhatsApp para dúvidas e para avisar se notar algo diferente do que conversamos.",
+  },
+  planejamentoTexto:
+    "Para uma data importante, como um casamento, uma viagem ou uma apresentação, o ideal é conversar com algumas semanas de antecedência. Alguns procedimentos deixam o rosto inchado por dias; outros agem ao longo de meses.",
+  praticas: [
+    { rotulo: "Valor", texto: "O valor da consulta e as formas de pagamento são informados no agendamento." },
+    { rotulo: "O que levar", texto: "Exames recentes, se tiver, e a lista dos medicamentos que você usa. Se puder, venha sem maquiagem." },
+    { rotulo: "Chegada", texto: "Chegue com 20 minutos de antecedência para o cadastro na recepção do prédio." },
+    { rotulo: "Cancelamento", texto: "Avise com pelo menos 24 horas de antecedência." },
+    { rotulo: "Idade", texto: "Atendo pacientes a partir de 18 anos." },
+  ],
+};

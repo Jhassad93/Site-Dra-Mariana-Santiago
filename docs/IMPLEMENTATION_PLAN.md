@@ -53,8 +53,8 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - **Fora desta etapa:** os links dos cards levam a páginas que só existem na Etapa 7 (hoje mostram a 404)
 
 ## Etapa 6 — Como funciona a consulta
-- [ ] Página com as etapas (conversa → avaliação → plano → decisão sua → retorno), a régua do planejamento e as crenças U2, U3, U5 e U7 (PERSONAS 7.1)
-- [ ] Prints nos 3 tamanhos
+- [x] Página com as etapas (conversa → avaliação → plano → decisão sua → procedimento → retorno) sobre a régua vertical, índice fixo no desktop, "Se algo fugir do esperado", a régua do planejamento e informações práticas; crenças U2, U3, U5 e U7 (PERSONAS 7.1). Itens `[A CONFIRMAR]` da Dra. listados em `lib/conteudo.ts`
+- [x] Prints nos 3 tamanhos; detector sem achados (1280 e 375)
 - Pronto quando: a página responde "o que acontece na consulta", "quanto vou gastar antes de decidir" e "e se eu não precisar de nada", sem prometer resultado
 
 ## Etapa 7 — Procedimentos

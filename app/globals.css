@@ -502,5 +502,25 @@
   @media (min-width: 1024px) {
     .regua-etapas { gap: 32px; }
   }
+
+  /* Régua sempre vertical (página Como funciona): desfaz a versão horizontal dos 768px */
+  @media (min-width: 768px) {
+    .regua-vertical {
+      grid-template-columns: none;
+      padding-top: 0;
+      padding-left: 32px;
+      gap: 56px;
+    }
+    .regua-vertical::before { display: none; }
+    .regua-vertical .regua-ponto { left: -32px; top: 0.55em; }
+    .regua-vertical .regua-marco:not(:last-child)::after {
+      display: block;
+      left: -28.5px;
+      bottom: calc(-56px - 0.55em);
+    }
+  }
+  .regua-vertical .regua-quando { font-size: var(--text-2xl); font-weight: 300; }
+  .regua-vertical .regua-oque { max-width: 62ch; color: var(--tinta); }
+  .regua-vertical .regua-oque > p:not(.font-voz) { color: rgb(28 24 19 / 0.8); }
 }
 
