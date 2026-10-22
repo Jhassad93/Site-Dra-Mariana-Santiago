@@ -64,9 +64,9 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - Pronto quando: as 7 páginas existem, seguem a estrutura obrigatória e passam no léxico do harness
 
 ## Etapa 8 — Sobre, Perguntas frequentes e Guia
-- [ ] `/sobre` (formação factual, CRM verificável com link para a busca do CFM, método; residência só se decidida na etapa 4)
-- [ ] `/perguntas-frequentes` (16 perguntas priorizadas, por tema) com dados estruturados FAQPage
-- [ ] `/guias/pele-na-menopausa` (educativo; sem oferta de tratamento de doença)
+- [x] `/sobre` (formação factual, CRM verificável com link para a busca do CFM, método; residência não citada, decisão 1 do harness). Foto e cursos pendentes da Dra.
+- [x] `/perguntas-frequentes` (18 perguntas do COPY.md, em 3 temas, com atalhos) com dados estruturados FAQPage (mesmo texto visível); abre e fecha com Enter e Espaço (testado)
+- [x] `/guias/pele-na-menopausa` (educativo, com fontes; terapia hormonal encaminhada ao ginecologista; sem oferta de tratamento de doença). Link no rodapé
 - Pronto quando: as 3 páginas estão completas, com CTA, e o FAQ abre e fecha pelo teclado
 
 ## Etapa 9 — Agendar e Obrigado

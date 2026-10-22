@@ -52,6 +52,11 @@ export function SiteFooter() {
               </li>
             ))}
             <li>
+              <Link href="/guias/pele-na-menopausa/" className="link-escuro">
+                Pele na menopausa
+              </Link>
+            </li>
+            <li>
               <Link href="/agendar/" className="link-escuro">
                 Agendar
               </Link>

@@ -251,7 +251,7 @@ export function Fechamento() {
   );
 }
 
-function FotoDra() {
+export function FotoDra() {
   const src = process.env.NEXT_PUBLIC_FOTO_DRA_PREVIA;
   if (src) {
     // eslint-disable-next-line @next/next/no-img-element
