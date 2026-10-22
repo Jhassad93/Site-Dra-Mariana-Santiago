@@ -48,13 +48,16 @@ Sobre foto ou vídeo: o texto fica sempre sobre um véu de Tinta (gradiente de 0
 Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem modo escuro dedicado no protótipo: as seções escuras são parte do layout. Se o modo escuro entrar depois, inverter Tinta e Linho e manter Ouro só como ornamento.
 
 ## Tipografia
-- **Geist** (sans, Google Fonts, SIL OFL), pesos 300, 400 e 500. Faz o trabalho de informação: títulos, corpo, botões, dados da régua do tempo e menus. Títulos grandes em 300 com espaçamento levemente negativo (−0,02em), à maneira do Reset.
-- **Instrument Serif** (serifada, Google Fonts, SIL OFL), regular e itálico. Tem **um único papel: a voz da Dra.** Nome dela no hero e na assinatura, frase da seção de fechamento e citações dela nas páginas ("Na consulta, eu…"). **Nunca** é usada para destacar uma palavra solta num título de seção.
-- **Escala:** terça maior (1,25), base 17px: 17 · 21 · 26,5 · 33 · 41,5 · 52 · 65 · 81. O hero usa `clamp(2.75rem, 7vw, 5.25rem)` em Geist 300.
-- **Entrelinha:** 1,55 no corpo (Geist); 1,35 nas citações em Instrument Serif; 1,05 nos títulos grandes.
+> **Revisado em 22/10/2026** (par A "Carta", escolhido pelo responsável). Geist e Instrument Serif foram trocadas porque o Impeccable as marca como "fontes muito usadas", típicas de páginas geradas por IA. As novas foram testadas no detector, que não as sinalizou.
+
+- **Host Grotesk** (sans, SIL OFL, servida pelo próprio site), pesos 300, 400 e 500. Faz o trabalho de informação: títulos, corpo, botões, dados da régua do tempo e menus. Grotesca precisa, levemente técnica, coerente com "médica que explica com calma". Títulos grandes em 300 com espaçamento levemente negativo (−0,02em).
+- **Libre Caslon Text** (serifada, SIL OFL), regular e itálico. Tem **um único papel: a voz da Dra.**, no itálico. O Caslon é a letra clássica de livros e cartas: o nome dela, a assinatura, a frase da seção de fechamento e as citações dela nas páginas ("Na consulta, eu…"). **Nunca** é usada como título grande do hero (o Impeccable marca serifada itálica grande no hero como clichê de IA) nem para destacar uma palavra solta num título.
+- **Escala:** terça maior (1,25), base 17px: 17 · 21 · 26,5 · 33 · 41,5 · 52 · 65 · 81. O hero usa `clamp(2.75rem, 7vw, 5.25rem)` em Host Grotesk 300.
+- **Entrelinha:** 1,55 no corpo; 1,35 nas citações em Libre Caslon (a serifada pede um pouco mais de ar); 1,05 nos títulos grandes.
 - **Medida de linha:** até 68 caracteres no corpo; citações até 56.
 - **Sem caixa-alta em rótulos.** Sem rótulos ("eyebrows") acima dos títulos. Botões em caixa de frase ("Agendar consulta"), sem seta "→" no texto.
-- **Bloco de identificação (R1):** "Dra. Mariana Passos Santiago" e "MÉDICA: CRM-SP 227636" em Geist 400, **mesmo tamanho e mesma cor, sem negrito** (manual da Codame). No rodapé, 15px; na seção de assinatura, 15px em Tinta.
+- **Bloco de identificação (R1):** "Dra. Mariana Passos Santiago" e "MÉDICA: CRM-SP 227636" em Host Grotesk 400, **mesmo tamanho e mesma cor, sem negrito** (manual da Codame). No rodapé e na seção de assinatura, 15px.
+- **Tamanho mínimo:** 15px para qualquer texto (13px só em rótulos curtos da régua do tempo, sempre com contraste AA).
 
 ## Layout
 
@@ -65,10 +68,10 @@ Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem mod
 ┌──────────────────────────────────────────────────────────────┐
 │ [M] Dra. Mariana Santiago   Como funciona  Procedimentos …  [Agendar consulta] │ ← cabeçalho de vidro
 │                                                              │
-│  Título em Geist 300, Areia, 2 linhas, alinhado à esquerda   │  VÍDEO 1 em tela cheia
+│  Título em Host Grotesk 300, Areia, 2 linhas, alinhado à esquerda   │  VÍDEO 1 em tela cheia
 │  ───────────────────■───────────────  (régua, Ouro)          │  (luz no linho), véu Tinta
 │  Apoio curto em Linho          [Agendar consulta]  Ver horários │
-│  Mariana Santiago (Instrument Serif itálico) · MÉDICA: CRM-SP… │
+│  Mariana Santiago (Libre Caslon itálico) · MÉDICA: CRM-SP… │
 │  Ter e sex até 21h · Sáb de manhã · Av. Paulista, 1048        │
 ├──────────────────────────────────────────────────────────────┤
 │ Como eu trabalho: 4 colunas com linha fina, ícone de traço   │  fundo Linho
@@ -91,7 +94,7 @@ Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem mod
 │ Onde e quando: mapa estático + horários + metrô              │
 ├──────────────────────────────────────────────────────────────┤
 │ Fechamento (gradiente Areia→Linho)                           │
-│ "Frase dela" (Instrument Serif itálico)      [foto da Dra.   │
+│ "Frase dela" (Libre Caslon itálico)      [foto da Dra.   │
 │  assinatura                                    recortada]    │
 │  Dra. Mariana Passos Santiago                                │
 │  MÉDICA: CRM-SP 227636         [Agendar consulta]            │
@@ -100,7 +103,7 @@ Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem mod
 └──────────────────────────────────────────────────────────────┘
 ```
 
-**Página de procedimento (modelo):** título + resumo em uma frase → **régua do tempo do procedimento** (dia 0 → início → efeito pleno → manutenção, em faixas e com "varia de pessoa para pessoa") → "Para quem costuma ser indicado" → "Como é feito" → "O que esperar depois" → "Possíveis efeitos e complicações" → "Na consulta, eu…" (voz da Dra., em Instrument Serif) → perguntas do procedimento → CTA.
+**Página de procedimento (modelo):** título + resumo em uma frase → **régua do tempo do procedimento** (dia 0 → início → efeito pleno → manutenção, em faixas e com "varia de pessoa para pessoa") → "Para quem costuma ser indicado" → "Como é feito" → "O que esperar depois" → "Possíveis efeitos e complicações" → "Na consulta, eu…" (voz da Dra., em Libre Caslon) → perguntas do procedimento → CTA.
 
 ## Componentes
 - **Biblioteca principal:** **Spell UI** (site sóbrio e institucional, conforme a tabela do kit), com shadcn/ui na base. Outras bibliotecas só para lacunas, registradas em `LICENCAS.md`.
@@ -109,13 +112,13 @@ Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem mod
   - Depois do hero (seções claras): `background: rgb(247 242 234 / 0.72)`, texto Tinta, borda `rgb(28 24 19 / 0.08)`.
   - Desktop: cabeçalho flutuante com margem de 12px e raio de 16px. Celular: barra encostada no topo.
   - Alternativas: `@supports not (backdrop-filter: blur(1px))` → fundo sólido (Tinta 92% ou Linho 96%); `prefers-reduced-transparency: reduce` → fundo sólido.
-- **Botão principal:** fundo Tinta, texto Linho, Geist 500 a 16px, altura 48px, raio 999px, foco visível com anel Ouro de 2px e afastamento de 2px. No hero, versão de vidro (mesma receita do cabeçalho) com texto Linho.
+- **Botão principal:** fundo Tinta, texto Linho, Host Grotesk 500 a 16px, altura 48px, raio 999px, foco visível com anel Ouro de 2px e afastamento de 2px. No hero, versão de vidro (mesma receita do cabeçalho) com texto Linho.
 - **Botão secundário / link "Ver horários disponíveis":** texto Bronze sublinhado (sobre Linho) ou Areia (sobre escuro).
-- **Card de procedimento grande:** retrato 3:4, raio de 20px, foto em tela cheia, **faixa de dados no topo** (número em Geist 300 a 33px + rótulo a 13px, separados por linha fina Areia), legenda de indicação embaixo (Linho sobre véu Tinta), pílula de vidro "Entender o procedimento". Sem sombra; no hover só a foto escala 1,02 em 300ms.
+- **Card de procedimento grande:** retrato 3:4, raio de 20px, foto em tela cheia, **faixa de dados no topo** (número em Host Grotesk 300 a 33px + rótulo a 13px, separados por linha fina Areia), legenda de indicação embaixo (Linho sobre véu Tinta), pílula de vidro "Entender o procedimento". Sem sombra; no hover só a foto escala 1,02 em 300ms.
 - **Card compacto:** fundo Areia a 40% sobre Linho, raio de 14px, nome + seta em traço desenhado como ícone (não o caractere "→"), altura de 72px.
-- **Régua do tempo:** linha de 1px Ouro, marcadores quadrados de 8px, rótulos em Geist 13px (Tinta 72% ou Areia). No celular, fica vertical.
+- **Régua do tempo:** linha de 1px Ouro, marcadores quadrados de 8px, rótulos em Host Grotesk 13px (Tinta 72% ou Areia). No celular, fica vertical.
 - **Acordeão do FAQ:** linhas finas Tinta a 12%, ícone "+" que vira "−", abertura com altura animada em 200ms.
-- **Seção de assinatura:** gradiente Areia → Linho, foto recortada à direita, frase em Instrument Serif itálico a 33px, assinatura (SVG) e bloco de identificação R1.
+- **Seção de assinatura:** gradiente Areia → Linho, foto recortada à direita, frase em Libre Caslon itálico a 33px, assinatura (SVG) e bloco de identificação R1.
 - **Raios por hierarquia:** cards grandes 20px · cabeçalho 16px · cards compactos 14px · campos 10px · botões 999px. Não é um raio único para tudo.
 - **Ícones:** traço de 1,25px em Ouro ou Tinta, desenhados como SVG. Sem pacotes de ícone preenchido.
 
@@ -209,7 +212,7 @@ Os cards compactos (contorno facial, skinbooster, peelings) não levam foto.
 - Deixar a luz e o espaço trabalharem: uma ideia por seção.
 - Usar a régua do tempo sempre que houver um prazo real.
 - Escrever os botões pelo que acontece: "Agendar consulta", "Ver horários disponíveis", "Entender o procedimento".
-- Manter a voz da Dra. (Instrument Serif) rara, para que ela pese.
+- Manter a voz da Dra. (Libre Caslon) rara, para que ela pese.
 - Conferir contraste de texto sobre vídeo em quadros claros e escuros.
 
 ## Não faça

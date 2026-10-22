@@ -62,15 +62,15 @@ export default function Page() {
         <h2 id="tipografia" className="text-3xl">Tipografia</h2>
         <div className="mt-8 grid gap-10 lg:grid-cols-2">
           <div>
-            <p className="text-sm text-muted-foreground">Geist: informação</p>
+            <p className="text-sm text-muted-foreground">Host Grotesk: informação</p>
             <p className="mt-3 text-4xl font-light">Planejamento no tempo certo</p>
             <p className="mt-4 max-w-[68ch]">
-              Corpo de texto em Geist 400, 17px, entrelinha 1,55. Antes de qualquer procedimento, uma
+              Corpo de texto em Host Grotesk 400, 17px, entrelinha 1,55. Antes de qualquer procedimento, uma
               avaliação individual.
             </p>
           </div>
           <div>
-            <p className="text-sm text-muted-foreground">Instrument Serif: a voz da Dra.</p>
+            <p className="text-sm text-muted-foreground">Libre Caslon itálico: a voz da Dra.</p>
             <p className="mt-3 max-w-[56ch] font-voz text-3xl italic leading-[1.35]">
               Antes de qualquer procedimento, eu quero entender o que incomoda você.
             </p>
