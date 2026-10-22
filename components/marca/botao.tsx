@@ -79,7 +79,7 @@ export function LinkSecundario({
 /** Pílula de vidro: ação curta sobre foto ("Entender o procedimento"). */
 export function PilulaVidro({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <span className={cn("pilula-vidro inline-flex h-10 items-center rounded-full px-4 text-sm font-medium", className)}>
+    <span className={cn("pilula-vidro inline-flex h-10 items-center rounded-full px-4 text-sm font-medium whitespace-nowrap", className)}>
       {children}
     </span>
   );

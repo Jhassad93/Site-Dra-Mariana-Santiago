@@ -223,6 +223,8 @@
 
   /* Links sobre fundo escuro: Gesso com sublinhado discreto */
   .link-escuro {
+    display: inline-flex;
+    align-items: center;
     color: var(--gesso);
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -322,6 +324,7 @@
   .regua-marco {
     position: relative;
     display: grid;
+    align-content: start;
     gap: 2px;
   }
   .regua-ponto {
@@ -467,5 +470,37 @@
 
   .carrossel { scrollbar-width: none; }
   .carrossel::-webkit-scrollbar { display: none; }
+
+  /* Alvos de toque: no celular, links pequenos do rodapé ganham 44px de altura */
+  @media (pointer: coarse) {
+    .link-escuro { min-height: 44px; }
+  }
+
+  /* "Como eu trabalho" sobre a régua: mesma linha e marcadores, com título e texto maiores */
+  .regua-etapas { gap: 36px; }
+  .regua-etapas .regua-quando {
+    font-size: var(--text-xl);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+  }
+  .regua-etapas .regua-oque {
+    margin-top: 8px;
+    font-size: var(--text-base);
+    line-height: 1.55;
+    max-width: 32ch;
+  }
+  .regua-etapas .regua-ponto { top: 0.55em; }
+  .regua-etapas .regua-marco:not(:last-child)::after {
+    top: calc(0.55em + 8px);
+    bottom: calc(-36px - 0.55em);
+  }
+  @media (min-width: 768px) {
+    .regua-etapas { gap: 24px; }
+    .regua-etapas .regua-ponto { top: -24px; }
+  }
+  @media (min-width: 1024px) {
+    .regua-etapas { gap: 32px; }
+  }
 }
 

@@ -43,13 +43,14 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - Pronto quando: COPY.md aprovado por você, sem nenhum 🔴 e com todos os 🟡 decididos e registrados
 
 ## Etapa 5 — Home
-- [ ] Hero: imagem de capa provisória (gerada pelo prompt de imagem do DESIGN.md; o vídeo entra na etapa 10), título, apoio, CTA (WhatsApp), link "Ver horários disponíveis", identificação curta, horários
-- [ ] Link opcional "Ver no Google" em Onde e quando e no rodapé, ligado a `NEXT_PUBLIC_GOOGLE_PERFIL_URL` (vazio = não aparece; decisão 4)
-- [ ] Seções na ordem do DESIGN.md: Como eu trabalho · Procedimentos (3 grandes + 3 compactos) · Planejamento no tempo · FAQ (5) · Onde e quando (mapa estático + link) · Fechamento com a foto da Dra. (**foto do Instagram, só na prévia**) e assinatura provisória
-- [ ] Ordem própria no celular (Onde e quando sobe para depois do hero)
-- [ ] `/impeccable critique` e `review-animations`; corrigir o que contrariar o DESIGN.md
-- [ ] Prints com Playwright em 375, 768 e 1280px
+- [x] Hero: título, apoio, CTA (WhatsApp), link "Ver horários disponíveis", identificação R1, horários. **Imagem de capa provisória em CSS** (feixe de luz sobre Tinta), porque não há gerador de imagem gratuito neste ambiente; a imagem gerada e o vídeo entram na Etapa 10
+- [x] Seções na ordem do DESIGN.md: Como eu trabalho (desenhada sobre a régua do tempo, decisão da crítica) · Procedimentos (3 grandes em carrossel até 1024px + 3 compactos) · Planejamento no tempo (com "Conversar sobre uma data") · FAQ (5) · Onde e quando (sem mapa estático por enquanto: link "Abrir no mapa" pelo endereço) · Fechamento com assinatura provisória em Libre Caslon. **Foto da Dra.: pendente** — o post de apresentação do Instagram tem textos vedados ("Dermatologia estética", "melhor versão"); o código já aceita uma foto limpa só na prévia (`NEXT_PUBLIC_FOTO_DRA_PREVIA`)
+- [x] Link opcional "Ver no Google" em Onde e quando e no rodapé, ligado a `NEXT_PUBLIC_GOOGLE_PERFIL_URL` (vazio = não aparece; decisão 4)
+- [x] Ordem própria no celular (faixa de horários logo depois do hero; no fechamento, a foto vem antes da frase)
+- [x] `/impeccable critique` (duas avaliações isoladas: design 24/28; detector 0 achados na página real) e `review-animations`; corrigidos: cards cortados a 768px, R1 e horário fora da primeira dobra no celular, CTA fixo invisível sobre fundo escuro, régua desalinhada, repetição da assinatura, alvos de toque do rodapé, contraste do rótulo do card no celular
+- [x] Prints com Playwright em 375, 768 e 1280px
 - Pronto quando: home completa no desktop e no celular, com o texto do COPY.md, CTA visível na primeira tela, sem rolagem horizontal, prints conferidos
+- **Fora desta etapa:** os links dos cards levam a páginas que só existem na Etapa 7 (hoje mostram a 404)
 
 ## Etapa 6 — Como funciona a consulta
 - [ ] Página com as etapas (conversa → avaliação → plano → decisão sua → retorno), a régua do planejamento e as crenças U2, U3, U5 e U7 (PERSONAS 7.1)

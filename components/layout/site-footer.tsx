@@ -11,12 +11,11 @@ export function SiteFooter() {
     <footer data-tema="escuro" data-cta className="tema-escuro bg-tinta text-areia">
       <div className="mx-auto grid max-w-[1200px] gap-12 px-4 pb-[max(64px,env(safe-area-inset-bottom))] pt-20 sm:px-6 lg:grid-cols-12 lg:gap-6 lg:px-6">
         <div className="grid content-start gap-6 lg:col-span-4">
-          <p className="font-voz text-2xl italic leading-[1.35] text-areia">Mariana Santiago</p>
           <IdentificacaoR1 sobre="escuro" />
         </div>
 
         <div className="grid content-start gap-3 text-sm lg:col-span-3">
-          <h2 className="text-sm font-normal tracking-normal text-areia">Onde e quando</h2>
+          <h2 className="text-sm font-normal tracking-normal text-areia">Endereço e horários</h2>
           <p className="text-gesso">
             {endereco.linha1}
             <br />

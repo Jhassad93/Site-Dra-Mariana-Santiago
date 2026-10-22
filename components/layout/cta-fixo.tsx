@@ -46,7 +46,7 @@ export function CtaFixo() {
         href={whatsappHref}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex h-12 w-full items-center justify-center rounded-full bg-tinta font-medium text-gesso"
+        className="flex h-12 w-full items-center justify-center rounded-full border border-areia/35 bg-tinta font-medium text-gesso"
       >
         Agendar consulta
         <span className="sr-only"> pelo WhatsApp (abre em nova aba)</span>

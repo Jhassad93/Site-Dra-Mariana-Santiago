@@ -22,13 +22,13 @@ export function Hero() {
   return (
     <section data-tema="escuro" aria-labelledby="titulo-hero" className="hero tema-escuro relative isolate overflow-hidden bg-tinta text-areia">
       <div aria-hidden="true" className="hero-luz absolute inset-0 -z-10" />
-      <div className={`${caixa} flex min-h-[max(640px,100svh)] flex-col justify-end pb-12 pt-28 md:min-h-[max(720px,92svh)] md:pb-16 lg:pt-36`}>
+      <div className={`${caixa} flex min-h-[max(600px,100svh)] flex-col justify-end pb-8 pt-24 sm:pb-12 md:min-h-[max(720px,92svh)] md:pb-16 lg:pt-36`}>
         <h1 id="titulo-hero" className="hero-titulo max-w-[17ch] text-[clamp(2.5rem,5.4vw,4.0625rem)] font-light">
           {hero.titulo}
         </h1>
-        <ReguaOrnamento animada className="mt-8" />
-        <p className="mt-8 max-w-[52ch] text-lg text-gesso">{hero.apoio}</p>
-        <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3" data-cta>
+        <ReguaOrnamento animada className="mt-6 sm:mt-8" />
+        <p className="mt-6 max-w-[52ch] text-base text-gesso sm:mt-8 sm:text-lg">{hero.apoio}</p>
+        <div className="mt-6 sm:mt-8 flex flex-wrap items-center gap-x-8 gap-y-3" data-cta>
           <Botao href={whatsappHref} externo variante="vidro">
             Agendar consulta
           </Botao>
@@ -36,12 +36,12 @@ export function Hero() {
             Ver horários disponíveis
           </LinkSecundario>
         </div>
-        <div className="mt-10 flex flex-col gap-6 border-t border-areia/20 pt-6 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mt-8 flex flex-col gap-3 border-t border-areia/20 pt-5 sm:mt-10 sm:flex-row sm:items-end sm:justify-between sm:gap-6 sm:pt-6">
           <div className="grid gap-2">
-            <p className="font-voz text-2xl italic leading-none text-areia">Mariana Santiago</p>
+            <p className="hidden font-voz text-2xl italic leading-none text-areia sm:block">Mariana Santiago</p>
             <IdentificacaoR1 sobre="escuro" />
           </div>
-          <p className="hidden max-w-[34ch] text-sm text-gesso sm:block sm:text-right">{hero.horario}</p>
+          <p className="max-w-[34ch] text-sm text-gesso sm:text-right">{hero.horario}</p>
         </div>
       </div>
     </section>
@@ -77,15 +77,12 @@ export function ComoTrabalho() {
           </h2>
           <p className="max-w-[46ch] text-lg text-muted-foreground lg:col-span-6 lg:col-start-7 lg:pt-3">{comoTrabalho.apoio}</p>
         </div>
-        <ol className="mt-14 grid gap-px overflow-hidden rounded-[var(--radius-compact)] border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="regua regua-clara regua-etapas mt-14" style={{ "--marcos": comoTrabalho.etapas.length } as React.CSSProperties}>
           {comoTrabalho.etapas.map((e, i) => (
-            <li key={e.titulo} className="grid content-start gap-3 bg-gesso p-6">
-              <span className="flex items-center gap-3 text-sm text-muted-foreground">
-                <span aria-hidden="true" className="size-2 bg-ouro" />
-                {i + 1}
-              </span>
-              <h3 className="text-xl font-normal tracking-[-0.015em]">{e.titulo}</h3>
-              <p className="text-muted-foreground">{e.texto}</p>
+            <li key={e.titulo} className="regua-marco" style={{ "--i": i } as React.CSSProperties}>
+              <span className="regua-ponto" aria-hidden="true" />
+              <h3 className="regua-quando">{e.titulo}</h3>
+              <p className="regua-oque">{e.texto}</p>
             </li>
           ))}
         </ol>
@@ -112,16 +109,19 @@ export function Procedimentos() {
         </div>
       </div>
       {/* No celular, os cards grandes viram uma faixa com deslize horizontal */}
-      <div className="carrossel mt-12 snap-x snap-mandatory scroll-px-4 overflow-x-auto sm:scroll-px-6 md:overflow-visible">
-        <ul className="flex w-max gap-4 px-4 sm:px-6 md:mx-auto md:grid md:w-auto md:max-w-[1200px] md:grid-cols-3 md:gap-5">
+      <div className="carrossel mt-12 snap-x snap-mandatory scroll-px-4 overflow-x-auto sm:scroll-px-6 lg:overflow-visible">
+        <ul aria-label="Procedimentos em destaque" className="flex w-max gap-4 px-4 sm:px-6 lg:mx-auto lg:grid lg:w-auto lg:max-w-[1200px] lg:grid-cols-3 lg:gap-5">
           {procedimentosDestaque.map((p) => (
-            <li key={p.href} className="w-[78vw] shrink-0 snap-start sm:w-[56vw] md:w-auto">
+            <li key={p.href} className="w-[78vw] shrink-0 snap-start sm:w-[46vw] md:w-[40vw] lg:w-auto">
               <CardProcedimento {...p} />
             </li>
           ))}
         </ul>
       </div>
       <div className={caixa}>
+        <p className="mt-3 text-sm text-muted-foreground lg:hidden" aria-hidden="true">
+          Deslize para ver os outros
+        </p>
         <ul className="mt-5 grid gap-3 md:grid-cols-3 md:gap-5">
           {procedimentosCompactos.map((p) => (
             <li key={p.href}>
@@ -146,6 +146,11 @@ export function Planejamento() {
             {planejamento.titulo}
           </h2>
           <p className="mt-8 max-w-[52ch] text-lg text-gesso">{planejamento.texto}</p>
+          <div className="mt-8" data-cta>
+            <LinkSecundario href={whatsappHref} externo sobre="escuro">
+              Conversar sobre uma data
+            </LinkSecundario>
+          </div>
         </div>
         {/* Lugar do vídeo 2 (luz no gesso), Etapa 10. Até lá, a luz é desenhada em CSS. */}
         <div aria-hidden="true" className="planejamento-luz hidden min-h-72 rounded-[var(--radius-card)] lg:col-span-5 lg:col-start-8 lg:block" />
@@ -222,12 +227,12 @@ export function Fechamento() {
   return (
     <section aria-labelledby="fechamento" className="fechamento overflow-hidden">
       <div className={`${caixa} grid items-end gap-10 pt-20 md:pt-28 lg:grid-cols-12 lg:gap-6`}>
-        <div className="pb-20 md:pb-28 lg:col-span-7">
+        <div className="pb-20 md:pb-28 lg:col-span-7 lg:row-start-1">
           <h2 id="fechamento" className="sr-only">
             Agende sua consulta
           </h2>
           <VozDaDra comIdentificacao={false}>{fechamento.frase}</VozDaDra>
-          <p className="mt-8 font-voz text-3xl italic leading-none text-tinta">Mariana Santiago</p>
+          <p className="mt-8 font-voz text-xl italic leading-none text-tinta">Mariana Santiago</p>
           <IdentificacaoR1 className="mt-3" />
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3" data-cta>
             <Botao href={whatsappHref} externo>
@@ -236,7 +241,7 @@ export function Fechamento() {
             <LinkSecundario href="/agendar/#agenda">Ver horários disponíveis</LinkSecundario>
           </div>
         </div>
-        <div className="fechamento-foto relative mx-auto aspect-[4/5] w-full max-w-[420px] lg:col-span-5 lg:mx-0 lg:justify-self-end">
+        <div className="fechamento-foto relative order-first mx-auto aspect-[4/5] w-full max-w-[420px] lg:order-none lg:col-span-5 lg:mx-0 lg:justify-self-end">
           <FotoDra />
         </div>
       </div>
