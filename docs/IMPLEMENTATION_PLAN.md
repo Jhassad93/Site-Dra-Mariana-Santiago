@@ -1,6 +1,6 @@
 # Plano de implementação — Dra. Mariana Santiago
 
-Fontes: BRIEF.md (modo protótipo) · APP_FLOW.md · DESIGN.md · SCHEMA.md · PERSONAS.md · CONCORRENTES.md · harness regulatório v1.3 (`claude/harness-regulatorio.md`)
+Fontes: BRIEF.md (modo protótipo) · APP_FLOW.md · DESIGN.md · SCHEMA.md · PERSONAS.md · CONCORRENTES.md · harness regulatório v1.4 (`claude/harness-regulatorio.md`)
 Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e parar para aprovação. Commit ao fim de cada etapa aprovada (`etapa N: <resumo>`).
 **Harness:** em toda etapa, rodar o filtro R1–R20 sobre o que foi produzido e escrever no resumo "Harness: sem alertas" ou a lista de alertas. Todo texto sai marcado RASCUNHO até a aprovação.
 
@@ -38,12 +38,13 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 ## Etapa 4 — Copy (documento, sem código)
 - [x] `docs/COPY.md` com o texto de todas as páginas, a partir de BRIEF, PERSONAS (crenças e banco de copy) e DESIGN, **marcado RASCUNHO**
 - [x] Páginas de procedimento na estrutura obrigatória: indicação · como é feito · régua do tempo (faixas + "varia de pessoa para pessoa" + fonte) · o que esperar depois · possíveis efeitos e complicações · "Na consulta, eu…" · perguntas
-- [ ] Decidir os 🟡 pendentes: menção à residência; redação do retorno ("retorno de avaliação em 15 dias incluído"); frase de fechamento; link para o perfil do Google (registrar no Anexo D do harness)
+- [x] Decidir os 🟡 pendentes (22/10/2026, registrados no Anexo D do harness v1.4): menção à residência; redação do retorno ("retorno de avaliação em 15 dias incluído"); frase de fechamento; link para o perfil do Google (registrar no Anexo D do harness)
 - [x] Rodar o harness linha a linha (léxico A2 + R1–R11) e listar o resultado (nenhum 🔴; fontes dos prazos em `docs/FONTES_PROCEDIMENTOS.md`)
 - Pronto quando: COPY.md aprovado por você, sem nenhum 🔴 e com todos os 🟡 decididos e registrados
 
 ## Etapa 5 — Home
 - [ ] Hero: imagem de capa provisória (gerada pelo prompt de imagem do DESIGN.md; o vídeo entra na etapa 10), título, apoio, CTA (WhatsApp), link "Ver horários disponíveis", identificação curta, horários
+- [ ] Link opcional "Ver no Google" em Onde e quando e no rodapé, ligado a `NEXT_PUBLIC_GOOGLE_PERFIL_URL` (vazio = não aparece; decisão 4)
 - [ ] Seções na ordem do DESIGN.md: Como eu trabalho · Procedimentos (3 grandes + 3 compactos) · Planejamento no tempo · FAQ (5) · Onde e quando (mapa estático + link) · Fechamento com a foto da Dra. (**foto do Instagram, só na prévia**) e assinatura provisória
 - [ ] Ordem própria no celular (Onde e quando sobe para depois do hero)
 - [ ] `/impeccable critique` e `review-animations`; corrigir o que contrariar o DESIGN.md

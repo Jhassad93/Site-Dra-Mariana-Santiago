@@ -43,7 +43,7 @@ MÉDICA: CRM-SP 227636
 | 1 | Conversa | Começo perguntando o que incomoda você e o que você espera. Sem lista pronta de procedimentos. |
 | 2 | Avaliação | Examino a pele e o rosto, pergunto sobre saúde, rotina e procedimentos anteriores. Às vezes a indicação é cuidar da pele em casa ou não fazer nada agora. |
 | 3 | Plano | Se fizer sentido seguir, explico o que indico, em que ordem, quanto tempo cada etapa leva para responder e o investimento. A decisão é sua, com calma. |
-| 4 | Retorno | Depois do procedimento, um retorno em cerca de 15 dias para avaliarmos juntas a resposta. *(redação do retorno: ver decisão 🟡 2)* |
+| 4 | Retorno | Cerca de 15 dias depois do procedimento, você volta para avaliarmos juntas a resposta. O retorno já faz parte do procedimento. |
 
 **Link:** Entender como funciona a consulta → /como-funciona/
 
@@ -82,10 +82,11 @@ Cards compactos: Contorno facial · Skinbooster · Peelings
 ### Onde e quando
 **H2:** Onde e quando
 **Texto:** Av. Paulista, 1048, 18º andar, a uma quadra do metrô Trianon-Masp. Atendo às terças e sextas, das 13h às 21h, e aos sábados, das 8h às 14h, horários pensados para quem trabalha durante o dia.
-**Link:** Abrir no mapa (Google Maps pelo endereço; ver decisão 🟡 4)
+**Link:** Abrir no mapa (Google Maps pelo endereço). **Previsto:** "Ver no Google" (perfil), só quando `NEXT_PUBLIC_GOOGLE_PERFIL_URL` estiver preenchido (decisão 4)
 
 ### Fechamento (gradiente Areia → Gesso, foto da Dra.)
-**Voz da Dra.:** *Antes de qualquer procedimento, eu quero entender o que incomoda você. Às vezes, a melhor indicação é esperar.* (ver decisão 🟡 3)
+**Voz da Dra.:** *Antes de qualquer procedimento, eu quero entender o que incomoda você. Daí em diante, decidimos juntas, no seu tempo.* (decisão 3: reescrita em 22/10/2026; ecoa o título do hero, "planejados no seu tempo")
+**Alternativas, se a Dra. preferir:** *"…Daí em diante, cada passo é combinado com você."* · *"…E, se a resposta for esperar, eu vou dizer."*
 **Assinatura + identificação R1 + CTA:** Agendar consulta
 
 ---
@@ -122,7 +123,7 @@ Você pode decidir na hora ou levar o plano para pensar. `[A CONFIRMAR: se o pro
 No dia, revisamos o plano, você assina o termo de consentimento e eu explico de novo o que vai acontecer. O nome do produto e o lote ficam registrados no seu prontuário, e você pode pedir essa informação. `[A CONFIRMAR: termo de consentimento e registro de lote]`
 
 ### 6. O retorno
-Cerca de 15 dias depois, você volta para avaliarmos juntas a resposta. É nesse momento que vemos se algo precisa de ajuste. O retorno já faz parte do procedimento. *(redação: decisão 🟡 2)*
+Cerca de 15 dias depois, você volta para avaliarmos juntas a resposta. É nesse momento que vemos se algo precisa de ajuste. O retorno já faz parte do procedimento.
 
 ### Se algo fugir do esperado
 Depois de qualquer procedimento, você tem um canal direto comigo pelo WhatsApp para dúvidas e para avisar se notar algo diferente do que conversamos. `[A CONFIRMAR: protocolo para intercorrências e horário de resposta]`
@@ -545,7 +546,7 @@ Escolhi trabalhar com calma. Prefiro uma consulta que explique bem a um procedim
 1. **Quanto custa a consulta?** O valor da consulta e as formas de pagamento são informados no agendamento. O investimento de um procedimento é apresentado na consulta, antes de qualquer decisão, porque depende da indicação.
 2. **Já faço o procedimento na primeira consulta?** Pode acontecer, quando a indicação é clara e você se sente segura para decidir. Se preferir pensar, o plano fica com você e marcamos depois. `[A CONFIRMAR]`
 3. **Preciso saber o que quero fazer antes de marcar?** Não. A consulta começa pelo que incomoda você. A indicação vem depois da avaliação.
-4. **Como funciona o retorno?** Cerca de 15 dias depois de um procedimento, você volta para avaliarmos juntas a resposta. O retorno já faz parte do procedimento. *(decisão 🟡 2)*
+4. **Como funciona o retorno?** Cerca de 15 dias depois de um procedimento, você volta para avaliarmos juntas a resposta. O retorno já faz parte do procedimento.
 5. **Você atende quem já fez procedimentos em outro lugar?** Sim. Conte o que fez, quando e, se souber, qual produto foi usado. A avaliação considera tudo isso, sem julgamento, e às vezes o melhor começo é esperar. *(não citar reversão com hialuronidase até a Dra. confirmar que faz)*
 6. **Com que idade faz sentido começar?** Não existe idade certa para todo mundo. Para muitas pessoas mais jovens, a primeira indicação é uma rotina de cuidados com a pele e proteção solar. Atendo a partir de 18 anos.
 
@@ -619,19 +620,16 @@ Redigidos na **Etapa 11**, a partir do SCHEMA.md e do R15, com revisão jurídic
 
 ---
 
-## Decisões 🟡 pendentes (para registrar no Anexo D do harness)
+## Decisões 🟡 (tomadas pelo responsável em 22/10/2026 e registradas no Anexo D do harness, v1.4)
 
-Cada item tem uma recomendação. Ao aprovar este documento, a decisão vai para o Anexo D do harness com data e justificativa.
-
-| # | Tema | Risco | Norma | Recomendação | Alternativa |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Menção à residência em Dermatologia na página Sobre | Induzir a paciente a vê-la como especialista sem RQE | Res. CFM 2.336/2023, art. 11, I; CEM, art. 114 (V) | **Não citar no protótipo.** A Sobre usa graduação, ano do CRM e o link de verificação do CFM. Levar o tema à Dra. e, se ela quiser citar, fazer antes a consulta escrita à Codame do Cremesp | Citar só no currículo, uma linha, sem destaque e sem a palavra "dermatologia" em título, depois da resposta da Codame |
-| 2 | Redação do retorno de 15 dias | "Grátis" ou "sem custo" anunciado como vantagem = gratuidade (R5) | Res. CFM 2.336/2023, art. 11, §4º, "c" (V) | **"O retorno, cerca de 15 dias depois, já faz parte do procedimento."** Informa o serviço sem anunciar gratuidade. Confirmar com a Dra. que o retorno é mesmo incluído | "Retorno de avaliação em cerca de 15 dias" (sem falar de custo) |
-| 3 | Frase de fechamento da home | Frase de filosofia pode ser lida como promessa de resultado (R4) | Res. CFM 2.336/2023, art. 11, XII (V) | **"Antes de qualquer procedimento, eu quero entender o que incomoda você. Às vezes, a melhor indicação é esperar."** Fala de método, não de resultado | "O melhor resultado é aquele em que você continua se reconhecendo" (frase dela no Instagram): 🟡, fala de resultado; usar só se a Dra. insistir, e fora de páginas de procedimento |
-| 4 | Link para o perfil do Google | Hoje o perfil se chama "… - Dermatologia Estética" (🔴 R2) e mostra avaliações (R7) | Res. CFM 2.336/2023, arts. 8º, §§3º e 4º, e 11, I (V) | **Não linkar o perfil no protótipo.** "Abrir no mapa" aponta para o endereço no Google Maps, sem o perfil. Depois do ajuste do perfil (pendência 11a), reavaliar um link discreto em "Onde e quando", sem citar nota nem avaliações | Link para o perfil corrigido, sem exibir avaliações no site |
-| 5 | Prazos e números nas páginas de procedimento | Número isolado pode soar como promessa (R4) | Res. CFM 2.336/2023, art. 11, XII (V); CDC, art. 37 (V) | Sempre em faixa, com "varia de pessoa para pessoa" e fonte em `FONTES_PROCEDIMENTOS.md`; a Dra. valida cada prazo antes de publicar | — |
-| 6 | Menções educativas a acne, melasma e rosácea | Virar oferta de tratamento de doença (R3) | Res. CFM 2.336/2023, art. 11, I (V) | Só a nota educativa "precisam de diagnóstico médico… conte na consulta", sem prometer tratar | Retirar a nota |
-
+| # | Tema | Decisão |
+| --- | --- | --- |
+| 1 | Residência em Dermatologia | **Não citar no protótipo.** A Sobre usa graduação, ano do CRM e link de verificação do CFM. Se a Dra. quiser citar, só depois de consulta escrita à Codame do Cremesp |
+| 2 | Retorno de 15 dias | **"O retorno, cerca de 15 dias depois, já faz parte do procedimento."** Sem "grátis" nem "sem custo". Confirmar com a Dra. que o retorno é incluído |
+| 3 | Frase de fechamento da home | **Reescrita:** *"Antes de qualquer procedimento, eu quero entender o que incomoda você. Daí em diante, decidimos juntas, no seu tempo."* Fala de método, não de resultado. A frase de resultado do Instagram ("o melhor resultado é aquele em que…") não é usada |
+| 4 | Link para o perfil do Google | **Sem link no protótipo, mas previsto.** "Abrir no mapa" aponta para o endereço. O código ganha um campo opcional (`NEXT_PUBLIC_GOOGLE_PERFIL_URL`): vazio, nada aparece; preenchido, surge em "Onde e quando" e no rodapé um link discreto "Ver no Google", sem nota, estrelas nem avaliações. Só preencher depois do ajuste do perfil (pendência 11a: nome sem "Dermatologia Estética") |
+| 5 | Prazos nas páginas de procedimento | **Sempre em faixa**, com "varia de pessoa para pessoa" e fonte em `FONTES_PROCEDIMENTOS.md`; a Dra. valida cada prazo antes de publicar |
+| 6 | Acne, melasma e rosácea | **Só a nota educativa** ("precisam de diagnóstico médico… conte na consulta"), sem oferta de tratamento |
 
 ## Harness: conferência linha a linha
 
@@ -642,7 +640,7 @@ Conferência feita em 22/10/2026 sobre todo o texto acima: busca pelo léxico do
 | R1 Identificação | OK. Nome e "MÉDICA: CRM-SP 227636" em duas linhas iguais na home, na Sobre e no rodapé | Elementos globais; Home; Sobre |
 | R2 Especialidade | OK. Nenhuma ocorrência no texto do site. "Dermatology" só aparece em nomes de revista, que ficam nos links das fontes (não no texto visível) | Busca do léxico |
 | R3 Doença | OK com nota educativa (decisão 🟡 6). Acne, melasma e rosácea aparecem só como "precisam de diagnóstico médico… conte na consulta" | Procedimentos (índice); Peelings |
-| R4 Promessa | OK. Todo prazo em faixa, com "varia de pessoa para pessoa"; "Ninguém pode garantir como cada pessoa vai responder"; cada página tem indicação, cuidados, complicações e quando não é indicado. Frase de fechamento conforme decisão 🟡 3 | Páginas de procedimento; FAQ 7 |
+| R4 Promessa | OK. Todo prazo em faixa, com "varia de pessoa para pessoa"; "Ninguém pode garantir como cada pessoa vai responder"; cada página tem indicação, cuidados, complicações e quando não é indicado. Frase de fechamento reescrita (decisão 3) | Páginas de procedimento; FAQ 7 |
 | R5 Sensacionalismo e gratuidade | OK. Sem superlativo sobre ela; "melhor" só como "melhor indicação" e "melhor opção" (sem comparação com colegas). Retorno "já faz parte do procedimento" (decisão 🟡 2). Riscos graves descritos com número e contexto, sem tom de alarme | Home; Como funciona; Contorno facial |
 | R6 e R7 Imagens e depoimentos | OK. Nenhum antes e depois, resultado ou depoimento. "Antes e depois" só no sentido de "cuidados antes e depois" | — |
 | R8 Preço | OK. Só "valor da consulta informado no agendamento" e "investimento apresentado na consulta"; nenhum preço de procedimento | Elementos globais; FAQ 1 |
@@ -652,5 +650,5 @@ Conferência feita em 22/10/2026 sobre todo o texto acima: busca pelo léxico do
 | R12 Contato | OK. Mensagem do WhatsApp neutra; agenda online com só nome, celular e e-mail e aviso de privacidade | Agendar |
 | R17 Veracidade | 🟡 até confirmar: horários, estacionamento, retorno incluído, registro de lote, termo de consentimento, hialuronidase e canal pós-procedimento estão marcados `[A CONFIRMAR]` e só vão ao ar confirmados | Marcações `[A CONFIRMAR]` |
 
-**Resultado: nenhum 🔴.** Os 🟡 estão na tabela de decisões acima (1 a 6) e nas marcações `[A CONFIRMAR]`, que dependem da Dra.
+**Resultado: nenhum 🔴.** Os seis 🟡 foram decididos (tabela acima, Anexo D do harness). Seguem pendentes só as marcações `[A CONFIRMAR]`, que dependem da Dra. e não vão ao ar sem confirmação.
 

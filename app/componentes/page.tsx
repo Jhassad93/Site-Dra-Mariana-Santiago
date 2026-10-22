@@ -141,7 +141,7 @@ export default function Componentes() {
 
       <Secao titulo="Voz da Dra. e identificação">
         <div className="grid gap-14 lg:grid-cols-2">
-          <VozDaDra>Antes de qualquer procedimento, eu quero entender o que incomoda você. Às vezes, a melhor indicação é esperar.</VozDaDra>
+          <VozDaDra>Antes de qualquer procedimento, eu quero entender o que incomoda você. Daí em diante, decidimos juntas, no seu tempo.</VozDaDra>
           <div className="grid content-start gap-3">
             <p className="text-sm text-muted-foreground">Identificação sozinha (R1)</p>
             <IdentificacaoR1 />
