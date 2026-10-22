@@ -270,6 +270,14 @@ export function FotoDra() {
       </div>
     );
   }
+  // Sem a foto: o vídeo 3 (mãos escrevendo o plano) com a capa, recortado para mostrar as mãos
+  if (temMidia("fechamento")) {
+    return (
+      <div className="relative size-full overflow-hidden rounded-t-[var(--radius-card)] [&_img]:object-[72%_50%] [&_video]:object-[72%_50%]">
+        <FundoMidia slot="fechamento" sizes="(min-width: 1024px) 420px, 90vw" />
+      </div>
+    );
+  }
   return <div aria-hidden="true" className="size-full rounded-t-[var(--radius-card)] bg-[linear-gradient(170deg,#e9dcc4_0%,#cdb48c_55%,#a98a5e_100%)]" />;
 }
 

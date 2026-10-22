@@ -29,6 +29,20 @@
       "webm": "/midia/planejamento.webm"
     }
   },
+  "fechamento": {
+    "imagem": {
+      "larguras": [
+        560,
+        840
+      ],
+      "largura": 1926,
+      "altura": 1076
+    },
+    "video": {
+      "mp4": "/midia/fechamento.mp4",
+      "webm": "/midia/fechamento.webm"
+    }
+  },
   "card-toxina-botulinica": {
     "imagem": {
       "larguras": [
