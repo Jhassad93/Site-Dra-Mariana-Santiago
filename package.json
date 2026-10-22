@@ -14,7 +14,8 @@
     "teste-agendar": "node scripts/teste-agendar.mjs",
     "midia": "node scripts/midia.mjs",
     "teste-midia": "node scripts/teste-midia.mjs",
-    "teste-cookies": "node scripts/teste-cookies.mjs"
+    "teste-cookies": "node scripts/teste-cookies.mjs",
+    "og": "node scripts/gerar-og.mjs"
   },
   "dependencies": {
     "@fontsource/host-grotesk": "^5.3.0",
@@ -35,6 +36,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.28",
+    "lighthouse": "^12.8.2",
     "playwright-core": "1.56",
     "pngjs": "^7.0.0",
     "sharp": "^0.34.5",

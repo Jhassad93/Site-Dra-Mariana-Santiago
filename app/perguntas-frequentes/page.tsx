@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { metadados } from "@/lib/seo";
+import { Migalhas } from "@/components/seo/json-ld";
 import Link from "next/link";
 import { Botao, LinkSecundario } from "@/components/marca/botao";
 import { ReguaOrnamento } from "@/components/marca/regua";
@@ -6,11 +8,11 @@ import { Acordeao } from "@/components/marca/blocos";
 import { grupos } from "@/lib/faq";
 import { whatsappHref } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Perguntas frequentes | Dra. Mariana Santiago, médica na Av. Paulista",
-  description:
-    "Valor da consulta, primeira consulta, prazos, cuidados, riscos, retorno, gestação e procedimentos feitos em outro lugar: respostas da Dra. Mariana Santiago.",
-};
+export const metadata: Metadata = metadados({
+  titulo: "Perguntas frequentes | Dra. Mariana Santiago, médica na Av. Paulista",
+  descricao: "Valor da consulta, primeira consulta, prazos, cuidados, riscos, retorno, gestação e procedimentos feitos em outro lugar: respostas da Dra. Mariana Santiago.",
+  caminho: "/perguntas-frequentes/",
+});
 
 const caixa = "mx-auto max-w-[1200px] px-4 sm:px-6";
 
@@ -26,6 +28,7 @@ const jsonLd = {
 export default function PerguntasFrequentes() {
   return (
     <>
+      <Migalhas itens={[["Perguntas frequentes", "/perguntas-frequentes/"]]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className={`${caixa} pb-12 pt-32 md:pb-16 lg:pt-44`} aria-labelledby="titulo">
         <h1 id="titulo" className="text-[clamp(2.5rem,6vw,4.0625rem)]">

@@ -72,6 +72,8 @@ export function AgendaOnline() {
           <button
             type="button"
             onClick={abrir}
+            data-evento="clique_agenda_online"
+            data-origem="agendar"
             className="botao inline-flex h-12 items-center justify-center justify-self-start rounded-full border border-tinta/25 px-6 text-[1rem] font-medium text-tinta hover:bg-areia/40"
           >
             Ver horários disponíveis

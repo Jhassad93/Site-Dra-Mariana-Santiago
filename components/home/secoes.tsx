@@ -219,15 +219,17 @@ export function OndeQuando() {
               ) : null}
             </div>
           </div>
-          <dl className="grid content-start gap-3">
-            {horarios.map((h) => (
-              <div key={h.dias} className="grid gap-0.5 border-t border-border pt-3">
-                <dt className="text-muted-foreground">{h.dias}</dt>
-                <dd className="text-xl tracking-[-0.01em]">{h.horas}</dd>
-              </div>
-            ))}
+          <div className="grid content-start gap-3">
+            <dl className="grid gap-3">
+              {horarios.map((h) => (
+                <div key={h.dias} className="grid gap-0.5 border-t border-border pt-3">
+                  <dt className="text-muted-foreground">{h.dias}</dt>
+                  <dd className="text-xl tracking-[-0.01em]">{h.horas}</dd>
+                </div>
+              ))}
+            </dl>
             <p className="pt-2 text-muted-foreground">Horários pensados para quem trabalha durante o dia.</p>
-          </dl>
+          </div>
         </div>
       </div>
     </section>

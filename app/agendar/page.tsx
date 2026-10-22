@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
+import { metadados } from "@/lib/seo";
+import { Migalhas } from "@/components/seo/json-ld";
 import { ReguaOrnamento } from "@/components/marca/regua";
 import { BotaoWhatsapp } from "@/components/agendar/botao-whatsapp";
 import { AgendaOnline } from "@/components/agendar/agenda-online";
 import { horarios } from "@/lib/site";
 
 // RASCUNHO (COPY.md). [A CONFIRMAR]: quem responde o WhatsApp e em quanto tempo.
-export const metadata: Metadata = {
-  title: "Agendar consulta | Dra. Mariana Santiago, médica na Av. Paulista",
-  description:
-    "Agende sua consulta com a Dra. Mariana Passos Santiago pelo WhatsApp ou escolha um horário na agenda online. Terças e sextas até 21h e sábados.",
-};
+export const metadata: Metadata = metadados({
+  titulo: "Agendar consulta | Dra. Mariana Santiago, médica na Av. Paulista",
+  descricao: "Agende sua consulta com a Dra. Mariana Passos Santiago pelo WhatsApp ou escolha um horário na agenda online. Terças e sextas até 21h e sábados.",
+  caminho: "/agendar/",
+});
 
 const caixa = "mx-auto max-w-[1200px] px-4 sm:px-6";
 
@@ -23,6 +25,7 @@ const antesDeVir = [
 export default function Agendar() {
   return (
     <>
+      <Migalhas itens={[["Agendar consulta", "/agendar/"]]} />
       <section className={`${caixa} grid gap-12 pb-16 pt-32 md:pb-24 lg:grid-cols-12 lg:gap-6 lg:pt-44`} aria-labelledby="titulo">
         <div className="lg:col-span-7">
           <h1 id="titulo" className="text-[clamp(2.5rem,6vw,4.0625rem)]">
@@ -36,15 +39,17 @@ export default function Agendar() {
             <BotaoWhatsapp />
           </div>
         </div>
-        <dl className="grid content-start gap-3 lg:col-span-4 lg:col-start-9 lg:pt-4">
-          {horarios.map((h) => (
-            <div key={h.dias} className="grid gap-0.5 border-t border-border pt-3">
-              <dt className="text-muted-foreground">{h.dias}</dt>
-              <dd className="text-xl tracking-[-0.01em]">{h.horas}</dd>
-            </div>
-          ))}
+        <div className="grid content-start gap-3 lg:col-span-4 lg:col-start-9 lg:pt-4">
+          <dl className="grid gap-3">
+            {horarios.map((h) => (
+              <div key={h.dias} className="grid gap-0.5 border-t border-border pt-3">
+                <dt className="text-muted-foreground">{h.dias}</dt>
+                <dd className="text-xl tracking-[-0.01em]">{h.horas}</dd>
+              </div>
+            ))}
+          </dl>
           <p className="border-t border-border pt-3 text-muted-foreground">Av. Paulista, 1048, 18º andar. A uma quadra do metrô Trianon-Masp.</p>
-        </dl>
+        </div>
       </section>
 
       <section id="agenda" aria-labelledby="agenda-t" className="scroll-mt-24 border-t border-border py-16 md:py-24">

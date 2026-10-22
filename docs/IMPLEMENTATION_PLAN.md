@@ -93,12 +93,13 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - Pronto quando: os textos estão prontos para revisão jurídica (você, como advogado, e depois a Dra.) e nenhum script não essencial carrega antes do aceite (conferido na aba de rede)
 
 ## Etapa 12 — SEO, IA e analytics
-- [ ] Title e description por página, Open Graph (imagem 1200×630 com identificação R1), favicons, `sitemap.xml`, canonical, `alt` em todas as imagens
-- [ ] JSON-LD `Physician` (sem `medicalSpecialty` indevida; `identifier` CRM-SP), `FAQPage`, `BreadcrumbList`
+- [x] Title e description por página, Open Graph (imagem 1200×630 com identificação R1), favicons, `sitemap.xml`, canonical, `alt` em todas as imagens. `lib/seo.ts`; imagem e ícones gerados por `npm run og` (monograma do cabeçalho); sitemap sem /obrigado e /componentes; nenhuma imagem sem `alt`
+- [x] JSON-LD `Physician` (sem `medicalSpecialty` indevida; `identifier` CRM-SP), `FAQPage`, `BreadcrumbList`. Physician + WebSite em todas as páginas; FAQPage em /perguntas-frequentes; BreadcrumbList nas páginas internas
 - [ ] Verificar os nomes atuais dos robôs de IA (prompt do PROMPTS.md), **aprovar a tabela**, gerar `robots.txt` e `llms.txt` (sem "dermatologista")
-- [ ] GA4 (conta de demonstração) com modo de consentimento, eventos do APP_FLOW e grupo de canais de IA
-- [ ] Na **prévia: `noindex` em tudo**; indexação só na publicação definitiva
+- [x] GA4 (conta de demonstração) com modo de consentimento, eventos do APP_FLOW e grupo de canais de IA. No código: modo de consentimento (anúncios sempre negados) e os 4 eventos, testados com ID de teste em `npm run teste-cookies`. No painel (conta ainda não criada): grupo de canais "IA", retenção de 14 meses e conversões, passo a passo em `docs/ANALYTICS.md`
+- [x] Na **prévia: `noindex` em tudo**; indexação só na publicação definitiva (`NEXT_PUBLIC_INDEXAR=1`)
 - Pronto quando: Lighthouse acima de 90 em SEO e acessibilidade e PageSpeed no celular acima de 90 (medido na prévia)
+  - Medição em 22/10/2026 (Lighthouse 12, celular, servidor local com compressão como na Cloudflare): desempenho 93–98, acessibilidade 100, boas práticas 100 em home, toxina botulínica, agendar e sobre. SEO 100 no build indexável; na prévia fica 63 só por causa do `noindex`, que é intencional. O PageSpeed oficial só roda com o site num endereço público, então fica para a publicação
 
 ## Etapa 13 — Auditorias do protótipo
 - [ ] `/impeccable polish` e `/impeccable audit`; `npx impeccable detect` sem achados críticos; `break-ui`

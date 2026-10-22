@@ -17,6 +17,7 @@ const [rec, ace] = await Promise.all([p.locator(".banner-cookies button", { hasT
 const br = await rec.boundingBox(), ba = await ace.boundingBox();
 const estilo = (l) => l.evaluate((e) => { const s = getComputedStyle(e); return [s.backgroundColor, s.color, s.borderColor, s.fontSize, s.fontWeight].join("|"); });
 ok("Aceitar e Recusar no mesmo nível (tamanho e estilo)", Math.abs(br.width - ba.width) < 2 && Math.abs(br.height - ba.height) < 1 && (await estilo(rec)) === (await estilo(ace)));
+ok("Nenhum evento na fila antes do aceite", (await p.evaluate(() => window.dataLayer)) === undefined);
 ok("Nenhum terceiro carrega antes do aceite", terceiros.length === 0, [...new Set(terceiros)].join(", "));
 await rec.click();
 await p.waitForTimeout(500);
@@ -29,6 +30,26 @@ ok("“Gerenciar cookies” reabre o banner", await p.locator(".banner-cookies")
 await p.locator(".banner-cookies button", { hasText: "Aceitar" }).click();
 await p.waitForTimeout(1500);
 if (process.env.COM_GA) ok("GA4 só carrega depois do aceite", terceiros.some((h) => /googletagmanager/.test(h)), [...new Set(terceiros)].join(", "));
+if (process.env.COM_GA) {
+  const fila = () => p.evaluate(() => (window.dataLayer || []).map((a) => Array.from(a)));
+  const eventos = async () => (await fila()).filter((a) => a[0] === "event").map((a) => [a[1], a[2]?.origem ?? ""]);
+  const consent = (await fila()).find((a) => a[0] === "consent");
+  ok("Modo de consentimento: análise sim, anúncios não", consent?.[2]?.analytics_storage === "granted" && consent?.[2]?.ad_storage === "denied" && consent?.[2]?.ad_personalization === "denied");
+  ctx.on("page", (aba) => aba.close());
+  await p.goto(base + "/procedimentos/toxina-botulinica/", { waitUntil: "networkidle" });
+  await p.locator('main a[href*="wa.me"]').first().click();
+  await p.waitForTimeout(300);
+  const ev = await eventos();
+  ok("clique_whatsapp com origem, sem nome do procedimento", ev.some(([n, o]) => n === "clique_whatsapp" && o && !/toxina|botul/.test(o)), JSON.stringify(ev));
+  await p.goto(base + "/agendar/", { waitUntil: "networkidle" });
+  await p.locator("button", { hasText: "Ver horários disponíveis" }).click();
+  await p.waitForTimeout(300);
+  ok("clique_agenda_online", (await eventos()).some(([n]) => n === "clique_agenda_online"), JSON.stringify(await eventos()));
+  await p.goto(base + "/obrigado/?origem=agenda", { waitUntil: "networkidle" });
+  await p.waitForTimeout(300);
+  const fim = (await eventos()).map(([n]) => n);
+  ok("view_obrigado e agendamento_concluido", fim.includes("view_obrigado") && fim.includes("agendamento_concluido"), fim.join(", "));
+}
 else r.push({ teste: "GA4 depois do aceite", resultado: "—", detalhe: "build sem NEXT_PUBLIC_GA4_ID (rode com COM_GA=1 num build com ID de teste)" });
 await p.goto(base + "/privacidade/", { waitUntil: "networkidle" });
 await p.locator("main button", { hasText: "Gerenciar cookies" }).click();

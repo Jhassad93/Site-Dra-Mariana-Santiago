@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { metadados } from "@/lib/seo";
+import { Migalhas } from "@/components/seo/json-ld";
 import { Botao, LinkSecundario } from "@/components/marca/botao";
 import { ReguaOrnamento } from "@/components/marca/regua";
 import { Planejamento } from "@/components/home/secoes";
@@ -6,11 +8,11 @@ import { comoFunciona } from "@/lib/conteudo";
 import { whatsappHref } from "@/lib/site";
 
 // RASCUNHO (COPY.md aprovado pelo responsável; aguarda a Dra.). Itens [A CONFIRMAR] listados em lib/conteudo.ts.
-export const metadata: Metadata = {
-  title: "Como funciona a consulta | Dra. Mariana Santiago, médica na Av. Paulista",
-  description:
-    "O que acontece na consulta com a Dra. Mariana Santiago: conversa, avaliação, plano com prazos e riscos, decisão sua e retorno. Valor da consulta, horários e o que levar.",
-};
+export const metadata: Metadata = metadados({
+  titulo: "Como funciona a consulta | Dra. Mariana Santiago, médica na Av. Paulista",
+  descricao: "O que acontece na consulta com a Dra. Mariana Santiago: conversa, avaliação, plano com prazos e riscos, decisão sua e retorno. Valor da consulta, horários e o que levar.",
+  caminho: "/como-funciona/",
+});
 
 const caixa = "mx-auto max-w-[1200px] px-4 sm:px-6";
 
@@ -18,6 +20,7 @@ export default function ComoFunciona() {
   const c = comoFunciona;
   return (
     <>
+      <Migalhas itens={[["Como funciona", "/como-funciona/"]]} />
       <section className={`${caixa} pb-16 pt-32 md:pb-24 lg:pt-44`} aria-labelledby="titulo">
         <h1 id="titulo" className="max-w-[16ch] text-[clamp(2.5rem,6vw,4.0625rem)]">
           {c.titulo}

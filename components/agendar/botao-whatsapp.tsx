@@ -38,6 +38,8 @@ export function BotaoWhatsapp() {
       <button
         type="button"
         onClick={abrir}
+        data-evento="clique_whatsapp"
+        data-origem="agendar"
         disabled={estado === "abrindo"}
         className="botao inline-flex h-12 items-center justify-center justify-self-start rounded-full bg-tinta px-6 text-[1rem] font-medium text-gesso disabled:opacity-80"
       >

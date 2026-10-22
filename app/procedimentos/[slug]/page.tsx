@@ -7,6 +7,8 @@ import { CardCompacto } from "@/components/marca/cards";
 import { Acordeao, VozDaDra } from "@/components/marca/blocos";
 import { maiuscula, porSlug, procedimentos } from "@/lib/procedimentos";
 import { whatsappHref } from "@/lib/site";
+import { metadados } from "@/lib/seo";
+import { Migalhas } from "@/components/seo/json-ld";
 
 // Modelo das páginas de procedimento (estrutura obrigatória da Etapa 4). RASCUNHO até a aprovação da Dra.
 export const dynamicParams = false;
@@ -18,7 +20,7 @@ type Props = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const p = porSlug((await params).slug);
-  return p ? { title: p.title, description: p.description } : {};
+  return p ? metadados({ titulo: p.title, descricao: p.description, caminho: `/procedimentos/${p.slug}/` }) : {};
 }
 
 const caixa = "mx-auto max-w-[1200px] px-4 sm:px-6";
@@ -43,6 +45,7 @@ export default async function PaginaProcedimento({ params }: Props) {
 
   return (
     <>
+      <Migalhas itens={[["Procedimentos", "/procedimentos/"], [p.nome, `/procedimentos/${p.slug}/`]]} />
       <section className={`${caixa} pb-14 pt-28 md:pb-20 lg:pt-40`} aria-labelledby="titulo">
         <nav aria-label="Você está em" className="text-sm text-muted-foreground">
           <Link href="/procedimentos/" className="underline decoration-1 underline-offset-4 hover:text-tinta">

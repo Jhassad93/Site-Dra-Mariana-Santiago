@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { metadados } from "@/lib/seo";
+import { Migalhas } from "@/components/seo/json-ld";
 import Link from "next/link";
 import { Botao, LinkSecundario } from "@/components/marca/botao";
 import { ReguaOrnamento } from "@/components/marca/regua";
@@ -6,17 +8,18 @@ import { procedimentos } from "@/lib/procedimentos";
 import { whatsappHref } from "@/lib/site";
 
 // RASCUNHO (COPY.md). Índice dos procedimentos.
-export const metadata: Metadata = {
-  title: "Procedimentos estéticos faciais | Dra. Mariana Santiago, médica na Av. Paulista",
-  description:
-    "Toxina botulínica, preenchimento labial, contorno facial com ácido hialurônico, bioestimuladores de colágeno, skinbooster e peelings: para que servem, prazos, cuidados e riscos.",
-};
+export const metadata: Metadata = metadados({
+  titulo: "Procedimentos estéticos faciais | Dra. Mariana Santiago, médica na Av. Paulista",
+  descricao: "Toxina botulínica, preenchimento labial, contorno facial com ácido hialurônico, bioestimuladores de colágeno, skinbooster e peelings: para que servem, prazos, cuidados e riscos.",
+  caminho: "/procedimentos/",
+});
 
 const caixa = "mx-auto max-w-[1200px] px-4 sm:px-6";
 
 export default function Procedimentos() {
   return (
     <>
+      <Migalhas itens={[["Procedimentos", "/procedimentos/"]]} />
       <section className={`${caixa} pb-12 pt-32 md:pb-20 lg:pt-44`} aria-labelledby="titulo">
         <h1 id="titulo" className="text-[clamp(2.5rem,6vw,4.0625rem)]">
           Procedimentos

@@ -6,13 +6,17 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { CtaFixo } from "@/components/layout/cta-fixo";
 import { BannerCookies } from "@/components/consentimento/banner-cookies";
 import { Analytics } from "@/components/consentimento/analytics";
+import { JsonLd } from "@/components/seo/json-ld";
+import { entidade, imagemOg, indexar, siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Dra. Mariana Santiago · Médica · Av. Paulista",
+  metadataBase: new URL(siteUrl),
+  title: "Dra. Mariana Santiago | Médica na Av. Paulista",
   description:
     "Consultório da Dra. Mariana Passos Santiago, médica (CRM-SP 227636), na Av. Paulista, São Paulo.",
-  // Protótipo: prévia privada, fora dos buscadores até a publicação definitiva.
-  robots: { index: false, follow: false },
+  openGraph: { type: "website", locale: "pt_BR", siteName: "Dra. Mariana Santiago", images: [imagemOg] },
+  // Prévia: fora dos buscadores. Só a publicação definitiva (NEXT_PUBLIC_INDEXAR=1) libera a indexação.
+  robots: indexar ? { index: true, follow: true } : { index: false, follow: false },
 };
 
 export const viewport: Viewport = {
@@ -23,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR" className={`${hostGrotesk.variable} ${libreCaslon.variable}`}>
       <body>
+        <JsonLd dados={entidade} />
         <a href="#conteudo" className="pular">
           Pular para o conteúdo
         </a>

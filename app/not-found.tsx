@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 // RASCUNHO — 404 (APP_FLOW: volta à home e ao agendar).
-export const metadata: Metadata = { title: "Página não encontrada · Dra. Mariana Santiago" };
+export const metadata: Metadata = { title: "Página não encontrada | Dra. Mariana Santiago", robots: { index: false, follow: false } };
 
 export default function NotFound() {
   return (

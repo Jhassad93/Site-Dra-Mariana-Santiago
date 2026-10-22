@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { metadados } from "@/lib/seo";
+import { Migalhas } from "@/components/seo/json-ld";
 import { Botao, LinkSecundario } from "@/components/marca/botao";
 import { ReguaOrnamento } from "@/components/marca/regua";
 import { IdentificacaoR1, VozDaDra } from "@/components/marca/blocos";
@@ -7,11 +9,11 @@ import { whatsappHref } from "@/lib/site";
 
 // RASCUNHO (COPY.md). Decisão 1 do harness: a residência NÃO é citada.
 // [A CONFIRMAR]: frase em itálico (escrita para ela), cursos livres e congressos, linhas pessoais.
-export const metadata: Metadata = {
-  title: "Sobre a Dra. Mariana Passos Santiago | Médica, CRM-SP 227636",
-  description:
-    "Mariana Passos Santiago é médica (CRM-SP 227636), formada pela USCS em 2021, e atua com procedimentos estéticos faciais em consultório próprio na Av. Paulista.",
-};
+export const metadata: Metadata = metadados({
+  titulo: "Sobre a Dra. Mariana Passos Santiago | Médica, CRM-SP 227636",
+  descricao: "Mariana Passos Santiago é médica (CRM-SP 227636), formada pela USCS em 2021, e atua com procedimentos estéticos faciais em consultório próprio na Av. Paulista.",
+  caminho: "/sobre/",
+});
 
 const caixa = "mx-auto max-w-[1200px] px-4 sm:px-6";
 
@@ -23,6 +25,7 @@ const formacao = [
 export default function Sobre() {
   return (
     <>
+      <Migalhas itens={[["Sobre", "/sobre/"]]} />
       <section className={`${caixa} grid gap-12 pb-16 pt-32 md:pb-24 lg:grid-cols-12 lg:gap-6 lg:pt-44`} aria-labelledby="titulo">
         <div className="lg:col-span-7">
           <h1 id="titulo" className="text-[clamp(2.5rem,6vw,4.0625rem)]">
