@@ -37,18 +37,21 @@ export const comoTrabalho = {
 export const procedimentosDestaque = [
   {
     href: "/procedimentos/toxina-botulinica/",
+    foto: "card-toxina-botulinica",
     nome: "Toxina botulínica",
     indicacao: "Linhas de expressão da testa, entre as sobrancelhas e ao redor dos olhos",
     dado: { valor: "~2 semanas", rotulo: "até o efeito pleno, varia de pessoa para pessoa" },
   },
   {
     href: "/procedimentos/bioestimuladores-de-colageno/",
+    foto: "card-bioestimuladores-de-colageno",
     nome: "Bioestimuladores de colágeno",
     indicacao: "Firmeza e qualidade da pele, ao longo de meses",
     dado: { valor: "2 a 4 sessões", rotulo: "efeito que aparece aos poucos, ao longo de meses" },
   },
   {
     href: "/procedimentos/preenchimento-labial/",
+    foto: "card-preenchimento-labial",
     nome: "Preenchimento labial",
     indicacao: "Contorno e hidratação dos lábios",
     dado: { valor: "1 a 2 semanas", rotulo: "para o inchaço ceder, varia de pessoa para pessoa" },

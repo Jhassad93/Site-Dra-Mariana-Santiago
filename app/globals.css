@@ -454,6 +454,13 @@
       linear-gradient(90deg, rgb(28 24 19 / 0.45) 0%, transparent 60%);
   }
 
+  /* Véu sobre a foto ou o vídeo do hero: garante contraste do texto (medir com npm run contraste) */
+  .hero-veu {
+    background:
+      linear-gradient(0deg, rgb(28 24 19 / 0.82) 0%, rgb(28 24 19 / 0.35) 55%, rgb(28 24 19 / 0.25) 100%),
+      linear-gradient(90deg, rgb(28 24 19 / 0.55) 0%, transparent 65%);
+  }
+
   /* Entrada da home: o único momento orquestrado (título 600ms; régua 900ms) */
   @keyframes hero-entra { from { opacity: 0; transform: translateY(8px); } }
   .hero-titulo { animation: hero-entra 600ms var(--ease-entrada) both; }
@@ -528,5 +535,9 @@
   @media (hover: hover) and (pointer: fine) {
     .item-procedimento:hover .seta { transform: translateX(3px); }
   }
+
+  /* Vídeo de ambiente entra por cima da capa só quando começa a tocar (sem piscar) */
+  .video-ambiente { opacity: 0; transition: opacity 600ms var(--ease-entrada); }
+  .video-ambiente[data-tocando] { opacity: 1; }
 }
 

@@ -78,9 +78,10 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - Pronto quando: todos os caminhos e estados do APP_FLOW (carregando, erro, sem horário, horário ocupado, obrigado) foram testados no Playwright
 
 ## Etapa 10 — Imagens e vídeos
-- [ ] Gerar ou receber as imagens dos 3 cards e a capa do hero (prompts do DESIGN.md); **vídeos do Higgsfield gerados por você** (pelo combinado, no final)
-- [ ] Comprimir (WebM/MP4 abaixo de cerca de 2 MB por vídeo; AVIF/WebP no tamanho exibido), extrair capas, `preload="none"`, tocar só quando visível, imagem de capa no celular e com `prefers-reduced-motion`
-- [ ] Registrar cada imagem e vídeo em `docs/LICENCAS.md` (ferramenta, data; foto do Instagram como "só prévia privada")
+- [x] Estrutura pronta: `npm run midia` comprime o que estiver em `midia-original/` (fora do git) para `public/midia/` (AVIF + WebP em 2 ou 3 larguras; MP4 + WebM abaixo de 2 MB, mudos, 1280 px) e gera `lib/midia.json`; sem arquivo, cada lugar continua com o desenho em CSS. Componentes `Imagem`, `FundoMidia` e `VideoAmbiente` (preload="none", toca só visível, pausa fora da tela, sem vídeo no celular nem com movimento reduzido; entra por cima da capa sem piscar). Pipeline testado com mídia sintética (`npm run teste-midia`: 8 de 8 OK) e depois limpo
+- [x] Pacote de prompts para o Higgsfield publicado como artefato ("Mídia Dra. Mariana"): capa do hero, 3 cards, painel do planejamento, vídeos 1, 2 e 3 (opcional), com nomes de arquivo e formatos
+- [ ] **Aguardando os arquivos do responsável** em `site/midia-original/` (decisão de 22/10/2026: ele gera no Higgsfield); depois: rodar `npm run midia`, `npm run contraste` (texto sobre as fotos e sobre o hero), prints e `teste-midia`
+- [ ] Registrar cada imagem e vídeo em `docs/LICENCAS.md` (ferramenta, data; foto do Instagram como "só prévia privada", ligada por `NEXT_PUBLIC_FOTO_DRA_PREVIA=1` e fora do git)
 - Pronto quando: nenhuma imagem acima de cerca de 200 KB sem motivo, vídeos com capa e pausa fora da tela, LICENCAS.md completo
 
 ## Etapa 11 — Páginas legais e cookies

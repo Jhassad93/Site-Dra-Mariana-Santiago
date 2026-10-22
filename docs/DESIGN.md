@@ -153,7 +153,7 @@ Slow cinematic dolly-in toward a sheer linen curtain gently moving in late-after
 ```
 Vídeo 2, planejamento no tempo:
 ```
-Static macro shot of warm golden sunlight slowly sweeping across a textured cream plaster wall, the soft shadow of a window frame and a leafy plant drifting as time passes, like a sundial. Warm sand, cream and soft black tones, gentle film grain, quiet and contemplative mood. No people, no faces, no text, no logos, no clocks. Seamless loop, 8 seconds, 16:9.
+Static macro shot of warm golden sunlight slowly sweeping across a textured warm off-white plaster wall, the soft shadow of a window frame and a leafy plant drifting as time passes, like a sundial. Warm sand, cream and soft black tones, gentle film grain, quiet and contemplative mood. No people, no faces, no text, no logos, no clocks. Seamless loop, 8 seconds, 16:9.
 ```
 Vídeo 3 (opcional), assinatura:
 ```

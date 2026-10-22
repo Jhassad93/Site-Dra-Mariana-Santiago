@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { PilulaVidro } from "./botao";
+import { Imagem, temMidia } from "./midia";
 
 /**
  * Card grande de procedimento (docs/DESIGN.md): retrato 3:4 (4:5 no celular), raio 20px, foto em tela cheia,
@@ -20,7 +21,8 @@ export function CardProcedimento({
   nome: string;
   indicacao: string;
   dado: { valor: string; rotulo: string };
-  foto?: { src: string; alt: string };
+  /** slot de lib/midia.json (ex.: "card-toxina-botulinica"); sem mídia, usa o gradiente provisório */
+  foto?: string;
   className?: string;
 }) {
   return (
@@ -30,10 +32,9 @@ export function CardProcedimento({
         className,
       )}
     >
-      <div className="card-foto absolute inset-0 -z-10" aria-hidden={foto ? undefined : true}>
-        {foto ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={foto.src} alt={foto.alt} className="size-full object-cover" loading="lazy" />
+      <div className="card-foto absolute inset-0 -z-10" aria-hidden="true">
+        {foto && temMidia(foto) ? (
+          <Imagem slot={foto} sizes="(min-width: 1024px) 380px, (min-width: 640px) 46vw, 78vw" />
         ) : (
           <span className="block size-full bg-[radial-gradient(120%_90%_at_80%_15%,#e3c89a_0%,#b8956a_38%,#5b4630_78%,#2a2219_100%)]" />
         )}

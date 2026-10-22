@@ -32,3 +32,8 @@ skills-lock.json
 .preview/
 .claude/agents/
 .claude/settings.local.json
+
+# Mídia original (arquivos grandes do Higgsfield); só a versão comprimida em public/midia vai para o git
+midia-original/
+# Foto da Dra. tirada do Instagram: só na prévia privada, nunca no repositório nem no site publicado
+public/midia/dra-previa-*

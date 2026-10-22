@@ -3,6 +3,7 @@ import { ReguaDoTempo, ReguaOrnamento } from "@/components/marca/regua";
 import { CardCompacto, CardProcedimento } from "@/components/marca/cards";
 import { Acordeao, IdentificacaoR1, VozDaDra } from "@/components/marca/blocos";
 import { whatsappHref, horarios } from "@/lib/site";
+import { FundoMidia, Imagem, temMidia } from "@/components/marca/midia";
 import {
   comoTrabalho,
   faqHome,
@@ -21,7 +22,14 @@ const caixa = "mx-auto max-w-[1200px] px-4 sm:px-6";
 export function Hero() {
   return (
     <section data-tema="escuro" aria-labelledby="titulo-hero" className="hero tema-escuro relative isolate overflow-hidden bg-tinta text-areia">
-      <div aria-hidden="true" className="hero-luz absolute inset-0 -z-10" />
+      {temMidia("hero") ? (
+        <div className="absolute inset-0 -z-10">
+          <FundoMidia slot="hero" sizes="100vw" prioridade />
+          <div aria-hidden="true" className="hero-veu absolute inset-0" />
+        </div>
+      ) : (
+        <div aria-hidden="true" className="hero-luz absolute inset-0 -z-10" />
+      )}
       <div className={`${caixa} flex min-h-[max(600px,100svh)] flex-col justify-end pb-8 pt-24 sm:pb-12 md:min-h-[max(720px,92svh)] md:pb-16 lg:pt-36`}>
         <h1 id="titulo-hero" className="hero-titulo max-w-[17ch] text-[clamp(2.5rem,5.4vw,4.0625rem)] font-light">
           {hero.titulo}
@@ -154,7 +162,9 @@ export function Planejamento({ texto = planejamento.texto, comLuz = true }: { te
         </div>
         {/* Lugar do vídeo 2 (luz no gesso), Etapa 10. Até lá, a luz é desenhada em CSS. */}
         {comLuz ? (
-          <div aria-hidden="true" className="planejamento-luz hidden min-h-72 rounded-[var(--radius-card)] lg:col-span-5 lg:col-start-8 lg:block" />
+          <div aria-hidden="true" className="planejamento-luz relative hidden min-h-72 overflow-hidden rounded-[var(--radius-card)] lg:col-span-5 lg:col-start-8 lg:block">
+            <FundoMidia slot="planejamento" sizes="(min-width: 1024px) 40vw, 0px" />
+          </div>
         ) : null}
         <div className="lg:col-span-12">
           <ReguaDoTempo rotulo="Linha do tempo de um plano" marcos={planejamento.regua} sobre="escuro" />
@@ -252,10 +262,13 @@ export function Fechamento() {
 }
 
 export function FotoDra() {
-  const src = process.env.NEXT_PUBLIC_FOTO_DRA_PREVIA;
-  if (src) {
-    // eslint-disable-next-line @next/next/no-img-element
-    return <img src={src} alt="Dra. Mariana Passos Santiago" className="size-full rounded-t-[var(--radius-card)] object-cover object-top" />;
+  // Foto do Instagram: SÓ na prévia privada (NEXT_PUBLIC_FOTO_DRA_PREVIA=1 no .env.local, nunca no site publicado)
+  if (process.env.NEXT_PUBLIC_FOTO_DRA_PREVIA === "1" && temMidia("dra-previa")) {
+    return (
+      <div className="size-full overflow-hidden rounded-t-[var(--radius-card)]">
+        <Imagem slot="dra-previa" alt="Dra. Mariana Passos Santiago" sizes="(min-width: 1024px) 420px, 90vw" className="object-top" />
+      </div>
+    );
   }
   return <div aria-hidden="true" className="size-full rounded-t-[var(--radius-card)] bg-[linear-gradient(170deg,#e9dcc4_0%,#cdb48c_55%,#a98a5e_100%)]" />;
 }

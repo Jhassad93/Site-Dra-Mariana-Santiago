@@ -11,7 +11,9 @@
     "preview": "next build && node scripts/preview.mjs",
     "teste-layout": "node scripts/teste-layout.mjs",
     "contraste": "node scripts/contraste-fotos.mjs",
-    "teste-agendar": "node scripts/teste-agendar.mjs"
+    "teste-agendar": "node scripts/teste-agendar.mjs",
+    "midia": "node scripts/midia.mjs",
+    "teste-midia": "node scripts/teste-midia.mjs"
   },
   "dependencies": {
     "@fontsource/host-grotesk": "^5.3.0",
@@ -33,6 +35,7 @@
     "eslint-config-next": "15.5.28",
     "playwright-core": "1.56",
     "pngjs": "^7.0.0",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
