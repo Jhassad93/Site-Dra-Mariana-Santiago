@@ -522,5 +522,11 @@
   .regua-vertical .regua-quando { font-size: var(--text-2xl); font-weight: 300; }
   .regua-vertical .regua-oque { max-width: 62ch; color: var(--tinta); }
   .regua-vertical .regua-oque > p:not(.font-voz) { color: rgb(28 24 19 / 0.8); }
+
+  /* Índice de procedimentos: a seta anda 3px no hover */
+  .item-procedimento .seta { transition: transform 200ms var(--ease-entrada); }
+  @media (hover: hover) and (pointer: fine) {
+    .item-procedimento:hover .seta { transform: translateX(3px); }
+  }
 }
 

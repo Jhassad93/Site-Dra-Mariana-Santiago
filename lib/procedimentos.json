@@ -1,0 +1,496 @@
+[
+  {
+    "slug": "toxina-botulinica",
+    "href": "/procedimentos/toxina-botulinica/",
+    "nome": "Toxina botulínica",
+    "pendencias": [],
+    "title": "Toxina botulínica na Av. Paulista | Dra. Mariana Santiago, médica",
+    "description": "Para que serve a toxina botulínica, como é feita, em quantos dias começa a agir, quanto dura, cuidados e possíveis complicações. Consulta com a Dra. Mariana Santiago, médica (CRM-SP 227636).",
+    "card": {
+      "valor": "~2 semanas",
+      "rotulo": "até o efeito pleno, varia de pessoa para pessoa",
+      "legenda": "Linhas de expressão da testa, entre as sobrancelhas e ao redor dos olhos"
+    },
+    "resumo": "Relaxa músculos específicos da expressão para suavizar as linhas que eles formam. O efeito é temporário e a dose é definida na avaliação.",
+    "fontesTexto": "StatPearls, \"Botulinum Toxin Treatment of the Upper Face\" (NCBI, NBK574523) e \"Botulinum Toxin\" (NBK557387).",
+    "paraQueServe": [
+      "Linhas que aparecem quando você franze a testa, junta as sobrancelhas ou sorri com os olhos. É a queixa de quem se acha com \"cara de cansada\" ou \"de brava\" nas fotos e nas videochamadas. A toxina age no músculo, não na pele. Por isso ela ajuda pouco em linhas que já estão marcadas mesmo com o rosto parado, e às vezes o plano combina outro cuidado."
+    ],
+    "comoEFeito": [
+      "Pequenas aplicações com agulha bem fina, em pontos escolhidos na avaliação. Gelo antes e depois ajuda no desconforto. A quantidade e os pontos são pensados para suavizar a linha sem tirar o movimento que faz o seu rosto ser o seu."
+    ],
+    "regua": [
+      {
+        "quando": "1 a 2 dias",
+        "oQue": "o efeito começa e aumenta ao longo da primeira semana"
+      },
+      {
+        "quando": "Cerca de 2 semanas",
+        "oQue": "efeito pleno. É quando fazemos o retorno"
+      },
+      {
+        "quando": "3 a 4 meses",
+        "oQue": "o músculo volta aos poucos à atividade; em algumas pessoas, o efeito dura até 5 meses"
+      },
+      {
+        "quando": "Não antes de 3 meses",
+        "oQue": "intervalo mínimo para uma nova aplicação"
+      }
+    ],
+    "reguaNota": "Prazos médios descritos nos estudos. Variam de pessoa para pessoa e com a dose.",
+    "depois": [
+      "Você volta às atividades no mesmo dia.",
+      "Nas primeiras horas, fique sentada ou em pé (até 3 horas), sem deitar de bruços nem abaixar a cabeça por longos períodos, e deixe o exercício intenso para o dia seguinte.",
+      "Pequenos pontos vermelhos ou um roxinho no local podem aparecer e somem em poucos dias.",
+      "Não massageie a região sem orientação."
+    ],
+    "avisar": "visão dupla, pálpebra muito caída, dificuldade para engolir, falar ou respirar.",
+    "efeitos": [
+      {
+        "rotulo": "Comuns e passageiros",
+        "texto": "dor leve, roxo ou inchaço no ponto da aplicação; dor de cabeça (cerca de 1 em cada 10 pessoas nos estudos)."
+      },
+      {
+        "rotulo": "Incomuns",
+        "texto": "queda da pálpebra ou da sobrancelha, em cerca de 1 a 3 em cada 100 pessoas, conforme o estudo e a área. É temporária e pode durar até cerca de 3 meses. Assimetria leve, que se avalia no retorno."
+      },
+      {
+        "rotulo": "Raros",
+        "texto": "reação alérgica; efeito à distância do local (visão dupla, dificuldade para engolir ou respirar). Nas doses usadas em estética, não há casos graves confirmados nos estudos da bula, mas o risco existe e é por isso que a dose é sempre individual."
+      }
+    ],
+    "desfazer": [],
+    "contraindicacoes": [
+      "Gestação e amamentação; alergia a qualquer toxina botulínica; infecção no local; doenças neuromusculares, como miastenia gravis. Conte na consulta todos os medicamentos que você usa."
+    ],
+    "naConsulta": "olho como o seu rosto se mexe antes de pensar em dose. Quero entender quais linhas incomodam você e quais fazem parte do jeito como você se expressa.",
+    "perguntas": [
+      {
+        "pergunta": "Em quantos dias começa a agir e quanto tempo dura?",
+        "resposta": "Começa em 1 a 2 dias, chega ao efeito pleno por volta de 2 semanas e dura, em média, de 3 a 4 meses. Varia de pessoa para pessoa."
+      },
+      {
+        "pergunta": "Quando o efeito passa, a ruga fica pior?",
+        "resposta": "Não há evidência disso. O músculo volta aos poucos ao que era antes. Fazer ou parar é sempre uma escolha sua."
+      },
+      {
+        "pergunta": "Vou conseguir mexer a testa?",
+        "resposta": "O plano busca suavizar sem tirar a expressão. Por isso começamos com doses conservadoras e avaliamos no retorno."
+      },
+      {
+        "pergunta": "Posso voltar ao trabalho?",
+        "resposta": "Sim, no mesmo dia."
+      }
+    ]
+  },
+  {
+    "slug": "preenchimento-labial",
+    "href": "/procedimentos/preenchimento-labial/",
+    "nome": "Preenchimento labial",
+    "pendencias": [
+      "[A CONFIRMAR: se a Dra. faz a dissolução e tem hialuronidase no consultório]"
+    ],
+    "title": "Preenchimento labial com ácido hialurônico em São Paulo | Dra. Mariana Santiago, médica",
+    "description": "Preenchimento labial com ácido hialurônico: para que serve, como é feito, quanto tempo dura o inchaço, cuidados, possíveis complicações e o que fazer se precisar desfazer. Av. Paulista.",
+    "card": {
+      "valor": "1 a 2 semanas",
+      "rotulo": "para o inchaço ceder, varia de pessoa para pessoa",
+      "legenda": "Contorno e hidratação dos lábios"
+    },
+    "resumo": "Ácido hialurônico aplicado nos lábios para desenhar o contorno, repor um pouco de volume ou melhorar a hidratação, na medida combinada na avaliação.",
+    "fontesTexto": "Czumbel et al., \"Hyaluronic Acid Is an Effective Dermal Filler for Lip Augmentation: A Meta-Analysis\", Frontiers in Surgery, 2021; StatPearls, \"Hyaluronic Acid\" (NBK482440) e \"Hyaluronidase\" (NBK545163); FDA, \"Dermal Fillers (Soft Tissue Fillers)\".",
+    "paraQueServe": [
+      "Lábios que perderam o contorno ou o volume com o tempo, assimetrias leves, linhas finas ao redor da boca, lábios ressecados. O ácido hialurônico é uma substância que o corpo já produz; o gel usado no preenchimento é absorvido aos poucos. A ideia é ajustar, não mudar o formato da sua boca."
+    ],
+    "comoEFeito": [
+      "O gel já vem com anestésico (lidocaína) e, se for preciso, uso anestesia local antes. A aplicação é feita com agulha fina ou cânula, em pequenas quantidades, olhando o resultado de frente e de perfil. Pode haver um retoque no retorno, se combinado."
+    ],
+    "regua": [
+      {
+        "quando": "Na hora",
+        "oQue": "o volume do gel já aparece, junto com o inchaço"
+      },
+      {
+        "quando": "2 a 7 dias",
+        "oQue": "a maior parte do roxo e da sensibilidade passa"
+      },
+      {
+        "quando": "Cerca de 1 semana",
+        "oQue": "o inchaço costuma ceder; em algumas pessoas, leva até 2 semanas"
+      },
+      {
+        "quando": "Cerca de 15 dias",
+        "oQue": "retorno, já com o lábio desinchado"
+      },
+      {
+        "quando": "6 a 12 meses",
+        "oQue": "o gel é absorvido aos poucos; em torno de metade das pessoas ainda percebe o efeito com 1 ano"
+      }
+    ],
+    "reguaNota": "Prazos médios descritos nos estudos. Variam de pessoa para pessoa e de produto para produto.",
+    "depois": [
+      "Inchaço, sensibilidade e roxo são esperados e podem durar de alguns dias a duas semanas. Por isso não marque o procedimento na véspera de uma data importante.",
+      "Nas primeiras 24 horas: compressa fria por pouco tempo se inchar; nada de exercício intenso, sauna ou sol forte.",
+      "Pequenos caroços podem ser sentidos ao toque nas primeiras semanas. Avise no retorno."
+    ],
+    "avisar": "dor forte e desproporcional, pele pálida ou arroxeada em forma de rede, bolhas, qualquer alteração da visão.",
+    "efeitos": [
+      {
+        "rotulo": "Comuns e passageiros",
+        "texto": "sensibilidade, inchaço e roxo (presentes na maioria das pessoas nos primeiros dias); pequenos caroços ao toque (cerca de 5 em cada 100), que em geral somem em semanas."
+      },
+      {
+        "rotulo": "Incomuns",
+        "texto": "reativação de herpes labial em quem já teve; reação inflamatória ao produto; inchaço alérgico."
+      },
+      {
+        "rotulo": "Raros e graves",
+        "texto": "o gel entrar num vaso sanguíneo e bloquear a circulação. Isso pode causar lesão da pele e, muito raramente, alteração da visão. É raro, mas é a complicação que mais pede atenção em qualquer preenchimento, e o tratamento precisa começar o quanto antes."
+      }
+    ],
+    "desfazer": [
+      "O ácido hialurônico pode ser dissolvido com uma enzima chamada hialuronidase. Ela é usada principalmente para tratar complicações e também tem riscos próprios, como alergia (rara) e inchaço, além de dissolver um pouco do ácido hialurônico natural da pele."
+    ],
+    "contraindicacoes": [
+      "Gestação e amamentação; herpes ativo ou qualquer infecção no lábio; alergia a lidocaína; histórico de alergias graves; distúrbios de coagulação."
+    ],
+    "naConsulta": "pergunto o que você quer mudar na sua boca e o que você quer manter. Muitas vezes o que incomoda é o contorno ou a hidratação, e não o tamanho.",
+    "perguntas": [
+      {
+        "pergunta": "Quanto tempo o roxo e o inchaço demoram a sair?",
+        "resposta": "Em geral, de alguns dias a uma semana; em algumas pessoas, até duas semanas."
+      },
+      {
+        "pergunta": "É normal ficar endurecido?",
+        "resposta": "Pequenos caroços ao toque nas primeiras semanas podem acontecer e costumam sumir. Se persistirem, avaliamos no retorno."
+      },
+      {
+        "pergunta": "Quanto tempo dura?",
+        "resposta": "De 6 a 12 meses, diminuindo aos poucos. Depende do produto, da quantidade e de como o seu corpo absorve o gel."
+      },
+      {
+        "pergunta": "Quem tem herpes labial pode fazer?",
+        "resposta": "Não com a lesão ativa. Se você costuma ter herpes, conte na consulta para planejarmos a prevenção."
+      }
+    ]
+  },
+  {
+    "slug": "contorno-facial",
+    "href": "/procedimentos/contorno-facial/",
+    "nome": "Contorno facial com ácido hialurônico",
+    "pendencias": [],
+    "title": "Contorno facial com ácido hialurônico em São Paulo | Dra. Mariana Santiago, médica",
+    "description": "Preenchimento com ácido hialurônico em maçãs do rosto, mandíbula, queixo e olheiras, feito em etapas: indicações, prazos, cuidados e possíveis complicações. Av. Paulista.",
+    "compacto": true,
+    "resumo": "Ácido hialurônico aplicado em pontos de sustentação do rosto, como maçãs do rosto, mandíbula, queixo e região das olheiras, para repor o que mudou com o tempo. Feito em etapas, uma área de cada vez.",
+    "fontesTexto": "Alam et al., 2021, estudo sobre complicações de preenchimento com ácido hialurônico; Doyon et al., revisão sobre perda de visão associada a preenchedores, Aesthetic Surgery Journal, 2024; StatPearls, \"Hyaluronic Acid\" (NBK482440); FDA, \"Dermal Fillers (Soft Tissue Fillers)\".",
+    "paraQueServe": [
+      "Com o tempo, o rosto perde um pouco de sustentação e volume em pontos específicos. Isso pode dar a impressão de cansaço, de \"rosto caído\" ou de contorno menos definido. O preenchimento repõe sustentação nesses pontos. Não é para mudar os seus traços, e nem toda queixa responde a volume: olheiras, por exemplo, têm causas diferentes, e as que vêm de pigmento ou de vasos não melhoram com preenchimento."
+    ],
+    "comoEFeito": [
+      "Um gel mais firme, com anestésico, aplicado em planos profundos com agulha ou cânula. Começamos pelo ponto que mais faz diferença para a sua queixa e avaliamos antes de seguir para o próximo. Algumas áreas, como a mandíbula, podem pedir mais de uma sessão."
+    ],
+    "regua": [
+      {
+        "quando": "Na hora",
+        "oQue": "o efeito aparece, com algum inchaço"
+      },
+      {
+        "quando": "2 a 7 dias",
+        "oQue": "a maior parte do inchaço e do roxo cede; na região das olheiras, o roxo pode durar até 2 a 4 semanas"
+      },
+      {
+        "quando": "Cerca de 15 dias",
+        "oQue": "retorno para avaliar e decidir a próxima etapa"
+      },
+      {
+        "quando": "12 a 24 meses",
+        "oQue": "duração descrita nos estudos para áreas profundas, como maçãs do rosto e mandíbula, diminuindo aos poucos. Na região das olheiras, a maioria ainda mantinha o efeito com 1 ano"
+      }
+    ],
+    "reguaNota": "Prazos médios descritos nos estudos. Variam de pessoa para pessoa, de área para área e de produto para produto.",
+    "depois": [
+      "Volta às atividades no mesmo dia, com possível inchaço e roxo.",
+      "Nas primeiras 24 horas: sem exercício intenso, sauna ou sol forte; compressa fria por pouco tempo se inchar.",
+      "Evite massagear ou apertar a região, a não ser que eu oriente."
+    ],
+    "avisar": "dor forte e desproporcional, pele pálida ou arroxeada em forma de rede, qualquer alteração da visão.",
+    "efeitos": [
+      {
+        "rotulo": "Comuns e passageiros",
+        "texto": "inchaço, roxo, sensibilidade, pequenos caroços ao toque (mais frequentes na região das olheiras, onde podem durar algumas semanas)."
+      },
+      {
+        "rotulo": "Incomuns",
+        "texto": "tom azulado quando o gel fica muito superficial (corrigível com hialuronidase); assimetria; reação inflamatória ao produto."
+      },
+      {
+        "rotulo": "Raros e graves",
+        "texto": "o gel entrar num vaso e bloquear a circulação. Num estudo com cerca de 1,7 milhão de seringas, isso aconteceu em cerca de 1 a cada 6.400 aplicações com agulha e 1 a cada 41.000 com cânula, e a maioria dos casos não deixou sequela. A forma mais grave é a perda de visão: rara, mas descrita, e mais ligada ao nariz, à testa e à região entre as sobrancelhas. É por isso que a escolha da área, da técnica e da quantidade é feita com cuidado e que alguns pedidos eu não faço."
+      }
+    ],
+    "desfazer": [],
+    "contraindicacoes": [
+      "Gestação e amamentação; infecção ou inflamação no local; alergia a lidocaína ou histórico de alergias graves; distúrbios de coagulação; tendência a queloide. Imunossupressão e uso de anticoagulantes pedem avaliação cuidadosa."
+    ],
+    "naConsulta": "prefiro começar por um ponto e ver como o seu rosto responde. Nada é feito em todas as áreas de uma vez só porque é possível.",
+    "perguntas": [
+      {
+        "pergunta": "Preciso fazer tudo de uma vez?",
+        "resposta": "Não. O contorno é planejado em etapas, e cada etapa é avaliada antes da próxima."
+      },
+      {
+        "pergunta": "Preenchimento resolve olheira escura?",
+        "resposta": "Depende da causa. Olheira por sulco pode responder; olheira por pigmento ou por vasos, não. A avaliação diferencia."
+      },
+      {
+        "pergunta": "Tem risco de cegueira?",
+        "resposta": "É uma complicação rara, mas real, dos preenchimentos. Na consulta, explico como reduzimos esse risco e o que fazer se algo diferente acontecer."
+      }
+    ]
+  },
+  {
+    "slug": "bioestimuladores-de-colageno",
+    "href": "/procedimentos/bioestimuladores-de-colageno/",
+    "nome": "Bioestimuladores de colágeno",
+    "pendencias": [],
+    "title": "Bioestimuladores de colágeno em São Paulo | Dra. Mariana Santiago, médica",
+    "description": "Como agem os bioestimuladores de colágeno, quantas sessões, em quanto tempo a pele responde, quanto dura, cuidados e possíveis complicações. Planejamento ao longo de meses, na Av. Paulista.",
+    "card": {
+      "valor": "2 a 4 sessões",
+      "rotulo": "efeito que aparece aos poucos, ao longo de meses",
+      "legenda": "Firmeza e qualidade da pele"
+    },
+    "resumo": "Substâncias injetadas que estimulam a pele a produzir colágeno. A mudança é gradual e acontece ao longo de meses, por isso o planejamento começa cedo.",
+    "fontesTexto": "StatPearls, \"Poly-L-Lactic Acid\" (NBK507871); de Almeida et al., consenso sobre hidroxiapatita de cálcio diluída, Plastic and Reconstructive Surgery Global Open, 2019; ASDS, \"Injectable Poly-L-lactic Acid\".",
+    "paraQueServe": [
+      "Perda de firmeza, pele mais fina, rosto que parece \"cair\" com o tempo, inclusive depois da menopausa ou de um emagrecimento grande. O bioestimulador não dá volume na hora como um preenchimento. Ele estimula a produção de colágeno, e o efeito depende do tempo e do número de sessões. Os mais usados são o ácido poli-L-láctico e a hidroxiapatita de cálcio; a escolha depende da avaliação."
+    ],
+    "comoEFeito": [
+      "Em geral, de 2 a 4 sessões, com intervalo de 3 a 8 semanas. O produto é diluído e aplicado com agulha ou cânula, com anestésico. Depois de algumas aplicações, pode ser preciso massagear a região em casa por alguns dias, como vou orientar."
+    ],
+    "regua": [
+      {
+        "quando": "Na hora",
+        "oQue": "algum volume aparece, mas é inchaço e some em 2 a 3 dias"
+      },
+      {
+        "quando": "3 a 8 semanas",
+        "oQue": "intervalo entre as sessões"
+      },
+      {
+        "quando": "A partir de 1 a 2 meses",
+        "oQue": "a pele começa a responder, aos poucos"
+      },
+      {
+        "quando": "3 meses ou mais",
+        "oQue": "a mudança segue ao longo dos meses seguintes ao fim das sessões"
+      },
+      {
+        "quando": "12 a 24 meses",
+        "oQue": "duração descrita nos estudos, com manutenção conforme avaliação"
+      }
+    ],
+    "reguaNota": "Prazos médios descritos nos estudos. Variam de pessoa para pessoa e de produto para produto.",
+    "depois": [
+      "Inchaço, roxo e sensibilidade nos primeiros dias são comuns.",
+      "Massagem em casa quando eu orientar (no ácido poli-L-láctico, costuma ser 5 minutos, 5 vezes ao dia, por 5 dias).",
+      "Nas primeiras 24 horas, evite sol e calor intensos.",
+      "Paciência: a diferença não aparece na primeira semana."
+    ],
+    "avisar": "dor forte, pele pálida ou arroxeada em forma de rede; e, a qualquer momento, um caroço que cresça ou doa.",
+    "efeitos": [
+      {
+        "rotulo": "Comuns e passageiros",
+        "texto": "inchaço, roxo, vermelhidão e sensibilidade, que melhoram em até uma semana."
+      },
+      {
+        "rotulo": "Incomuns",
+        "texto": "pequenos nódulos sob a pele, que podem aparecer semanas ou meses depois. A maioria é discreta e some sozinha; alguns precisam de tratamento."
+      },
+      {
+        "rotulo": "Raros e graves",
+        "texto": "como em qualquer injetável, bloqueio de vaso sanguíneo, com risco de lesão da pele. Diferente do ácido hialurônico, os bioestimuladores não são dissolvidos pela hialuronidase, e esse é mais um motivo para escolher bem a área e a técnica."
+      }
+    ],
+    "desfazer": [],
+    "contraindicacoes": [
+      "Gestação e amamentação; tendência a queloide ou cicatriz grossa; infecção ou inflamação no local; alergia aos componentes. Doença autoimune, distúrbios de coagulação e cirurgia recente no rosto pedem avaliação. A hidroxiapatita de cálcio não é usada nos lábios."
+    ],
+    "naConsulta": "explico o calendário antes de qualquer agulha: quantas sessões, com que intervalo e quando faz sentido reavaliar. Se você tem uma data em mente, é por ela que começamos a contar.",
+    "perguntas": [
+      {
+        "pergunta": "Quantas sessões são necessárias?",
+        "resposta": "Em geral, de 2 a 4, com intervalo de 3 a 8 semanas. O número depende da avaliação e de como a pele responde."
+      },
+      {
+        "pergunta": "Quando começo a ver diferença?",
+        "resposta": "Aos poucos, a partir do primeiro ou segundo mês, e ao longo dos meses seguintes."
+      },
+      {
+        "pergunta": "Bioestimulador é preenchimento?",
+        "resposta": "Não. Ele estimula o colágeno da própria pele; o volume que aparece no dia é inchaço."
+      },
+      {
+        "pergunta": "Substitui uma cirurgia?",
+        "resposta": "Não. Para flacidez mais intensa, a avaliação pode concluir que injetáveis não são a melhor opção, e eu digo isso na consulta."
+      }
+    ]
+  },
+  {
+    "slug": "skinbooster",
+    "href": "/procedimentos/skinbooster/",
+    "nome": "Skinbooster",
+    "pendencias": [],
+    "title": "Skinbooster em São Paulo | Dra. Mariana Santiago, médica na Av. Paulista",
+    "description": "Skinbooster é ácido hialurônico aplicado em microgotas para hidratação e qualidade da pele. Sessões, prazos, cuidados, possíveis efeitos e a diferença para o preenchimento.",
+    "compacto": true,
+    "resumo": "Ácido hialurônico mais fluido, aplicado em microgotas na pele, para melhorar hidratação, viço e linhas finas. Não dá volume e não muda o contorno.",
+    "fontesTexto": "StatPearls, \"Hyaluronic Acid\" (NBK482440); Nikolis e Enright, 2018, série de casos sobre ácido hialurônico para qualidade da pele; FDA, \"Dermal Fillers (Soft Tissue Fillers)\". *Evidência ainda limitada: poucos estudos independentes de longo prazo.*",
+    "paraQueServe": [
+      "Pele opaca, ressecada, sem viço, com linhas finas e textura irregular. É uma opção para quem quer cuidar da qualidade da pele sem mudar nada no formato do rosto. Funciona melhor junto com a rotina de cuidados em casa, que também conversamos na consulta."
+    ],
+    "comoEFeito": [
+      "Muitas pequenas aplicações na pele, com produto que já contém anestésico. Em geral são 2 a 3 sessões com cerca de 4 semanas de intervalo."
+    ],
+    "regua": [
+      {
+        "quando": "1 a 3 dias",
+        "oQue": "vermelhidão, inchaço e pequenas elevações no local costumam ceder"
+      },
+      {
+        "quando": "Até 2 semanas",
+        "oQue": "algum roxo pode durar mais"
+      },
+      {
+        "quando": "Cerca de 4 semanas",
+        "oQue": "intervalo entre as sessões; muitas pessoas já notam diferença em um mês"
+      },
+      {
+        "quando": "Cerca de 6 meses",
+        "oQue": "duração descrita nos estudos e momento de reavaliar a manutenção"
+      }
+    ],
+    "reguaNota": "Prazos médios descritos nos estudos. Variam de pessoa para pessoa e de produto para produto.",
+    "depois": [
+      "Pequenas elevações e vermelhidão nos pontos de aplicação no primeiro dia ou dois. Planeje a sessão longe de compromissos importantes.",
+      "Nas primeiras 24 horas: sem exercício intenso, sauna, sol forte ou massagem no rosto.",
+      "Retome a sua rotina de cuidados quando eu orientar."
+    ],
+    "avisar": "",
+    "efeitos": [
+      {
+        "rotulo": "Comuns e passageiros",
+        "texto": "vermelhidão, inchaço, pequenas elevações e roxo, presentes na maioria das pessoas nos primeiros dias."
+      },
+      {
+        "rotulo": "Incomuns",
+        "texto": "elevações que duram mais de um mês (em poucas pessoas, por muitos meses); reação alérgica."
+      },
+      {
+        "rotulo": "Raros",
+        "texto": "os riscos de qualquer ácido hialurônico injetável, inclusive o bloqueio de um vaso. Como é ácido hialurônico, pode ser dissolvido com hialuronidase, se necessário."
+      }
+    ],
+    "desfazer": [],
+    "contraindicacoes": [
+      "Gestação e amamentação; infecção ou inflamação no local; alergia a lidocaína ou histórico de alergias graves."
+    ],
+    "naConsulta": "olho também para a sua rotina. Às vezes, o que falta para a pele é mudar o cuidado em casa e a proteção solar, antes de qualquer agulha.",
+    "perguntas": [
+      {
+        "pergunta": "Skinbooster é preenchimento?",
+        "resposta": "É a mesma substância, o ácido hialurônico, mas aplicada em microgotas na pele para hidratar e melhorar a textura. Não cria volume nem muda o contorno."
+      },
+      {
+        "pergunta": "Quanto tempo dura?",
+        "resposta": "Nos estudos, cerca de 6 meses, quando se reavalia a manutenção."
+      },
+      {
+        "pergunta": "Vai inchar o meu rosto?",
+        "resposta": "Pode haver pequenas elevações e inchaço por um a três dias. Depois disso, o rosto não fica com volume diferente."
+      }
+    ]
+  },
+  {
+    "slug": "peelings",
+    "href": "/procedimentos/peelings/",
+    "nome": "Peelings",
+    "pendencias": [
+      "[A CONFIRMAR: quais peelings a Dra. faz (superficiais e/ou médios) e com quais ácidos]"
+    ],
+    "title": "Peeling químico em São Paulo | Dra. Mariana Santiago, médica na Av. Paulista",
+    "description": "O que é o peeling químico, para que serve, quantos dias de descamação, cuidados com o sol, possíveis complicações e se pode fazer no verão. Consulta na Av. Paulista.",
+    "compacto": true,
+    "resumo": "Ácidos aplicados na pele para renovar a camada superficial de forma controlada. Ajudam na textura, no viço e na uniformidade do tom.",
+    "fontesTexto": "StatPearls, \"Chemical Peels\" (NBK547752); AAD, perguntas frequentes sobre peelings químicos; Vemula et al., 2018, estudo sobre segurança de peelings superficiais em peles mais escuras.",
+    "paraQueServe": [
+      "Textura irregular, poros aparentes, pele opaca, tom desigual, linhas finas. Manchas têm causas diferentes: algumas são do sol, outras, como o melasma, são uma condição de pele que precisa de diagnóstico. Se é isso que incomoda você, conte na consulta. A avaliação vem antes de qualquer indicação."
+    ],
+    "comoEFeito": [
+      "A pele é preparada antes, em geral por 2 a 4 semanas, com produtos que oriento. No dia, o ácido é aplicado por alguns minutos e depois neutralizado ou retirado. Ardência e calor durante a aplicação são esperados. Os peelings superficiais costumam ser feitos em série, de 3 a 5 sessões, com intervalo de 2 a 5 semanas."
+    ],
+    "regua": [
+      {
+        "quando": "No dia",
+        "oQue": "vermelhidão e sensação de pele repuxada"
+      },
+      {
+        "quando": "Peeling superficial",
+        "oQue": "a pele se recupera em até uma semana, com descamação fina por alguns dias"
+      },
+      {
+        "quando": "Peeling médio",
+        "oQue": "de 7 a 14 dias, com inchaço nos primeiros dias, descamação mais intensa e crostas"
+      },
+      {
+        "quando": "1 a 2 semanas",
+        "oQue": "a vermelhidão costuma passar; em algumas pessoas, dura mais"
+      },
+      {
+        "quando": "Semanas a meses",
+        "oQue": "proteção solar rigorosa faz parte do tratamento"
+      }
+    ],
+    "reguaNota": "Prazos médios descritos nos estudos. Variam de pessoa para pessoa, com o tipo de pele e com a profundidade do peeling.",
+    "depois": [
+      "Não arranque as peles que soltarem.",
+      "Limpeza suave, hidratante simples e protetor solar todos os dias, com chapéu se for ficar ao sol.",
+      "No peeling médio, evite o sol completamente até a pele cicatrizar. Planeje a sessão para uma semana mais tranquila."
+    ],
+    "avisar": "dor que aumenta em vez de diminuir, pus, bolhas inesperadas ou manchas que escurecem.",
+    "efeitos": [
+      {
+        "rotulo": "Esperados",
+        "texto": "ardência, vermelhidão, descamação e inchaço leve."
+      },
+      {
+        "rotulo": "Incomuns",
+        "texto": "manchas escuras depois da inflamação, mais frequentes em peles morenas e negras (num estudo com peelings superficiais em peles mais escuras, cerca de 2 em cada 100); reativação de herpes; pequenos cistos brancos (mília); acne."
+      },
+      {
+        "rotulo": "Raros",
+        "texto": "infecção; clareamento de áreas da pele (no peeling médio); cicatriz."
+      }
+    ],
+    "desfazer": [],
+    "contraindicacoes": [
+      "Infecção ou ferida aberta no local; uso de isotretinoína oral (no peeling médio, também nos últimos 6 meses); alergia ao ácido. No peeling médio, também gestação e amamentação, tendência a queloide, algumas doenças de pele e tabagismo pedem cautela. Peles morenas e negras podem fazer, com indicação e preparo cuidadosos."
+    ],
+    "naConsulta": "pergunto sobre a sua rotina, o sol do seu dia a dia e a sua agenda das próximas semanas. Peeling bom é o que cabe na sua vida, inclusive nos dias de descamação.",
+    "perguntas": [
+      {
+        "pergunta": "Pode fazer peeling no verão?",
+        "resposta": "Pode, com cuidado redobrado: a proteção solar faz parte do tratamento. Num estudo em peles mais escuras, as complicações foram menos frequentes no inverno, por isso os peelings mais profundos costumam ficar para os meses mais frios."
+      },
+      {
+        "pergunta": "Quantos dias vou descamar?",
+        "resposta": "No superficial, alguns dias, em geral discretos. No médio, de uma a duas semanas."
+      },
+      {
+        "pergunta": "Pele morena ou negra pode fazer?",
+        "resposta": "Pode, com indicação e preparo cuidadosos, porque o risco de manchas depois do peeling é maior."
+      }
+    ]
+  }
+]

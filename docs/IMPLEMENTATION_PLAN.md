@@ -58,9 +58,9 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - Pronto quando: a página responde "o que acontece na consulta", "quanto vou gastar antes de decidir" e "e se eu não precisar de nada", sem prometer resultado
 
 ## Etapa 7 — Procedimentos
-- [ ] `/procedimentos` (índice) + modelo de página + 6 páginas (toxina botulínica, preenchimento labial, contorno facial, bioestimuladores de colágeno, skinbooster, peelings)
-- [ ] Régua do tempo de cada uma com as faixas e as fontes do COPY.md
-- [ ] Prints nos 3 tamanhos de 2 páginas representativas + `break-ui` com textos longos
+- [x] `/procedimentos` (índice) + modelo de página + 6 páginas (toxina botulínica, preenchimento labial, contorno facial, bioestimuladores de colágeno, skinbooster, peelings). Os textos saem do COPY.md por `scripts/copy-procedimentos.py` (gera `lib/procedimentos.json`; o COPY.md continua a fonte da verdade)
+- [x] Régua do tempo de cada uma com as faixas e as fontes do COPY.md (fontes com link, só sem marca comercial)
+- [x] Prints nos 3 tamanhos de 4 páginas (índice, toxina, preenchimento labial, contorno facial, bioestimuladores) + teste de textos longos (nome mais longo, "Contorno facial com ácido hialurônico", e régua de 5 marcos a 768px): sem rolagem horizontal nem corte; detector sem achados
 - Pronto quando: as 7 páginas existem, seguem a estrutura obrigatória e passam no léxico do harness
 
 ## Etapa 8 — Sobre, Perguntas frequentes e Guia
