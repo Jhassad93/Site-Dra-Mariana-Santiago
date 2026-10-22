@@ -30,3 +30,5 @@ next-env.d.ts
 !.claude/skills/construir-site/
 skills-lock.json
 .preview/
+.claude/agents/
+.claude/settings.local.json
