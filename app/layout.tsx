@@ -11,10 +11,10 @@ import { entidade, imagemOg, indexar, siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Dra. Mariana Santiago | Médica na Av. Paulista",
+  title: "Dra. Helena Duarte | Médica na Av. Paulista",
   description:
-    "Consultório da Dra. Mariana Passos Santiago, médica (CRM-SP 227636), na Av. Paulista, São Paulo.",
-  openGraph: { type: "website", locale: "pt_BR", siteName: "Dra. Mariana Santiago", images: [imagemOg] },
+    "Consultório da Dra. Helena Duarte, médica, na Av. Paulista, São Paulo.",
+  openGraph: { type: "website", locale: "pt_BR", siteName: "Dra. Helena Duarte", images: [imagemOg] },
   // Prévia: fora dos buscadores. Só a publicação definitiva (NEXT_PUBLIC_INDEXAR=1) libera a indexação.
   robots: indexar ? { index: true, follow: true } : { index: false, follow: false },
 };

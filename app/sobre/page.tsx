@@ -7,19 +7,19 @@ import { IdentificacaoR1, VozDaDra } from "@/components/marca/blocos";
 import { FotoDra } from "@/components/home/secoes";
 import { whatsappHref } from "@/lib/site";
 
-// RASCUNHO (COPY.md). Decisão 1 do harness: a residência NÃO é citada.
+// RASCUNHO (COPY.md). Decisão 1 do harness: a formação complementar NÃO é citada.
 // [A CONFIRMAR]: frase em itálico (escrita para ela), cursos livres e congressos, linhas pessoais.
 export const metadata: Metadata = metadados({
-  titulo: "Sobre a Dra. Mariana Passos Santiago | Médica, CRM-SP 227636",
-  descricao: "Mariana Passos Santiago é médica (CRM-SP 227636), formada pela USCS em 2021, e atua com procedimentos estéticos faciais em consultório próprio na Av. Paulista.",
+  titulo: "Sobre a Dra. Helena Duarte | Médica na Av. Paulista",
+  descricao: "Helena Duarte é médica e atua com procedimentos estéticos faciais em consultório próprio na Av. Paulista, da avaliação ao retorno.",
   caminho: "/sobre/",
 });
 
 const caixa = "mx-auto max-w-[1200px] px-4 sm:px-6";
 
 const formacao = [
-  { rotulo: "Graduação", texto: "Medicina, Universidade Municipal de São Caetano do Sul (USCS), 2021" },
-  { rotulo: "Registro", texto: "CRM-SP 227636, desde 14/12/2021, situação regular" },
+  { rotulo: "Graduação", texto: "Medicina, 2019" },
+  { rotulo: "Registro", texto: "CRM-SP 123456*" },
 ];
 
 export default function Sobre() {
@@ -34,8 +34,7 @@ export default function Sobre() {
           <ReguaOrnamento className="mt-8" />
           <div className="mt-8 grid max-w-[60ch] gap-5 text-lg">
             <p>
-              Sou médica, formada pela Universidade Municipal de São Caetano do Sul (USCS) em 2021, com registro no Conselho
-              Regional de Medicina de São Paulo desde dezembro daquele ano. Atuo com procedimentos estéticos faciais em
+              Sou médica, formada em 2019, com registro no Conselho Regional de Medicina de São Paulo. Atuo com procedimentos estéticos faciais em
               consultório próprio, na Av. Paulista, onde atendo sozinha, da avaliação ao retorno.
             </p>
             <p className="text-muted-foreground">
@@ -75,13 +74,9 @@ export default function Sobre() {
               ))}
             </dl>
             <p className="mt-8 max-w-[60ch] text-muted-foreground">
-              Você pode conferir o meu registro na busca pública de médicos do Conselho Federal de Medicina.
+              Num site real, aqui entra o link para conferir o registro na busca pública de médicos do Conselho Federal de
+              Medicina. Neste projeto de portfólio, o registro é fictício.
             </p>
-            <div className="mt-3">
-              <LinkSecundario href="https://portal.cfm.org.br/busca-medicos" externo>
-                Conferir o registro no CFM
-              </LinkSecundario>
-            </div>
           </div>
         </div>
       </section>

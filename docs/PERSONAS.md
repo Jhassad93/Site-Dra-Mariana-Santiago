@@ -1,6 +1,6 @@
 # Mulheres que temem exagerar escolhem planejamento
 
-**Resumo executivo.** O público mais provável da Dra. Mariana Santiago são **mulheres de 30 a 55 anos, das classes B e A, que trabalham ou circulam na Av. Paulista**. O que as move é suavizar sinais de cansaço e envelhecimento sem deixar de se reconhecer. O núcleo de volume é a faixa de **35 a 50 anos**, que concentra **47% das aplicações de toxina no mundo** ([ISAPS 2024](https://www.isaps.org/media/3uhnjvup/2024-global-survey-portuguese-brazilian.pdf)). A faixa de **45 a 54 anos é a mais engajada no Brasil (30,2% dos interessados)**, mas **82,2% das interessadas nunca fizeram nenhum tratamento** ([Viva, 2025](https://viva.com.br/saude-e-bem-estar/mulheres-de-45-a-54-anos-lideram-interesse-por-estetica-aponta-pesquisa.html)). Isso significa que o site fala, em grande parte, com quem ainda vai estrear. A dor dominante tem número: entre brasileiras e brasileiros que tiveram receio antes do procedimento, **67% temiam aparência artificial, 45% temiam não alcançar o resultado e 42% temiam perder a expressão** ([Ipsos/Merz](https://www.ipsos.com/sites/default/files/ct/news/documents/2021-12/MerzAesthetic_Release_Brasil.pdf)). O posicionamento que ela já usa ("respeitar o rosto natural", avaliação antes de escolher o procedimento, planejamento no tempo) responde exatamente a esse medo. Proponho **três personas primárias**: a profissional de 35 a 45 anos com os primeiros sinais e medo de exagerar, a mulher de 46 a 55 anos na perimenopausa que sente a pele perder firmeza, e a jovem de 26 a 34 anos focada em pele e prevenção. A **persona secundária** é a mulher que já fez procedimentos, se arrependeu ou se sentiu pressionada e voltou desconfiada. Há duas limitações importantes. Primeiro, **não existe dado sobre as pacientes reais da Dra. Mariana**: o perfil abaixo é inferido do discurso dela, de dados de mercado e da localização, e deve ser validado com ela. Segundo, as regras do CFM obrigam a substituir "provas" (antes e depois, depoimentos, título de especialista) por **educação, processo e verificabilidade**. Isso faz do conteúdo educativo o principal ativo do site e, provavelmente, o principal diferencial frente às dermatologistas com RQE do mesmo andar.
+**Resumo executivo.** O público mais provável da Dra. Helena Duarte são **mulheres de 30 a 55 anos, das classes B e A, que trabalham ou circulam na Av. Paulista**. O que as move é suavizar sinais de cansaço e envelhecimento sem deixar de se reconhecer. O núcleo de volume é a faixa de **35 a 50 anos**, que concentra **47% das aplicações de toxina no mundo** ([ISAPS 2024](https://www.isaps.org/media/3uhnjvup/2024-global-survey-portuguese-brazilian.pdf)). A faixa de **45 a 54 anos é a mais engajada no Brasil (30,2% dos interessados)**, mas **82,2% das interessadas nunca fizeram nenhum tratamento** ([Viva, 2025](https://viva.com.br/saude-e-bem-estar/mulheres-de-45-a-54-anos-lideram-interesse-por-estetica-aponta-pesquisa.html)). Isso significa que o site fala, em grande parte, com quem ainda vai estrear. A dor dominante tem número: entre brasileiras e brasileiros que tiveram receio antes do procedimento, **67% temiam aparência artificial, 45% temiam não alcançar o resultado e 42% temiam perder a expressão** ([Ipsos/Merz](https://www.ipsos.com/sites/default/files/ct/news/documents/2021-12/MerzAesthetic_Release_Brasil.pdf)). O posicionamento que ela já usa ("respeitar o rosto natural", avaliação antes de escolher o procedimento, planejamento no tempo) responde exatamente a esse medo. Proponho **três personas primárias**: a profissional de 35 a 45 anos com os primeiros sinais e medo de exagerar, a mulher de 46 a 55 anos na perimenopausa que sente a pele perder firmeza, e a jovem de 26 a 34 anos focada em pele e prevenção. A **persona secundária** é a mulher que já fez procedimentos, se arrependeu ou se sentiu pressionada e voltou desconfiada. Há duas limitações importantes. Primeiro, **não existe dado sobre as pacientes reais da Dra. Helena**: o perfil abaixo é inferido do discurso dela, de dados de mercado e da localização, e deve ser validado com ela. Segundo, as regras do CFM obrigam a substituir "provas" (antes e depois, depoimentos, título de especialista) por **educação, processo e verificabilidade**. Isso faz do conteúdo educativo o principal ativo do site e, provavelmente, o principal diferencial frente às dermatologistas com RQE do mesmo andar.
 
 ---
 
@@ -8,7 +8,7 @@
 
 ### O que se sabe da lead e o que isso revela sobre quem ela atende
 
-Os sinais vindos da própria médica são consistentes, mas mostram a quem ela *quer* falar, não quem ela *já* atende. Ela se apresenta como médica (CRM-SP 227636, desde 12/2021) em consultório individual na Clinovi Unidade Paulista (Av. Paulista 1048, 18º andar). Atende só adultos (18+) e oferece "1ª consulta", "retorno" e "procedimento", com retorno sem custo em 15 dias. O Instagram (@dra.marianapsantiago, cerca de 130 seguidores, ativo desde abr/2026) declara foco em "principalmente mulheres decididas a cuidarem da pele e suavizarem os sinais de envelhecimento com naturalidade". O conteúdo volta sempre ao medo de exagerar, à avaliação individual, ao planejamento no tempo, à mulher que cuida de todos e se coloca por último, ao skincare e ao glow da K-beauty. A mensagem pré-preenchida do WhatsApp pergunta a queixa principal entre **papada, flacidez, rugas, olheiras, acne e manchas**. Isso mostra que ela espera receber tanto quem busca rejuvenescimento quanto quem busca pele.
+Os sinais vindos da própria médica são consistentes, mas mostram a quem ela *quer* falar, não quem ela *já* atende. Ela se apresenta como médica (CRM-SP 123456*) em consultório individual no prédio comercial da Paulista. Atende só adultos (18+) e oferece "1ª consulta", "retorno" e "procedimento", com retorno sem custo em 15 dias. O Instagram (recente e pequeno) declara foco em "principalmente mulheres decididas a cuidarem da pele e suavizarem os sinais de envelhecimento com naturalidade". O conteúdo volta sempre ao medo de exagerar, à avaliação individual, ao planejamento no tempo, à mulher que cuida de todos e se coloca por último, ao skincare e ao glow da K-beauty. A mensagem pré-preenchida do WhatsApp pergunta a queixa principal entre **papada, flacidez, rugas, olheiras, acne e manchas**. Isso mostra que ela espera receber tanto quem busca rejuvenescimento quanto quem busca pele.
 
 O horário é uma evidência forte e pouco explorada. **Terça e sexta das 13h às 21h e sábado das 8h às 14h** atendem quem sai do trabalho na região ou só tem o fim de semana livre. É um encaixe com a mulher economicamente ativa, e não com a moradora com tempo livre durante o dia. No Brasil, **33% dos agendamentos online acontecem fora do horário comercial e 13% nos fins de semana** ([Medicina S/A/Doctoralia, 2025](https://medicinasa.com.br/perfil-paciente-doctoralia/)). Isso reforça a importância de o site e o WhatsApp funcionarem bem à noite.
 
@@ -30,7 +30,7 @@ O consumo é majoritariamente feminino: mulheres somaram **85,5% dos procediment
 | **Secundário**: mulheres que já fizeram procedimentos, se arrependeram, se sentiram pressionadas ou querem trocar de profissional | Narrativa de "desarmonização" (2023 a 2026); queixas recorrentes no Reclame Aqui | **Média-baixa** em volume, **alta** em afinidade com o discurso |
 | **Fora de foco**: homens, menores de 18 anos, quem procura o menor preço | Homens são 15% a 20% do total, e a lead não fala com eles; ela não atende menores; preço não é o terreno dela | — |
 
-Um risco merece atenção. A Dra. Mariana tem cerca de 28 anos. Isso aproxima naturalmente o segmento C. No segmento B (46 a 55 anos), porém, pode surgir a pergunta "ela tem experiência?". Essa objeção é uma hipótese, mas o site deve respondê-la com processo e transparência, não com títulos.
+Um risco merece atenção. A Dra. Helena tem menos de 30 anos. Isso aproxima naturalmente o segmento C. No segmento B (46 a 55 anos), porém, pode surgir a pergunta "ela tem experiência?". Essa objeção é uma hipótese, mas o site deve respondê-la com processo e transparência, não com títulos.
 
 ---
 
@@ -115,7 +115,7 @@ As tabelas abaixo servem de base para as páginas de procedimento e para a FAQ. 
 | **Manchas** | Mistura: lentigos solares (estética) e **melasma (doença)** e hiperpigmentação pós-inflamatória | Mencionar de forma educativa ("manchas têm causas diferentes e pedem diagnóstico"). **Não** escrever "tratamos melasma" |
 | **Acne** | **Doença** (acne ativa); marcas são sequela | Apenas menção educativa ("acne é uma condição de pele que exige diagnóstico médico"). **Não** escrever "tratamos acne". Há várias doenças que se parecem com acne ([Bem Paraná](https://www.bemparana.com.br/noticia/cinco-doencas-de-pele-que-sao-parecidas-com-a-acne-mas-requerem-tratamentos-diferentes)). Rosácea também é doença crônica ([Itatiaia](https://www.itatiaia.com.br/entretenimento/doenca-que-acomete-atriz-carol-castro-e-incuravel-e-afeta-a-pele-entenda-o-diagnostico/)) |
 
-Recomendo levar à Dra. Mariana uma sugestão: no site, trocar "acne" e "manchas" do menu de queixas por algo como "pele (textura, manchas, marcas)", com nota de avaliação diagnóstica. 🟡 Essa área é cinzenta. Ela é médica e pode atender essas condições. O filtro do projeto, porém, proíbe *ofertar* tratamento de doenças na publicidade. Por isso o enquadramento deve ser educativo e passar pelo harness de medicina.
+Recomendo levar à Dra. Helena uma sugestão: no site, trocar "acne" e "manchas" do menu de queixas por algo como "pele (textura, manchas, marcas)", com nota de avaliação diagnóstica. 🟡 Essa área é cinzenta. Ela é médica e pode atender essas condições. O filtro do projeto, porém, proíbe *ofertar* tratamento de doenças na publicidade. Por isso o enquadramento deve ser educativo e passar pelo harness de medicina.
 
 ---
 
@@ -231,7 +231,7 @@ Legenda de evidência: **[E]** apoiado em dado ou fonte citada; **[L]** vem do d
 
 ### Vocabulário validado
 
-**Usar:** "natural" (com cuidado, ver 🟡 abaixo), "sem exagero", "preservar seus traços", "expressão", "continuar se reconhecendo", "descansada", "qualidade da pele", "firmeza", "planejamento", "avaliação individual", "tempo de resposta", "etapas", "médica, CRM-SP 227636". Os temas de "natural", "preservar características" e "menos é mais" aparecem na imprensa e combinam com o medo nº 1 medido ([Gazeta SP](https://www.gazetasp.com.br/colunista/simone-viotto/harmonizacao-estetica-tecnica-beleza-comportamento/); [Ipsos/Merz](https://www.ipsos.com/sites/default/files/ct/news/documents/2021-12/MerzAesthetic_Release_Brasil.pdf)).
+**Usar:** "natural" (com cuidado, ver 🟡 abaixo), "sem exagero", "preservar seus traços", "expressão", "continuar se reconhecendo", "descansada", "qualidade da pele", "firmeza", "planejamento", "avaliação individual", "tempo de resposta", "etapas", "médica, CRM-SP 123456*". Os temas de "natural", "preservar características" e "menos é mais" aparecem na imprensa e combinam com o medo nº 1 medido ([Gazeta SP](https://www.gazetasp.com.br/colunista/simone-viotto/harmonizacao-estetica-tecnica-beleza-comportamento/); [Ipsos/Merz](https://www.ipsos.com/sites/default/files/ct/news/documents/2021-12/MerzAesthetic_Release_Brasil.pdf)).
 
 **Evitar:** dermatologista, especialista, dermatologia (como título), harmonização, rejuvenescer X anos, sem dor, sem riscos, garantido, a melhor, exclusiva, Botox® ou qualquer marca, avaliação gratuita, "tratamos acne/melasma/rosácea", antes e depois, depoimentos, quiz de "descubra seu tratamento", preço de procedimento ou pacote.
 
@@ -244,13 +244,13 @@ Legenda de evidência: **[E]** apoiado em dado ou fonte citada; **[L]** vem do d
 | 3 | "Cada tratamento tem seu tempo de resposta. Por isso planejamos com antecedência, inclusive para datas importantes." | ✅ | Gatilho de prazo sem promessa |
 | 4 | "Nada é feito fora do que foi combinado no seu plano." | ✅ | Responde à queixa de pressão |
 | 5 | "Você sai da consulta sabendo o que esperar, quanto tempo leva e quais cuidados tomar." | ✅ | Processo |
-| 6 | "Médica, CRM-SP 227636. Consultório na Av. Paulista, com atendimento às terças e sextas até 21h e aos sábados pela manhã." | ✅ | Verificabilidade + conveniência |
+| 6 | "Médica, CRM-SP 123456*. Consultório na Av. Paulista, com atendimento às terças e sextas até 21h e aos sábados pela manhã." | ✅ | Verificabilidade + conveniência |
 | 7 | "Rejuvenescimento que respeita seu rosto natural." (bio atual) | 🟡 | "Rejuvenescimento" pode ser lido como promessa de resultado. Alternativa: "Cuidado com a pele e o envelhecimento, com respeito aos seus traços" |
 | 8 | "O melhor resultado é aquele em que você continua se reconhecendo." | 🟡 | Fala de resultado, mas como filosofia, não como promessa. Usar em "sobre mim" ou em post, não como headline de procedimento |
 | 9 | "Resultados naturais" / "efeito natural" | 🟡 | Insinua o resultado. Preferir "planejamento que busca preservar sua expressão" |
 | 10 | "Retorno em 15 dias sem custo para avaliar a resposta." | 🟡 | É informação de serviço, mas "sem custo" pode ser lido como vantagem promocional. Preferir "retorno de avaliação em 15 dias incluído", e validar no harness |
 | 11 | "A toxina botulínica tem efeito temporário, e o ácido hialurônico pode ser dissolvido se necessário." | 🟡 | Educativo e verdadeiro, mas pode soar como "sem risco". Sempre acompanhar de "a hialuronidase também tem riscos e indicações" |
-| 12 | "Médica em formação em dermatologia" / "residente de dermatologia" | 🟡 (alto) | Pode induzir a paciente a vê-la como especialista sem RQE. Checar a Res. CFM 2.336/2023 no harness antes de usar qualquer menção à residência |
+| 12 | "Médica em formação em dermatologia" / "em formação complementar" | 🟡 (alto) | Pode induzir a paciente a vê-la como especialista sem RQE. Checar a Res. CFM 2.336/2023 no harness antes de usar qualquer menção à formação complementar |
 | 13 | "Procedimentos injetáveis exigem conhecimento de anatomia e preparo para intercorrências, e por isso são feitos por médica." | 🟡 | Factual, mas pode ser lido como crítica a outras profissões e a decisão do TRF-1 cabe recurso. Usar sem citar outras categorias |
 | 14 | "Para mulheres que cuidam de todo mundo e querem um tempo para si." | 🟡 | Apelo emocional aceitável, mas não deve sugerir que o procedimento resolve autoestima. Manter como convite à consulta |
 | 15 | "Entenda o que a menopausa muda na pele." (título de conteúdo) | ✅ | Educativo |
@@ -283,7 +283,7 @@ Os sinais de confiança permitidos são: CRM-SP visível e verificável; foto re
 
 ### Ângulos de diferenciação frente às dermatologistas vizinhas
 
-As vizinhas de andar têm RQE e de 28 a 51 avaliações no Google, e a Dra. Mariana não pode competir em título nem em prova social. O terreno dela tem cinco frentes.
+As vizinhas de andar têm RQE e de 28 a 51 avaliações no Google, e a Dra. Helena não pode competir em título nem em prova social. O terreno dela tem cinco frentes.
 
 1. **Conveniência real.** Atendimento até 21h e aos sábados, o que encaixa com a profissional da Paulista e com os 33% que agendam fora do horário comercial.
 2. **Método explícito.** Avaliação, plano e "nada fora do combinado", com a possibilidade de indicar não fazer nada.
@@ -297,7 +297,7 @@ Não há dado sobre os sites das vizinhas. Antes de fechar o ângulo, convém co
 
 ## 6. As maiores lacunas estão nas pacientes reais
 
-A pesquisa não tem nenhum dado sobre **quem já se consulta com a Dra. Mariana**. As personas combinam mercado, localização e discurso da lead. As lacunas e as formas de fechá-las:
+A pesquisa não tem nenhum dado sobre **quem já se consulta com a Dra. Helena**. As personas combinam mercado, localização e discurso da lead. As lacunas e as formas de fechá-las:
 
 | Lacuna | Como validar |
 |---|---|
@@ -310,7 +310,7 @@ A pesquisa não tem nenhum dado sobre **quem já se consulta com a Dra. Mariana*
 | Hialuronidase e tratamento de papada no portfólio | Confirmar com a Dra.; checar o registro na Anvisa antes de citar opções de papada |
 | Prazos por região no full face, Sculptra, masseter, profundidade de peeling | Páginas da SBD, bulas da Anvisa, a própria Dra. |
 | Sazonalidade de busca | Google Trends ("botox", "preenchimento labial", "bioestimulador", "peeling") em SP |
-| Regras finas: menção à residência, link para o Google, "retorno sem custo", "rejuvenescimento" | Passar cada item 🟡 pelo harness regulatório de medicina antes da copy final |
+| Regras finas: menção à formação complementar, link para o Google, "retorno sem custo", "rejuvenescimento" | Passar cada item 🟡 pelo harness regulatório de medicina antes da copy final |
 | Sites das concorrentes do andar | Auditar conteúdo, horários e CTAs das 2 ou 3 vizinhas com RQE |
 
 As fontes também têm limites. Os principais números de medo (Ipsos/Merz) são de **2021** e foram patrocinados por fabricante. A pesquisa Behavior Insights não divulga metodologia. O dado de fluxo da Paulista é de **2011**. Os prazos de procedimento vêm, na maioria, de portais de saúde.
@@ -326,7 +326,7 @@ As fontes também têm limites. Os principais números de medo (Ipsos/Merz) são
 
 | # | Crença necessária | Resistência provável | Como o site constrói (prova permitida) | Não pode (harness) |
 | --- | --- | --- | --- | --- |
-| U1 | "Ela é médica de verdade, e eu posso conferir." | "Qualquer um aplica hoje em dia." | Bloco "MÉDICA · CRM-SP 227636" visível, com link para a busca pública do CFM; nome do registro; endereço real (R1) | Dizer "especialista", "dermatologista" ou sugerir título (R2) |
+| U1 | "Ela é médica de verdade, e eu posso conferir." | "Qualquer um aplica hoje em dia." | Bloco "MÉDICA · CRM-SP 123456*" visível, com link para a busca pública do CFM; nome do registro; endereço real (R1) | Dizer "especialista", "dermatologista" ou sugerir título (R2) |
 | U2 | "Ela vai me ouvir antes de propor qualquer coisa." | Medo de pressão de venda (Pública, ELLE, Reclame Aqui) | Página "Como funciona a consulta", com etapas (conversa → avaliação → plano → decisão sua) e a frase "a indicação pode ser não fazer nada agora" | Prometer resultado do plano (R4) |
 | U3 | "Com ela eu não vou ficar artificial." | Medo nº 1 (67%) | **Não afirmar.** Mostrar o *processo* que busca preservar a expressão: doses e áreas definidas na avaliação, etapas, retorno para avaliar a resposta | "Resultado natural garantido", antes e depois, depoimentos (R4, R6, R7) |
 | U4 | "Eu vou saber exatamente o que esperar, inclusive os riscos." | "Ninguém me explica nada" / medo de complicação | Páginas de procedimento com indicação, tempo de resposta, cuidados e complicações possíveis em linguagem clara | Omitir riscos ou dizer "sem riscos" (R4, R17) |
@@ -342,7 +342,7 @@ As fontes também têm limites. Os principais números de medo (Ipsos/Merz) são
 | "Consigo fazer sem atrapalhar o trabalho." | Medo de roxo, inchaço ou afastamento | Bloco "o que esperar depois" com cuidados e prazos honestos (pico em cerca de 14 dias; possível hematoma) e dica de planejar antes de reuniões e eventos | ✅ |
 | "Posso começar pequeno e decidir aos poucos." | Medo de ser empurrada para um "pacote" | Frase de método: "começar por uma área, avaliar no retorno e só então decidir os próximos passos" | ✅ |
 | "Ela atende no meu horário." | Agenda apertada | Horário pós-expediente em destaque no topo e no CTA | ✅ |
-| "Uma médica mais jovem pode ser a escolha certa." (crença secundária) | "Prefiro alguém com mais anos de carreira" | Não discutir idade. Construir por método, clareza e formação factual (graduação, ano de CRM, cursos cadastrados **[confirmar]**) | 🟡: residência só com decisão (seção 1 do harness) |
+| "Uma médica mais jovem pode ser a escolha certa." (crença secundária) | "Prefiro alguém com mais anos de carreira" | Não discutir idade. Construir por método, clareza e formação factual (graduação, ano de CRM, cursos cadastrados **[confirmar]**) | 🟡: formação complementar só com decisão (seção 1 do harness) |
 
 ### 7.3 Persona B: Renata, 51 anos
 
@@ -350,7 +350,7 @@ As fontes também têm limites. Os principais números de medo (Ipsos/Merz) são
 | --- | --- | --- | --- |
 | "Ela entende o que está mudando na minha pele nesta fase." | "Ninguém explica se é idade ou hormônio" (56% confundem) | Conteúdo educativo "o que a menopausa muda na pele" e como isso entra na avaliação | ✅ |
 | "Ela vai planejar comigo ao longo do tempo, sem pressa." | Medo de investir e não ver diferença (45%) | Explicar que bioestimulador e full face funcionam em etapas e meses; mostrar um *exemplo genérico de calendário de planejamento* (ilustrativo, sem paciente real) | ✅ (ilustração não pode sugerir resultado) |
-| "Ela é séria o suficiente para mim, mesmo sendo jovem." | Objeção de idade e experiência [H] | Tom técnico e calmo; transparência sobre riscos e limites ("nem toda flacidez responde a injetáveis"); CRM verificável; foto profissional sóbria | 🟡: não usar a residência como argumento sem decisão |
+| "Ela é séria o suficiente para mim, mesmo sendo jovem." | Objeção de idade e experiência [H] | Tom técnico e calmo; transparência sobre riscos e limites ("nem toda flacidez responde a injetáveis"); CRM verificável; foto profissional sóbria | 🟡: não usar a formação complementar como argumento sem decisão |
 | "Ela não vai me deixar 'esticada'." | Medo da face hiperpreenchida | Discurso de qualidade de pele e firmeza, não de volume; "preservar seus traços" | ✅ (como objetivo do método, não promessa) |
 | "Cuidar de mim agora é legítimo, não é vaidade." | Culpa de se colocar em primeiro lugar [L/H] | Convite acolhedor ("um tempo para cuidar de você, com informação"), sem prometer que o procedimento resolve autoestima | 🟡 (frase 14) |
 
@@ -378,13 +378,13 @@ As fontes também têm limites. Os principais números de medo (Ipsos/Merz) são
 2. **A página "Como funciona a consulta" é a peça mais importante do site.** Ela sustenta U2, U3, U5 e U7 de uma vez e substitui o antes e depois e os depoimentos que o CFM proíbe.
 3. **Cada página de procedimento sustenta U4** e as crenças específicas de A (toxina), B (bioestimulador e full face) e C (skinbooster, peeling, lábio).
 4. **O FAQ fecha as crenças residuais**: idade, já fez antes, gravidez, retorno, custo da consulta.
-5. **A crença "ela é jovem demais" não se combate de frente.** Ela se dissolve com método, transparência e verificabilidade. O tema da residência só entra se houver decisão registrada no Anexo D do harness.
+5. **A crença "ela é jovem demais" não se combate de frente.** Ela se dissolve com método, transparência e verificabilidade. O tema da formação complementar só entra se houver decisão registrada no Anexo D do harness.
 
 ---
 
 ## Conclusão
 
-A pesquisa muda o eixo da copy. A pergunta deixa de ser "qual procedimento vender" e passa a ser "qual medo desarmar". Duas em cada três mulheres hesitam por medo de parecer artificial, e a maioria das interessadas nunca fez nada. O site da Dra. Mariana funciona melhor como uma **primeira consulta antecipada**: mostra o método, os prazos, os riscos e a liberdade de não fazer. Esse formato é exatamente o que o CFM permite, e é o que as vizinhas com mais títulos e avaliações tendem a não oferecer. A limitação regulatória vira vantagem competitiva quando educação e processo ocupam o lugar das provas proibidas.
+A pesquisa muda o eixo da copy. A pergunta deixa de ser "qual procedimento vender" e passa a ser "qual medo desarmar". Duas em cada três mulheres hesitam por medo de parecer artificial, e a maioria das interessadas nunca fez nada. O site da Dra. Helena funciona melhor como uma **primeira consulta antecipada**: mostra o método, os prazos, os riscos e a liberdade de não fazer. Esse formato é exatamente o que o CFM permite, e é o que as vizinhas com mais títulos e avaliações tendem a não oferecer. A limitação regulatória vira vantagem competitiva quando educação e processo ocupam o lugar das provas proibidas.
 
 A decisão mais sensível é de foco. A idade e o conteúdo da lead favorecem a persona C, mas o volume e o ticket estão nas personas A e B. Recomendo construir a home para a **persona A (porta de entrada pela toxina, horário pós-expediente)**, com páginas e conteúdos dedicados a B (pele na menopausa, bioestimulador planejado) e a C (pele, skincare, prevenção com indicação). Essa recomendação deve ser confirmada na reunião com os números reais das pacientes que ela já atende.
 
@@ -435,4 +435,4 @@ A decisão mais sensível é de foco. A idade e o conteúdo da lead favorecem a 
 - Metrópoles (exercício e toxina): https://www.metropoles.com/colunas/claudia-meireles/exercicios-fisicos-de-alta-intensidade-afetam-a-duracao-do-botox
 - Bem Paraná (doenças parecidas com acne): https://www.bemparana.com.br/noticia/cinco-doencas-de-pele-que-sao-parecidas-com-a-acne-mas-requerem-tratamentos-diferentes
 - Itatiaia (rosácea): https://www.itatiaia.com.br/entretenimento/doenca-que-acomete-atriz-carol-castro-e-incuravel-e-afeta-a-pele-entenda-o-diagnostico/
-- Contexto da lead: dados públicos verificados nesta sessão (CRM-SP 227636, site atual e Instagram @dra.marianapsantiago).
+- Contexto da lead: dados públicos verificados na época (removidos na versão de portfólio).

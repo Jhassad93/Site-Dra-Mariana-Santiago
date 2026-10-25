@@ -186,7 +186,7 @@ export function SiteHeader() {
 function Monograma() {
   return (
     <span aria-hidden="true" className="monograma grid size-9 shrink-0 place-items-center rounded-[10px] border font-voz text-xl italic leading-none">
-      M
+      H
     </span>
   );
 }

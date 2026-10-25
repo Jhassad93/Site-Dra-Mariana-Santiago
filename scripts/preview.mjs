@@ -41,7 +41,7 @@ const html = (await readFile(join(out, rotaPrevia, "index.html"), "utf8")).repla
 const head = html.match(/<head>([\s\S]*?)<\/head>/)?.[1] ?? "";
 const body = html.match(/<body[^>]*>([\s\S]*?)<\/body>/)?.[1] ?? "";
 const htmlClass = html.match(/<html[^>]*class="([^"]*)"/)?.[1] ?? "";
-const titulo = head.match(/<title>[\s\S]*?<\/title>/)?.[0] ?? "<title>Site Dra. Mariana Santiago</title>";
+const titulo = head.match(/<title>[\s\S]*?<\/title>/)?.[0] ?? "<title>Site Dra. Helena Duarte</title>";
 const resto = head
   .replace(/<title>[\s\S]*?<\/title>/, "")
   .replace(/<meta charSet="utf-8"\/>/, "")

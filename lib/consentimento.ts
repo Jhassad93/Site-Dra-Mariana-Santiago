@@ -1,6 +1,6 @@
 // Preferência de cookies (LGPD, R15). Guardada só no navegador; vale 12 meses (SCHEMA.md).
 export type Escolha = "aceito" | "recusado";
-const CHAVE = "dra-ms-cookies";
+const CHAVE = "consultorio-cookies";
 const VERSAO = 1;
 const VALIDADE_MS = 365 * 24 * 60 * 60 * 1000;
 export const EVENTO_MUDOU = "cookies-mudou";

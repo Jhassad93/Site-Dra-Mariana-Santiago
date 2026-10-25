@@ -4,8 +4,8 @@
     "href": "/procedimentos/toxina-botulinica/",
     "nome": "Toxina botulínica",
     "pendencias": [],
-    "title": "Toxina botulínica na Av. Paulista | Dra. Mariana Santiago, médica",
-    "description": "Para que serve a toxina botulínica, como é feita, em quantos dias começa a agir, quanto dura, cuidados e possíveis complicações. Consulta com a Dra. Mariana Santiago, médica (CRM-SP 227636).",
+    "title": "Toxina botulínica na Av. Paulista | Dra. Helena Duarte, médica",
+    "description": "Para que serve a toxina botulínica, como é feita, em quantos dias começa a agir, quanto dura, cuidados e possíveis complicações. Consulta com a Dra. Helena Duarte, médica na Av. Paulista.",
     "card": {
       "valor": "~2 semanas",
       "rotulo": "até o efeito pleno, varia de pessoa para pessoa",
@@ -90,7 +90,7 @@
     "pendencias": [
       "[A CONFIRMAR: se a Dra. faz a dissolução e tem hialuronidase no consultório]"
     ],
-    "title": "Preenchimento labial com ácido hialurônico em São Paulo | Dra. Mariana Santiago, médica",
+    "title": "Preenchimento labial com ácido hialurônico em São Paulo | Dra. Helena Duarte, médica",
     "description": "Preenchimento labial com ácido hialurônico: para que serve, como é feito, quanto tempo dura o inchaço, cuidados, possíveis complicações e o que fazer se precisar desfazer. Av. Paulista.",
     "card": {
       "valor": "1 a 2 semanas",
@@ -179,7 +179,7 @@
     "href": "/procedimentos/contorno-facial/",
     "nome": "Contorno facial com ácido hialurônico",
     "pendencias": [],
-    "title": "Contorno facial com ácido hialurônico em São Paulo | Dra. Mariana Santiago, médica",
+    "title": "Contorno facial com ácido hialurônico em São Paulo | Dra. Helena Duarte, médica",
     "description": "Preenchimento com ácido hialurônico em maçãs do rosto, mandíbula, queixo e olheiras, feito em etapas: indicações, prazos, cuidados e possíveis complicações. Av. Paulista.",
     "compacto": true,
     "resumo": "Ácido hialurônico aplicado em pontos de sustentação do rosto, como maçãs do rosto, mandíbula, queixo e região das olheiras, para repor o que mudou com o tempo. Feito em etapas, uma área de cada vez.",
@@ -254,7 +254,7 @@
     "href": "/procedimentos/bioestimuladores-de-colageno/",
     "nome": "Bioestimuladores de colágeno",
     "pendencias": [],
-    "title": "Bioestimuladores de colágeno em São Paulo | Dra. Mariana Santiago, médica",
+    "title": "Bioestimuladores de colágeno em São Paulo | Dra. Helena Duarte, médica",
     "description": "Como agem os bioestimuladores de colágeno, quantas sessões, em quanto tempo a pele responde, quanto dura, cuidados e possíveis complicações. Planejamento ao longo de meses, na Av. Paulista.",
     "card": {
       "valor": "2 a 4 sessões",
@@ -342,7 +342,7 @@
     "href": "/procedimentos/skinbooster/",
     "nome": "Skinbooster",
     "pendencias": [],
-    "title": "Skinbooster em São Paulo | Dra. Mariana Santiago, médica na Av. Paulista",
+    "title": "Skinbooster em São Paulo | Dra. Helena Duarte, médica na Av. Paulista",
     "description": "Skinbooster é ácido hialurônico aplicado em microgotas para hidratação e qualidade da pele. Sessões, prazos, cuidados, possíveis efeitos e a diferença para o preenchimento.",
     "compacto": true,
     "resumo": "Ácido hialurônico mais fluido, aplicado em microgotas na pele, para melhorar hidratação, viço e linhas finas. Não dá volume e não muda o contorno.",
@@ -419,7 +419,7 @@
     "pendencias": [
       "[A CONFIRMAR: quais peelings a Dra. faz (superficiais e/ou médios) e com quais ácidos]"
     ],
-    "title": "Peeling químico em São Paulo | Dra. Mariana Santiago, médica na Av. Paulista",
+    "title": "Peeling químico em São Paulo | Dra. Helena Duarte, médica na Av. Paulista",
     "description": "O que é o peeling químico, para que serve, quantos dias de descamação, cuidados com o sol, possíveis complicações e se pode fazer no verão. Consulta na Av. Paulista.",
     "compacto": true,
     "resumo": "Ácidos aplicados na pele para renovar a camada superficial de forma controlada. Ajudam na textura, no viço e na uniformidade do tom.",

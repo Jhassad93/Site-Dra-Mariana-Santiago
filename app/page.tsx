@@ -12,9 +12,9 @@ import {
 } from "@/components/home/secoes";
 
 export const metadata: Metadata = metadados({
-  titulo: "Dra. Mariana Santiago | Médica, procedimentos estéticos faciais na Av. Paulista",
+  titulo: "Dra. Helena Duarte | Médica, procedimentos estéticos faciais na Av. Paulista",
   descricao:
-    "Médica (CRM-SP 227636) com consultório na Av. Paulista. Consulta de avaliação e plano antes de qualquer procedimento estético facial: o que fazer, quando, cuidados e riscos.",
+    "Médica com consultório na Av. Paulista. Consulta de avaliação e plano antes de qualquer procedimento estético facial: o que fazer, quando, cuidados e riscos.",
   caminho: "/",
 });
 

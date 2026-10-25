@@ -1,11 +1,11 @@
-# SCHEMA.md — Dra. Mariana Santiago
+# SCHEMA.md — Dra. Helena Duarte
 
 > Derivado do APP_FLOW.md (modo protótipo). **O site não tem banco de dados próprio, login nem formulário.** Por isso, seguindo o modelo do kit para sites sem formulário, este arquivo registra **para onde vão os dados** de quem usa o site, quem trata cada um e por quanto tempo.
 > **Harness regulatório v1.3 aplicado** (R11, R12, R13, R15).
 > Este arquivo descreve o tratamento de dados da cliente: tratar como confidencial.
 
 ## Papéis (LGPD)
-- **Controladora:** a Dra. Mariana Passos Santiago (pessoa física, consultório próprio). No protótipo, as contas de demonstração são do João, sem dados reais de pacientes.
+- **Controladora:** a Dra. Helena Duarte (pessoa física, consultório próprio). No protótipo, as contas de demonstração são do João, sem dados reais de pacientes.
 - **Operadores:** Calendly (agenda online), Meta/WhatsApp (mensagens), Google (Analytics e Mapa), Cloudflare (hospedagem e registros técnicos).
 - **Canal do titular:** e-mail de contato publicado na Política de Privacidade (`[A CONFIRMAR]`: criar e-mail no domínio; hoje ela usa um Gmail pessoal).
 
@@ -32,7 +32,7 @@ flowchart LR
     V -->|Clique Agendar consulta| WA[(WhatsApp da Dra.)]
     V -->|Clique Ver horários| CAL[(Calendly: nome, celular, e-mail)]
     CAL -->|Confirmação e lembrete| V
-    CAL -->|Agenda| DRA[Dra. Mariana]
+    CAL -->|Agenda| DRA[Dra. Helena]
     WA --> DRA
     S -->|Link, sem dados| MAPS[Google Maps em nova aba]
 ```

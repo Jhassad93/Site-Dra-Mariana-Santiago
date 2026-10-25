@@ -10,7 +10,7 @@ import { revisaoTextos, whatsappHref } from "@/lib/site";
 // Guia educativo (COPY.md). R3: sem oferta de tratamento; terapia hormonal fica com o ginecologista.
 // [A CONFIRMAR]: frase final em itálico (escrita para ela).
 export const metadata: Metadata = metadados({
-  titulo: "O que muda na pele na menopausa | Guia da Dra. Mariana Santiago, médica",
+  titulo: "O que muda na pele na menopausa | Guia da Dra. Helena Duarte, médica",
   descricao: "Colágeno, espessura, elasticidade, hidratação e cicatrização: o que acontece com a pele na menopausa, o que ajuda no dia a dia e quando procurar avaliação médica.",
   caminho: "/guias/pele-na-menopausa/",
 });

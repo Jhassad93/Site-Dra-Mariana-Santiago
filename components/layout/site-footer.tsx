@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { endereco, horarios, identificacao, legais, navegacao, redes, telefoneVisivel, whatsappHref } from "@/lib/site";
+import { endereco, horarios, identificacao, legais, navegacao, notaPortfolio, redes, telefoneVisivel, whatsappHref } from "@/lib/site";
 import { GerenciarCookies } from "./gerenciar-cookies";
 import { IdentificacaoR1 } from "@/components/marca/blocos";
 import { perfilGoogle } from "@/lib/conteudo";
@@ -64,6 +64,7 @@ export function SiteFooter() {
           </ul>
         </nav>
 
+        {redes.length > 0 && (
         <div className="grid content-start gap-3 text-sm lg:col-span-3">
           <h2 className="text-sm font-normal tracking-normal text-areia">Redes</h2>
           <ul className="grid gap-2">
@@ -77,6 +78,9 @@ export function SiteFooter() {
             ))}
           </ul>
         </div>
+        )}
+
+        <p className="max-w-[80ch] text-sm text-gesso lg:col-span-12">{notaPortfolio}</p>
 
         <div className="flex flex-col gap-4 border-t border-areia/20 pt-6 text-sm text-gesso sm:flex-row sm:flex-wrap sm:items-center sm:justify-between lg:col-span-12">
           <p>© {ano} {identificacao.nome}</p>

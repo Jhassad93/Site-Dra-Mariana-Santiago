@@ -9,7 +9,7 @@ import { whatsappHref } from "@/lib/site";
 
 // RASCUNHO (COPY.md). Índice dos procedimentos.
 export const metadata: Metadata = metadados({
-  titulo: "Procedimentos estéticos faciais | Dra. Mariana Santiago, médica na Av. Paulista",
+  titulo: "Procedimentos estéticos faciais | Dra. Helena Duarte, médica na Av. Paulista",
   descricao: "Toxina botulínica, preenchimento labial, contorno facial com ácido hialurônico, bioestimuladores de colágeno, skinbooster e peelings: para que servem, prazos, cuidados e riscos.",
   caminho: "/procedimentos/",
 });

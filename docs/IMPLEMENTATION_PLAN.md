@@ -1,4 +1,6 @@
-# Plano de implementação — Dra. Mariana Santiago
+# Plano de implementação — Dra. Helena Duarte
+
+> **Versão de portfólio (25/10/2026).** A cliente original não seguiu com a proposta. O site virou peça de portfólio com uma médica fictícia: **Dra. Helena Duarte, CRM-SP 123456\*** (o asterisco é explicado no rodapé de todas as páginas e na imagem de compartilhamento). Saíram nome, registro, telefone, número do endereço, redes, domínio, a foto do Instagram e o diagnóstico da presença digital da cliente; os concorrentes foram anonimizados. Sem número de WhatsApp, o site funciona em modo demonstração (os botões levam a /agendar e o "Abrir o WhatsApp" simula o envio). As etapas abaixo ficam como registro do processo.
 
 Fontes: BRIEF.md (modo protótipo) · APP_FLOW.md · DESIGN.md · SCHEMA.md · PERSONAS.md · CONCORRENTES.md · harness regulatório v1.4 (`claude/harness-regulatorio.md`)
 Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e parar para aprovação. Commit ao fim de cada etapa aprovada (`etapa N: <resumo>`).
@@ -7,8 +9,8 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 > **Fases:** Etapas 1 a 12 constroem o protótipo. A etapa 13 audita. A etapa 14 prepara a oferta à lead. A etapa 15 só acontece **depois do aceite** (publicação definitiva).
 
 ## Etapa 1 — Setup e infraestrutura
-- [x] **Onde construir (PREMISSA):** código e build no ambiente de nuvem da sessão (Node 22, Chromium e Playwright disponíveis). O **código-fonte, sem `node_modules` e sem build, é sincronizado** com `Site - Dra. Mariana Passos/site/` no seu computador a cada etapa aprovada. Motivo: a pasta fica no iCloud, que sincroniza mal milhares de arquivos de `node_modules` e onde o Git não consegue apagar arquivos pela conexão.
-- [x] **Versionamento:** repositório **privado no GitHub do João** (`site-dra-mariana-santiago`), com commit por etapa aprovada. Transferir para a conta da Dra. depois do aceite (regra do kit). Repositório: https://github.com/Jhassad93/Site-Dra-Mariana-Santiago
+- [x] **Onde construir (PREMISSA):** código e build no ambiente de nuvem da sessão (Node 22, Chromium e Playwright disponíveis). O **código-fonte, sem `node_modules` e sem build, é sincronizado** com uma pasta local no seu computador a cada etapa aprovada. Motivo: a pasta fica no iCloud, que sincroniza mal milhares de arquivos de `node_modules` e onde o Git não consegue apagar arquivos pela conexão.
+- [x] **Versionamento:** repositório **privado no GitHub do João** (do projeto), com commit por etapa aprovada. Transferir para a conta da Dra. depois do aceite (regra do kit). Repositório: https://github.com/Jhassad93/Site-Dra-Mariana-Santiago
 - [x] Next.js (App Router) + TypeScript + Tailwind CSS + shadcn/ui; `components.json` com os registros de `config/components.json`; **exportação estática** (`output: "export"`), porque o site não precisa de servidor (APP_FLOW/SCHEMA)
 - [x] Fontes **Host Grotesk** e **Libre Caslon Text** com `next/font` (servidas pelo próprio site, sem CDN do Google, conforme o SCHEMA). Trocadas em 22/10/2026 (Geist e Instrument Serif saíram por serem marcadas como "fontes muito usadas" pelo Impeccable)
 - [x] Tokens do DESIGN.md no `globals.css` (5 cores, escala tipográfica, raios por hierarquia, curvas de animação)
@@ -20,7 +22,7 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 
 ## Etapa 2 — Layout base
 - [x] Cabeçalho "liquid glass" com os dois estados (sobre o hero escuro e sobre seções claras), alternativas sem `backdrop-filter` e com `prefers-reduced-transparency`; menu do celular em folha cheia (`<dialog>`: prende o foco, fecha com Esc e devolve o foco ao botão)
-- [x] Rodapé com bloco de identificação R1 ("Dra. Mariana Passos Santiago" / "MÉDICA: CRM-SP 227636", tipografia uniforme), endereço, horários, links legais, "Gerenciar cookies" e redes. "Gerenciar cookies" leva a /privacidade/#cookies até o banner da Etapa 11
+- [x] Rodapé com bloco de identificação R1 ("Dra. Helena Duarte" / "MÉDICA: CRM-SP 123456*", tipografia uniforme), endereço, horários, links legais, "Gerenciar cookies" e redes. "Gerenciar cookies" leva a /privacidade/#cookies até o banner da Etapa 11
 - [x] CTA fixo no celular ("Agendar consulta", WhatsApp) que some quando o CTA da seção ou o rodapé está visível
 - [x] Página 404 e página de erro genérica (APP_FLOW); `lang="pt-BR"`; HTML semântico; link "pular para o conteúdo"; foco visível (anel Bronze no claro e Ouro no escuro, porque o Ouro sobre Gesso não chega a 3:1)
 - [x] Prints com Playwright em 375, 768 e 1280px; teste de interação em `scripts/teste-layout.mjs` (17 verificações)
@@ -38,7 +40,7 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 ## Etapa 4 — Copy (documento, sem código)
 - [x] `docs/COPY.md` com o texto de todas as páginas, a partir de BRIEF, PERSONAS (crenças e banco de copy) e DESIGN, **marcado RASCUNHO**
 - [x] Páginas de procedimento na estrutura obrigatória: indicação · como é feito · régua do tempo (faixas + "varia de pessoa para pessoa" + fonte) · o que esperar depois · possíveis efeitos e complicações · "Na consulta, eu…" · perguntas
-- [x] Decidir os 🟡 pendentes (22/10/2026, registrados no Anexo D do harness v1.4): menção à residência; redação do retorno ("retorno de avaliação em 15 dias incluído"); frase de fechamento; link para o perfil do Google (registrar no Anexo D do harness)
+- [x] Decidir os 🟡 pendentes (22/10/2026, registrados no Anexo D do harness v1.4): menção à formação complementar; redação do retorno ("retorno de avaliação em 15 dias incluído"); frase de fechamento; link para o perfil do Google (registrar no Anexo D do harness)
 - [x] Rodar o harness linha a linha (léxico A2 + R1–R11) e listar o resultado (nenhum 🔴; fontes dos prazos em `docs/FONTES_PROCEDIMENTOS.md`)
 - Pronto quando: COPY.md aprovado por você, sem nenhum 🔴 e com todos os 🟡 decididos e registrados
 
@@ -64,7 +66,7 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 - Pronto quando: as 7 páginas existem, seguem a estrutura obrigatória e passam no léxico do harness
 
 ## Etapa 8 — Sobre, Perguntas frequentes e Guia
-- [x] `/sobre` (formação factual, CRM verificável com link para a busca do CFM, método; residência não citada, decisão 1 do harness). Foto e cursos pendentes da Dra.
+- [x] `/sobre` (formação factual, CRM verificável com link para a busca do CFM, método; formação complementar não citada, decisão 1 do harness). Foto e cursos pendentes da Dra.
 - [x] `/perguntas-frequentes` (18 perguntas do COPY.md, em 3 temas, com atalhos) com dados estruturados FAQPage (mesmo texto visível); abre e fecha com Enter e Espaço (testado)
 - [x] `/guias/pele-na-menopausa` (educativo, com fontes; terapia hormonal encaminhada ao ginecologista; sem oferta de tratamento de doença). Link no rodapé
 - Pronto quando: as 3 páginas estão completas, com CTA, e o FAQ abre e fecha pelo teclado
@@ -79,7 +81,7 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 
 ## Etapa 10 — Imagens e vídeos
 - [x] Estrutura pronta: `npm run midia` comprime o que estiver em `midia-original/` (fora do git) para `public/midia/` (AVIF + WebP em 2 ou 3 larguras; MP4 + WebM abaixo de 2 MB, mudos, 1280 px) e gera `lib/midia.json`; sem arquivo, cada lugar continua com o desenho em CSS. Componentes `Imagem`, `FundoMidia` e `VideoAmbiente` (preload="none", toca só visível, pausa fora da tela, sem vídeo no celular nem com movimento reduzido; entra por cima da capa sem piscar). Pipeline testado com mídia sintética (`npm run teste-midia`: 8 de 8 OK) e depois limpo
-- [x] Pacote de prompts para o Higgsfield publicado como artefato ("Mídia Dra. Mariana"): capa do hero, 3 cards, painel do planejamento, vídeos 1, 2 e 3 (opcional), com nomes de arquivo e formatos
+- [x] Pacote de prompts para o Higgsfield publicado como artefato ("Mídia Dra. Helena"): capa do hero, 3 cards, painel do planejamento, vídeos 1, 2 e 3 (opcional), com nomes de arquivo e formatos
 - [x] **Imagens recebidas** (pasta `Imagens/Adapta`, 22/10/2026): capa do hero, 3 cards e painel do planejamento, aprovadas no harness (sem pessoas, texto ou marca). Comprimidas (a maior tem 56 KB em WebP; AVIF ainda menor); véus do hero e dos cards reforçados até o contraste medido por pixel passar (texto ≥ 4,5:1, título grande ≥ 3:1)
 - [x] **Imagens substituídas pela versão do Runway** (22/10/2026, resolução maior: hero com 2752 px, cards com 1792 × 2400) e **vídeo 1 do hero** (856 × 478 px, 8 s, montado em ida e volta = 16 s sem salto; 348 KB em MP4). Contraste medido de novo: passa
 - [x] **Vídeo 2 do planejamento** (Runway, 1920 × 1080, ida e volta, 1,1 MB em MP4 e 735 KB em WebM); testado: toca quando visível, o do hero pausa fora da tela. Vídeo 3 (mãos escrevendo, 1926 × 1076, loop por fusão de 1 s, 358 KB) ocupa o lugar da foto da Dra. no fechamento e na Sobre até a foto real. Observação: o vídeo 1 tem baixa resolução para tela cheia; se o Runway permitir 1280 px ou mais, vale gerar de novo
@@ -117,8 +119,8 @@ Regra: executar uma etapa por vez, marcar [x], resumir, listar o que testar e pa
 ## Etapa 15 — Publicação definitiva (só depois do aceite)
 - [ ] Reunião de briefing (ROTEIRO_BRIEFING.md) para validar as premissas; prompt "Mudança no brief" se algo mudar
 - [ ] Sessão de fotos, foto do Instagram substituída, assinatura real escaneada, valor da consulta, prazos da régua validados pela Dra.
-- [ ] Contas no nome da Dra.: domínio (titularidade de `dramarianasantiago.com.br`), Cloudflare, GA4, Search Console, Bing, Calendly (plano pago, sincronizado com a agenda da sala); repositório transferido
-- [ ] Correções nos outros canais (pendências 3, 4 e 11b do harness): Google Perfil da Empresa, tipos de agendamento da Clinovi, bio e posts do Instagram
+- [ ] Contas no nome da Dra.: domínio (titularidade de `[domínio do site]`), Cloudflare, GA4, Search Console, Bing, Calendly (plano pago, sincronizado com a agenda da sala); repositório transferido
+- [ ] Correções nos outros canais (pendências 3, 4 e 11b do harness): Google Perfil da Empresa, tipos de agendamento do prédio comercial, bio e posts do Instagram
 - [ ] Remover `noindex`, publicar no domínio, HTTPS e redirecionamentos, conferir os robôs de IA da Cloudflare, enviar o sitemap
 - [ ] Decidir títulos e descriptions acima de 60/155 caracteres (AUDITORIA.md, produção itens 3 e 4); opção intermediária: manter "médica" e tirar "na Av. Paulista" dos títulos internos
 - [ ] Reverificar o Anexo B do harness (R20) antes de publicar; reteste das 7 perguntas de IA após 60 a 90 dias

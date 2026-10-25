@@ -61,7 +61,7 @@ Legenda: **OK** · **falha** (corrigida nesta etapa, salvo indicação) · **n/a
 | 30 | Imagens com intenção e direito de uso | OK | Imagens e vídeos gerados no Runway com os prompts do DESIGN.md; `docs/LICENCAS.md` atualizado (inclui OG e ícones). Foto real da Dra.: pós-aceite |
 | 31 | Teclado e HTML semântico | OK | Tab alcança todos os controles com anel visível (`auditoria-a11y`); um H1 por página, sem salto de nível; `header`, `nav`, `main`, `footer`, `aside`; `lang="pt-BR"` |
 
-**Proposta para os itens 3 e 4 (aguarda aprovação):** trocar o sufixo "| Dra. Mariana Santiago, médica na Av. Paulista" por "| Dra. Mariana Santiago" nos títulos internos (a palavra "médica" e "Av. Paulista" continuam no título da home, no Sobre e nas descriptions) e cortar as descriptions para até 155 caracteres mantendo as palavras-chave do BRIEF. Ex.: "Toxina botulínica | Dra. Mariana Santiago" (41) e "Para que serve a toxina botulínica, como é feita, quando começa a agir, quanto dura, cuidados e possíveis complicações. Médica na Av. Paulista." (149).
+**Proposta para os itens 3 e 4 (aguarda aprovação):** trocar o sufixo "| Dra. Helena Duarte, médica na Av. Paulista" por "| Dra. Helena Duarte" nos títulos internos (a palavra "médica" e "Av. Paulista" continuam no título da home, no Sobre e nas descriptions) e cortar as descriptions para até 155 caracteres mantendo as palavras-chave do BRIEF. Ex.: "Toxina botulínica | Dra. Helena Duarte" (41) e "Para que serve a toxina botulínica, como é feita, quando começa a agir, quanto dura, cuidados e possíveis complicações. Médica na Av. Paulista." (149).
 
 ## 3. Checklist de segurança (19 itens)
 
@@ -104,7 +104,7 @@ Legenda: **OK** · **falha** (corrigida nesta etapa, salvo indicação) · **n/a
 | 11 | Fatos verificáveis | OK, com pendência | Prazos (régua), horários, endereço e "Texto revisado em" visíveis; valor da consulta: `[A CONFIRMAR]` com a Dra. |
 | 12 | Entidade consistente | OK no site; pós-aceite fora | Nome, endereço, telefone e redes iguais no rodapé, no JSON-LD (`sameAs`) e no `llms.txt`; Google e redes dependem da correção do perfil |
 | 13 | Política para robôs de IA | OK | Tabela aprovada em 22/10/2026; `robots.txt` gerado; teste após o deploy: pós-aceite |
-| 14 | Autoria e credenciais | OK | `/sobre` com formação, CRM-SP e link de verificação no CFM; sem residência (decisão do Anexo D) |
+| 14 | Autoria e credenciais | OK | `/sobre` com formação, CRM-SP e link de verificação no CFM; sem formação complementar (decisão do Anexo D) |
 | 15 | Tráfego vindo de IA | pós-aceite | Grupo de canais "IA" descrito em `docs/ANALYTICS.md`; precisa da conta |
 | 16 | llms.txt | OK | `/llms.txt` gerado dos dados do site, sem termos vedados |
 
@@ -112,7 +112,7 @@ Legenda: **OK** · **falha** (corrigida nesta etapa, salvo indicação) · **n/a
 
 | # | Item | Regra | Resultado | Onde foi verificado |
 | --- | --- | --- | --- | --- |
-| 1 | Identificação R1 na página principal e no rodapé | R1 | OK | `IdentificacaoR1` (`blocos.tsx`): nome e "MÉDICA: CRM-SP 227636" na mesma classe (`text-sm font-normal`), em todas as 17 páginas |
+| 1 | Identificação R1 na página principal e no rodapé | R1 | OK | `IdentificacaoR1` (`blocos.tsx`): nome e "MÉDICA: CRM-SP 123456*" na mesma classe (`text-sm font-normal`), em todas as 17 páginas |
 | 2 | OG e peças com identificação | R1 | OK | `og.png` e `og:image:alt` |
 | 3 | Nenhuma ocorrência de termos vedados | R2 | OK, com 1 nota | Varredura de todo o build (HTML sem tags, alt, slugs, JSON-LD, llms.txt, robots, sitemap): zero. Única ocorrência: a URL de uma fonte científica (`jamanetwork.com/journals/jamadermatology/...`), citada como referência, com texto visível "Alam et al., 2021" |
 | 4 | Pós-graduação com NÃO ESPECIALISTA | R2 | n/a | Nenhuma pós citada |

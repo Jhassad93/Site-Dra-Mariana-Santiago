@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { endereco, identificacao, redes, telefoneVisivel } from "@/lib/site";
+import { endereco, identificacao, redes } from "@/lib/site";
 
-// Endereço do site. Não é segredo. BRIEF: dramarianasantiago.com.br (PENDÊNCIA: titularidade no Registro.br).
-export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://dramarianasantiago.com.br").replace(/\/$/, "");
+// Endereço do site: NEXT_PUBLIC_SITE_URL; na Vercel, o domínio de produção do projeto; senão, local.
+const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || (vercel ? `https://${vercel}` : "http://localhost:3000")).replace(/\/$/, "");
 
 // Prévia: fora dos buscadores. Só a publicação definitiva, depois do aceite, liga NEXT_PUBLIC_INDEXAR=1.
 export const indexar = process.env.NEXT_PUBLIC_INDEXAR === "1";
@@ -28,12 +29,11 @@ export function metadados({ titulo, descricao, caminho }: { titulo: string; desc
   };
 }
 
-const telefoneE164 = "+55-11-3192-2635"; // mesmo número de telefoneVisivel
-void telefoneVisivel;
 
 /**
  * Entidade do consultório (JSON-LD), igual em todas as páginas e ao Perfil da Empresa no Google.
- * R2: sem `medicalSpecialty` (a Dra. não tem RQE). Sem preço (R8). Sem avaliações (R7).
+ * R2: sem `medicalSpecialty`. Sem preço (R8). Sem avaliações (R7). Portfólio: sem telefone, CEP nem registro
+ * (fictícios não entram em dados estruturados, que não têm a nota de rodapé).
  */
 export const entidade = {
   "@context": "https://schema.org",
@@ -46,14 +46,11 @@ export const entidade = {
         "Consultório médico de procedimentos estéticos faciais na Av. Paulista, com consulta de avaliação e plano antes de qualquer procedimento.",
       url: `${siteUrl}/`,
       image: `${siteUrl}/og.png`,
-      telephone: telefoneE164,
-      identifier: { "@type": "PropertyValue", propertyID: "CRM-SP", value: "227636" },
       address: {
         "@type": "PostalAddress",
         streetAddress: endereco.linha1,
         addressLocality: "São Paulo",
         addressRegion: "SP",
-        postalCode: "01310-100",
         addressCountry: "BR",
       },
       openingHoursSpecification: [
@@ -61,7 +58,7 @@ export const entidade = {
         { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "14:00" },
       ],
       areaServed: { "@type": "City", name: "São Paulo" },
-      sameAs: redes.map((r) => r.href),
+      ...(redes.length ? { sameAs: redes.map((r) => r.href) } : {}),
     },
     {
       "@type": "WebSite",

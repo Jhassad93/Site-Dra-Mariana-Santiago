@@ -12,7 +12,7 @@ for (const [w, h, touch] of [[375, 812, true], [1280, 800, false]]) {
   for (const r of rotas) {
     const p = await ctx.newPage();
     await p.goto(base + r, { waitUntil: "networkidle" });
-    await p.evaluate(() => { try { localStorage.setItem("dra-ms-cookies", JSON.stringify({ escolha: "recusado", data: new Date().toISOString(), versao: 1 })); } catch {} });
+    await p.evaluate(() => { try { localStorage.setItem("consultorio-cookies", JSON.stringify({ escolha: "recusado", data: new Date().toISOString(), versao: 1 })); } catch {} });
     // fecha o banner para auditar a página; depois audita o banner à parte na home
     await p.evaluate(() => document.querySelector(".banner-cookies button")?.click());
     await p.waitForTimeout(300);

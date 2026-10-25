@@ -10,8 +10,8 @@ import { telefoneVisivel, whatsappHref } from "@/lib/site";
 // [A CONFIRMAR]: e-mail do canal do titular (hoje só WhatsApp); enquadramento como agente de pequeno porte (Res. CD/ANPD 2/2022);
 // conta do Calendly e do GA4 no nome da Dra. depois do aceite.
 export const metadata: Metadata = metadados({
-  titulo: "Política de privacidade | Dra. Mariana Santiago",
-  descricao: "Como o site da Dra. Mariana Passos Santiago trata dados pessoais: o que é coletado, para quê, por quanto tempo, com quem é compartilhado e como exercer seus direitos.",
+  titulo: "Política de privacidade | Dra. Helena Duarte",
+  descricao: "Como o site da Dra. Helena Duarte trata dados pessoais: o que é coletado, para quê, por quanto tempo, com quem é compartilhado e como exercer seus direitos.",
   caminho: "/privacidade/",
 });
 
@@ -59,7 +59,7 @@ export default function Privacidade() {
       <Migalhas itens={[["Política de privacidade", "/privacidade/"]]} />
       <PaginaLegal titulo="Política de privacidade" atualizacao="22 de outubro de 2026">
         <p>
-          Esta política explica como o site da Dra. Mariana Passos Santiago, médica (CRM-SP 227636), trata dados pessoais, de
+          Esta política explica como o site da Dra. Helena Duarte, médica (CRM-SP 123456*), trata dados pessoais, de
           acordo com a Lei Geral de Proteção de Dados (Lei 13.709/2018, LGPD).
         </p>
 
@@ -73,8 +73,8 @@ export default function Privacidade() {
 
         <h2 id="controladora">Quem é a responsável pelos dados</h2>
         <p>
-          A controladora dos dados é a Dra. Mariana Passos Santiago, médica, pessoa física, com consultório na Av. Paulista,
-          1048, 18º andar, Bela Vista, São Paulo/SP, 01310-100. Para qualquer assunto sobre os seus dados, fale pelo{" "}
+          A controladora dos dados é a Dra. Helena Duarte, médica, pessoa física, com consultório na Av. Paulista,
+          Bela Vista, São Paulo/SP. Para qualquer assunto sobre os seus dados, fale pelo{" "}
           <a href={whatsappHref} target="_blank" rel="noopener noreferrer">
             WhatsApp {telefoneVisivel}
           </a>
@@ -156,7 +156,7 @@ export default function Privacidade() {
             </thead>
             <tbody>
               <tr>
-                <th scope="row">dra-ms-cookies</th>
+                <th scope="row">consultorio-cookies</th>
                 <td>Necessário (armazenamento local)</td>
                 <td>Lembrar a sua escolha sobre cookies</td>
                 <td>12 meses</td>

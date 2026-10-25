@@ -3,7 +3,6 @@
 // Nomes esperados em midia-original/ (qualquer extensão de imagem jpg/png/webp/avif e de vídeo mp4/mov/webm):
 //   hero.*  hero-video.*  planejamento.*  planejamento-video.*  fechamento-video.* (opcional)
 //   card-toxina-botulinica.*  card-bioestimuladores-de-colageno.*  card-preenchimento-labial.*
-//   dra-previa.*  (foto da Dra. só para a prévia privada; fica fora do git)
 import sharp from "sharp";
 import { execFileSync } from "node:child_process";
 import { readdir, mkdir, writeFile, stat, rm } from "node:fs/promises";
@@ -22,7 +21,6 @@ const SLOTS = {
   "card-toxina-botulinica": { larguras: [400, 600, 800] },
   "card-bioestimuladores-de-colageno": { larguras: [400, 600, 800] },
   "card-preenchimento-labial": { larguras: [400, 600, 800] },
-  "dra-previa": { larguras: [560, 840] },
 };
 const IMG = [".jpg", ".jpeg", ".png", ".webp", ".avif"];
 const VID = [".mp4", ".mov", ".webm", ".m4v"];

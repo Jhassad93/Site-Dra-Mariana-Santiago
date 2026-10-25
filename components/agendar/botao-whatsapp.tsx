@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { telefoneVisivel, whatsappHref, whatsappWebHref } from "@/lib/site";
+import { telefoneVisivel, whatsappDemo, whatsappHref, whatsappWebHref } from "@/lib/site";
 
 /**
  * Botão principal de /agendar (APP_FLOW). Abre o WhatsApp em nova aba e leva esta aba para
@@ -15,6 +15,11 @@ export function BotaoWhatsapp() {
 
   const abrir = () => {
     setEstado("abrindo");
+    // Portfólio sem número: simula o envio e segue para a página de obrigado
+    if (whatsappDemo) {
+      window.setTimeout(() => router.push("/obrigado/?origem=whatsapp"), 600);
+      return;
+    }
     const aba = window.open(whatsappHref, "_blank");
     if (!aba) {
       setEstado("falhou");

@@ -5,7 +5,7 @@ import { ConteudoObrigado } from "./conteudo";
 
 // RASCUNHO (COPY.md). Fora dos buscadores. [A CONFIRMAR]: prazo de resposta do WhatsApp.
 export const metadata: Metadata = {
-  title: "Obrigado | Dra. Mariana Santiago",
+  title: "Obrigado | Dra. Helena Duarte",
   robots: { index: false, follow: false },
 };
 
@@ -17,7 +17,7 @@ export default function Obrigado() {
       <div className="mt-10 grid max-w-[52ch] gap-2">
         <h2 className="text-xl font-normal tracking-[-0.015em]">Para a consulta</h2>
         <p className="text-muted-foreground">
-          Leve exames recentes, se tiver, e a lista dos seus medicamentos. Av. Paulista, 1048, 18º andar, a uma quadra do metrô
+          Leve exames recentes, se tiver, e a lista dos seus medicamentos. Av. Paulista, a uma quadra do metrô
           Trianon-Masp.
         </p>
       </div>

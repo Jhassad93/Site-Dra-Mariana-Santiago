@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { telefoneVisivel, whatsappHref } from "@/lib/site";
+import { telefoneVisivel, whatsappDemo, whatsappHref } from "@/lib/site";
 
 // Lê ?origem no navegador (site estático). Sem parâmetro, mostra a versão do WhatsApp (padrão do APP_FLOW).
 export function ConteudoObrigado() {
@@ -17,6 +17,17 @@ export function ConteudoObrigado() {
         <p className="mt-8 max-w-[52ch] text-lg text-muted-foreground">
           A confirmação chega no seu e-mail, com data, horário e endereço. Se precisar remarcar, use o link do e-mail ou fale
           pelo WhatsApp com 24 horas de antecedência.
+        </p>
+      </>
+    );
+  }
+  if (whatsappDemo) {
+    return (
+      <>
+        <h1 className="text-[clamp(2.5rem,6vw,4.0625rem)]">Sua mensagem está a caminho</h1>
+        <p className="mt-8 max-w-[52ch] text-lg text-muted-foreground">
+          Num site real, o WhatsApp do consultório abriria em outra aba com a mensagem pronta. Este é um projeto de portfólio,
+          então nenhuma mensagem foi enviada.
         </p>
       </>
     );

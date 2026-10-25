@@ -9,8 +9,8 @@ import { whatsappHref } from "@/lib/site";
 
 // RASCUNHO (COPY.md aprovado pelo responsável; aguarda a Dra.). Itens [A CONFIRMAR] listados em lib/conteudo.ts.
 export const metadata: Metadata = metadados({
-  titulo: "Como funciona a consulta | Dra. Mariana Santiago, médica na Av. Paulista",
-  descricao: "O que acontece na consulta com a Dra. Mariana Santiago: conversa, avaliação, plano com prazos e riscos, decisão sua e retorno. Valor da consulta, horários e o que levar.",
+  titulo: "Como funciona a consulta | Dra. Helena Duarte, médica na Av. Paulista",
+  descricao: "O que acontece na consulta com a Dra. Helena Duarte: conversa, avaliação, plano com prazos e riscos, decisão sua e retorno. Valor da consulta, horários e o que levar.",
   caminho: "/como-funciona/",
 });
 

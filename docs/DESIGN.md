@@ -1,4 +1,4 @@
-# DESIGN.md — Dra. Mariana Santiago
+# DESIGN.md — Dra. Helena Duarte
 
 > Fonte da verdade visual do site. As skills de design trabalham dentro deste arquivo, nunca no lugar dele.
 > **Harness regulatório v1.3 aplicado** (seções "Imagens" e "Regras do harness para o visual").
@@ -56,7 +56,7 @@ Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem mod
 - **Entrelinha:** 1,55 no corpo; 1,35 nas citações em Libre Caslon (a serifada pede um pouco mais de ar); 1,05 nos títulos grandes.
 - **Medida de linha:** até 68 caracteres no corpo; citações até 56.
 - **Sem caixa-alta em rótulos.** Sem rótulos ("eyebrows") acima dos títulos. Botões em caixa de frase ("Agendar consulta"), sem seta "→" no texto.
-- **Bloco de identificação (R1):** "Dra. Mariana Passos Santiago" e "MÉDICA: CRM-SP 227636" em Host Grotesk 400, **mesmo tamanho e mesma cor, sem negrito** (manual da Codame). No rodapé e na seção de assinatura, 15px.
+- **Bloco de identificação (R1):** "Dra. Helena Duarte" e "MÉDICA: CRM-SP 123456*" em Host Grotesk 400, **mesmo tamanho e mesma cor, sem negrito** (manual da Codame). No rodapé e na seção de assinatura, 15px.
 - **Tamanho mínimo:** 15px para qualquer texto (13px só em rótulos curtos da régua do tempo, sempre com contraste AA).
 
 ## Layout
@@ -66,13 +66,13 @@ Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem mod
 **Home: desktop**
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│ [M] Dra. Mariana Santiago   Como funciona  Procedimentos …  [Agendar consulta] │ ← cabeçalho de vidro
+│ [H] Dra. Helena Duarte   Como funciona  Procedimentos …  [Agendar consulta] │ ← cabeçalho de vidro
 │                                                              │
 │  Título em Host Grotesk 300, Areia, 2 linhas, alinhado à esquerda   │  VÍDEO 1 em tela cheia
 │  ───────────────────■───────────────  (régua, Ouro)          │  (luz no linho), véu Tinta
 │  Apoio curto em Gesso          [Agendar consulta]  Ver horários │
-│  Mariana Santiago (Libre Caslon itálico) · MÉDICA: CRM-SP… │
-│  Ter e sex até 21h · Sáb de manhã · Av. Paulista, 1048        │
+│  Helena Duarte (Libre Caslon itálico) · MÉDICA: CRM-SP… │
+│  Ter e sex até 21h · Sáb de manhã · Av. Paulista        │
 ├──────────────────────────────────────────────────────────────┤
 │ Como eu trabalho: 4 colunas com linha fina, ícone de traço   │  fundo Gesso
 │ Conversa │ Avaliação │ Plano │ Retorno   (sequência real, numerada) │
@@ -96,8 +96,8 @@ Regras: 5 cores, cada uma sempre no mesmo papel; nada fora desta tabela. Sem mod
 │ Fechamento (gradiente Areia→Gesso)                           │
 │ "Frase dela" (Libre Caslon itálico)      [foto da Dra.   │
 │  assinatura                                    recortada]    │
-│  Dra. Mariana Passos Santiago                                │
-│  MÉDICA: CRM-SP 227636         [Agendar consulta]            │
+│  Dra. Helena Duarte                                │
+│  MÉDICA: CRM-SP 123456*         [Agendar consulta]            │
 ├──────────────────────────────────────────────────────────────┤
 │ Rodapé: identificação R1, endereço, horários, legais, redes  │
 └──────────────────────────────────────────────────────────────┘

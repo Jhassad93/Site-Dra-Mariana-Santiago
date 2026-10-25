@@ -2,7 +2,7 @@
 
 # Dossiê factual: procedimentos estéticos faciais e pele na menopausa
 
-Pesquisa feita em outubro de 2026 para as páginas de procedimento do site da Dra. Mariana Santiago. Isto é material de apuração; o texto do site será escrito a partir daqui.
+Pesquisa feita em outubro de 2026 para as páginas de procedimento do site da Dra. Helena Duarte. Isto é material de apuração; o texto do site será escrito a partir daqui.
 
 **Como ler este dossiê**
 - Cada número tem fonte com link. Quando não achei fonte boa, está escrito **não verificado**.

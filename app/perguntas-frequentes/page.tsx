@@ -9,8 +9,8 @@ import { grupos } from "@/lib/faq";
 import { whatsappHref } from "@/lib/site";
 
 export const metadata: Metadata = metadados({
-  titulo: "Perguntas frequentes | Dra. Mariana Santiago, médica na Av. Paulista",
-  descricao: "Valor da consulta, primeira consulta, prazos, cuidados, riscos, retorno, gestação e procedimentos feitos em outro lugar: respostas da Dra. Mariana Santiago.",
+  titulo: "Perguntas frequentes | Dra. Helena Duarte, médica na Av. Paulista",
+  descricao: "Valor da consulta, primeira consulta, prazos, cuidados, riscos, retorno, gestação e procedimentos feitos em outro lugar: respostas da Dra. Helena Duarte.",
   caminho: "/perguntas-frequentes/",
 });
 

@@ -1,11 +1,15 @@
 // Dados do consultório usados no cabeçalho, no rodapé e nos CTAs.
-// Fonte: docs/BRIEF.md (premissas de 22/10/2026). Itens [A CONFIRMAR] lá continuam pendentes.
+// Projeto de portfólio: consultório fictício (dados reais do cliente original removidos em 25/10/2026).
 
 export const identificacao = {
-  nome: "Dra. Mariana Passos Santiago",
-  registro: "MÉDICA: CRM-SP 227636", // R1: mesma fonte, tamanho e cor do nome, sem negrito
-  marca: "Dra. Mariana Santiago",
+  nome: "Dra. Helena Duarte",
+  registro: "MÉDICA: CRM-SP 123456*", // R1: mesma fonte, tamanho e cor do nome, sem negrito. * = fictício (nota no rodapé)
+  marca: "Dra. Helena Duarte",
 };
+
+// Projeto de portfólio: pessoa, consultório, registro e contatos são fictícios. Aparece no rodapé de todas as páginas.
+export const notaPortfolio =
+  "* Projeto de portfólio. A médica, o consultório, o registro no CRM, o telefone e os horários são fictícios. Nenhuma consulta é marcada por este site.";
 
 export const navegacao = [
   { href: "/como-funciona/", rotulo: "Como funciona" },
@@ -20,8 +24,8 @@ export const legais = [
 ] as const;
 
 export const endereco = {
-  linha1: "Av. Paulista, 1048, 18º andar",
-  linha2: "Bela Vista, São Paulo/SP, 01310-100",
+  linha1: "Av. Paulista",
+  linha2: "Bela Vista, São Paulo/SP",
 };
 
 export const horarios = [
@@ -29,20 +33,21 @@ export const horarios = [
   { dias: "Sábado", horas: "8h às 14h" },
 ] as const;
 
-export const redes = [
-  { href: "https://www.instagram.com/dra.marianapsantiago/", rotulo: "Instagram" },
-  { href: "https://www.tiktok.com/@dra.marianapsantiago", rotulo: "TikTok" },
-] as const;
+// Portfólio: sem perfis em redes sociais (perfis inventados poderiam existir de verdade).
+export const redes: readonly { href: string; rotulo: string }[] = [];
 
 // Data da última revisão dos textos educativos (visível nas páginas de procedimento e no guia: AEO, item 11).
 export const revisaoTextos = "22 de outubro de 2026";
 
-export const telefoneVisivel = "(11) 3192-2635";
+export const telefoneVisivel = "(11) 0000-0000"; // fictício
 
 // WhatsApp: número e mensagem neutra vêm do ambiente (não são segredos). R12: a mensagem não pede queixa.
+// Sem número (portfólio): modo demonstração; os botões levam a /agendar e o "Abrir o WhatsApp" simula o envio.
 const numero = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "";
 const mensagem =
   process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE ?? "Olá! Vim pelo site e gostaria de agendar uma consulta.";
+
+export const whatsappDemo = !numero;
 
 export const whatsappHref = numero
   ? `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`

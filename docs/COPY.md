@@ -1,6 +1,6 @@
-# Copy do site — Dra. Mariana Santiago
+# Copy do site — Dra. Helena Duarte
 
-> **RASCUNHO para revisão (Etapa 4, 22/10/2026).** Nenhum texto daqui vai ao ar como definitivo sem a aprovação da Dra. Mariana (harness R11).
+> **RASCUNHO para revisão (Etapa 4, 22/10/2026).** Nenhum texto daqui vai ao ar como definitivo sem a aprovação da Dra. Helena (harness R11).
 > Fontes: `BRIEF.md` (premissas do protótipo), `PERSONAS.md` (crenças U1–U7, banco de frases e FAQ priorizado), `DESIGN.md` (estrutura das seções), `APP_FLOW.md` (estados) e o dossiê de procedimentos com fontes (`docs/FONTES_PROCEDIMENTOS.md`).
 > **Convenções:** `[A CONFIRMAR: …]` = fato que só a Dra. pode dar; até lá, o site usa a versão neutra escrita ao lado. **Voz:** o texto do método fala em primeira pessoa (a Dra.); o texto informativo é impessoal. Frases em *itálico* são a "voz da Dra." e saem em Libre Caslon.
 > **Regras de escrita:** nunca "dermatologista", "especialista", "harmonização", marca de produto, "grátis", "sem dor", "garantido", "natural" como promessa, superlativos sobre ela; todo prazo em faixa e com "varia de pessoa para pessoa"; todo procedimento com indicação individual e possíveis complicações (R2–R5, R9).
@@ -10,29 +10,29 @@
 ## Elementos globais
 
 **Identificação (R1), sempre em duas linhas iguais:**
-Dra. Mariana Passos Santiago
-MÉDICA: CRM-SP 227636
+Dra. Helena Duarte
+MÉDICA: CRM-SP 123456*
 
 **Botão principal:** Agendar consulta → WhatsApp, mensagem "Olá! Vim pelo site e gostaria de agendar uma consulta."
 **Link secundário:** Ver horários disponíveis → /agendar/
 **Horários:** Terça e sexta, 13h às 21h. Sábado, 8h às 14h. `[A CONFIRMAR: horários atuais]`
-**Endereço:** Av. Paulista, 1048, 18º andar, Bela Vista, São Paulo/SP, 01310-100.
-**Como chegar:** A uma quadra da estação Trianon-Masp do metrô (linha 2-Verde). O prédio tem estacionamento no subsolo. `[A CONFIRMAR: estacionamento pago ou conveniado]` (fonte: página da unidade Paulista da Clinovi)
+**Endereço:** Av. Paulista, Bela Vista, São Paulo/SP.
+**Como chegar:** A uma quadra da estação Trianon-Masp do metrô (linha 2-Verde). O prédio tem estacionamento no subsolo. `[A CONFIRMAR: estacionamento pago ou conveniado]` (fonte: página da unidade Paulista do prédio comercial)
 **Valor da consulta:** "O valor da consulta e as formas de pagamento são informados no agendamento." `[A CONFIRMAR: se a Dra. quer publicar o valor (permitido, R8)]`
 
 ---
 
 ## Home `/`
 
-**Title:** Dra. Mariana Santiago | Médica, procedimentos estéticos faciais na Av. Paulista
-**Description:** Consulta com a Dra. Mariana Passos Santiago, médica (CRM-SP 227636), na Av. Paulista. Avaliação antes de qualquer procedimento, com prazos, cuidados e riscos explicados. Terças e sextas até 21h e sábados.
+**Title:** Dra. Helena Duarte | Médica, procedimentos estéticos faciais na Av. Paulista
+**Description:** Consulta com a Dra. Helena Duarte, médica (CRM-SP 123456*), na Av. Paulista. Avaliação antes de qualquer procedimento, com prazos, cuidados e riscos explicados. Terças e sextas até 21h e sábados.
 
 ### Hero
 **H1:** Procedimentos estéticos faciais, planejados no seu tempo
 **Apoio:** Antes de qualquer procedimento, uma consulta para entender o que incomoda você. Se fizer sentido seguir, você sai com um plano: o que fazer, quando, quais cuidados e quais riscos.
 **CTA:** Agendar consulta · **Link:** Ver horários disponíveis
-**Assinatura:** *Mariana Santiago* + identificação R1
-**Linha de horário:** Terças e sextas até 21h, sábados pela manhã. Av. Paulista, 1048.
+**Assinatura:** *Helena Duarte* + identificação R1
+**Linha de horário:** Terças e sextas até 21h, sábados pela manhã. Av. Paulista.
 
 ### Como eu trabalho
 **H2:** Como eu trabalho
@@ -81,7 +81,7 @@ Cards compactos: Contorno facial · Skinbooster · Peelings
 
 ### Onde e quando
 **H2:** Onde e quando
-**Texto:** Av. Paulista, 1048, 18º andar, a uma quadra do metrô Trianon-Masp. Atendo às terças e sextas, das 13h às 21h, e aos sábados, das 8h às 14h, horários pensados para quem trabalha durante o dia.
+**Texto:** Av. Paulista, a uma quadra do metrô Trianon-Masp. Atendo às terças e sextas, das 13h às 21h, e aos sábados, das 8h às 14h, horários pensados para quem trabalha durante o dia.
 **Link:** Abrir no mapa (Google Maps pelo endereço). **Previsto:** "Ver no Google" (perfil), só quando `NEXT_PUBLIC_GOOGLE_PERFIL_URL` estiver preenchido (decisão 4)
 
 ### Fechamento (gradiente Areia → Gesso, foto da Dra.)
@@ -93,8 +93,8 @@ Cards compactos: Contorno facial · Skinbooster · Peelings
 
 ## Como funciona a consulta `/como-funciona/`
 
-**Title:** Como funciona a consulta | Dra. Mariana Santiago, médica na Av. Paulista
-**Description:** O que acontece na consulta com a Dra. Mariana Santiago: conversa, avaliação, plano com prazos e riscos, decisão sua e retorno. Valor da consulta, horários e o que levar.
+**Title:** Como funciona a consulta | Dra. Helena Duarte, médica na Av. Paulista
+**Description:** O que acontece na consulta com a Dra. Helena Duarte: conversa, avaliação, plano com prazos e riscos, decisão sua e retorno. Valor da consulta, horários e o que levar.
 
 **H1:** Como funciona a consulta
 **Apoio:** O que acontece em cada etapa, da primeira conversa ao retorno.
@@ -145,7 +145,7 @@ Mesma régua da home, com o texto: "Para uma data importante, como um casamento,
 
 ## Procedimentos (índice) `/procedimentos/`
 
-**Title:** Procedimentos estéticos faciais | Dra. Mariana Santiago, médica na Av. Paulista
+**Title:** Procedimentos estéticos faciais | Dra. Helena Duarte, médica na Av. Paulista
 **Description:** Toxina botulínica, preenchimento labial, contorno facial com ácido hialurônico, bioestimuladores de colágeno, skinbooster e peelings: para que servem, prazos, cuidados e riscos.
 
 **H1:** Procedimentos
@@ -173,8 +173,8 @@ Mesma régua da home, com o texto: "Para uma data importante, como um casamento,
 
 ### Toxina botulínica `/procedimentos/toxina-botulinica/`
 
-**Title:** Toxina botulínica na Av. Paulista | Dra. Mariana Santiago, médica
-**Description:** Para que serve a toxina botulínica, como é feita, em quantos dias começa a agir, quanto dura, cuidados e possíveis complicações. Consulta com a Dra. Mariana Santiago, médica (CRM-SP 227636).
+**Title:** Toxina botulínica na Av. Paulista | Dra. Helena Duarte, médica
+**Description:** Para que serve a toxina botulínica, como é feita, em quantos dias começa a agir, quanto dura, cuidados e possíveis complicações. Consulta com a Dra. Helena Duarte, médica na Av. Paulista.
 **Dados do card:** "~2 semanas" · "até o efeito pleno, varia de pessoa para pessoa" · legenda: Linhas de expressão da testa, entre as sobrancelhas e ao redor dos olhos
 
 **H1:** Toxina botulínica
@@ -223,7 +223,7 @@ Gestação e amamentação; alergia a qualquer toxina botulínica; infecção no
 
 ### Preenchimento labial `/procedimentos/preenchimento-labial/`
 
-**Title:** Preenchimento labial com ácido hialurônico em São Paulo | Dra. Mariana Santiago, médica
+**Title:** Preenchimento labial com ácido hialurônico em São Paulo | Dra. Helena Duarte, médica
 **Description:** Preenchimento labial com ácido hialurônico: para que serve, como é feito, quanto tempo dura o inchaço, cuidados, possíveis complicações e o que fazer se precisar desfazer. Av. Paulista.
 **Dados do card:** "1 a 2 semanas" · "para o inchaço ceder, varia de pessoa para pessoa" · legenda: Contorno e hidratação dos lábios
 
@@ -276,7 +276,7 @@ Gestação e amamentação; herpes ativo ou qualquer infecção no lábio; alerg
 
 ### Contorno facial com ácido hialurônico `/procedimentos/contorno-facial/`
 
-**Title:** Contorno facial com ácido hialurônico em São Paulo | Dra. Mariana Santiago, médica
+**Title:** Contorno facial com ácido hialurônico em São Paulo | Dra. Helena Duarte, médica
 **Description:** Preenchimento com ácido hialurônico em maçãs do rosto, mandíbula, queixo e olheiras, feito em etapas: indicações, prazos, cuidados e possíveis complicações. Av. Paulista.
 **Card compacto:** Contorno facial
 
@@ -324,7 +324,7 @@ Gestação e amamentação; infecção ou inflamação no local; alergia a lidoc
 
 ### Bioestimuladores de colágeno `/procedimentos/bioestimuladores-de-colageno/`
 
-**Title:** Bioestimuladores de colágeno em São Paulo | Dra. Mariana Santiago, médica
+**Title:** Bioestimuladores de colágeno em São Paulo | Dra. Helena Duarte, médica
 **Description:** Como agem os bioestimuladores de colágeno, quantas sessões, em quanto tempo a pele responde, quanto dura, cuidados e possíveis complicações. Planejamento ao longo de meses, na Av. Paulista.
 **Dados do card:** "2 a 4 sessões" · "efeito que aparece aos poucos, ao longo de meses" · legenda: Firmeza e qualidade da pele
 
@@ -375,7 +375,7 @@ Gestação e amamentação; tendência a queloide ou cicatriz grossa; infecção
 
 ### Skinbooster `/procedimentos/skinbooster/`
 
-**Title:** Skinbooster em São Paulo | Dra. Mariana Santiago, médica na Av. Paulista
+**Title:** Skinbooster em São Paulo | Dra. Helena Duarte, médica na Av. Paulista
 **Description:** Skinbooster é ácido hialurônico aplicado em microgotas para hidratação e qualidade da pele. Sessões, prazos, cuidados, possíveis efeitos e a diferença para o preenchimento.
 **Card compacto:** Skinbooster
 
@@ -422,7 +422,7 @@ Gestação e amamentação; infecção ou inflamação no local; alergia a lidoc
 
 ### Peelings `/procedimentos/peelings/`
 
-**Title:** Peeling químico em São Paulo | Dra. Mariana Santiago, médica na Av. Paulista
+**Title:** Peeling químico em São Paulo | Dra. Helena Duarte, médica na Av. Paulista
 **Description:** O que é o peeling químico, para que serve, quantos dias de descamação, cuidados com o sol, possíveis complicações e se pode fazer no verão. Consulta na Av. Paulista.
 **Card compacto:** Peelings
 
@@ -472,7 +472,7 @@ Infecção ou ferida aberta no local; uso de isotretinoína oral (no peeling mé
 
 ## Guia: o que muda na pele na menopausa `/guias/pele-na-menopausa/`
 
-**Title:** O que muda na pele na menopausa | Guia da Dra. Mariana Santiago, médica
+**Title:** O que muda na pele na menopausa | Guia da Dra. Helena Duarte, médica
 **Description:** Colágeno, espessura, elasticidade, hidratação e cicatrização: o que acontece com a pele na menopausa, o que ajuda no dia a dia e quando procurar avaliação médica.
 
 **H1:** O que muda na pele na menopausa
@@ -511,22 +511,22 @@ Na avaliação, pergunto em que fase você está, como a sua pele mudou e o que 
 
 ## Sobre `/sobre/`
 
-**Title:** Sobre a Dra. Mariana Passos Santiago | Médica, CRM-SP 227636
-**Description:** Mariana Passos Santiago é médica (CRM-SP 227636), formada pela USCS em 2021, e atua com procedimentos estéticos faciais em consultório próprio na Av. Paulista.
+**Title:** Sobre a Dra. Helena Duarte | Médica, CRM-SP 123456*
+**Description:** Helena Duarte é médica (CRM-SP 123456*), formada em 2019, e atua com procedimentos estéticos faciais em consultório próprio na Av. Paulista.
 
 **H1:** Sobre mim
 **Texto:**
-Sou médica, formada pela Universidade Municipal de São Caetano do Sul (USCS) em 2021, com registro no Conselho Regional de Medicina de São Paulo desde dezembro daquele ano. Atuo com procedimentos estéticos faciais em consultório próprio, na Av. Paulista, onde atendo sozinha, da avaliação ao retorno.
+Sou médica, formada em 2019, com registro no Conselho Regional de Medicina de São Paulo desde dezembro daquele ano. Atuo com procedimentos estéticos faciais em consultório próprio, na Av. Paulista, onde atendo sozinha, da avaliação ao retorno.
 
 Escolhi trabalhar com calma. Prefiro uma consulta que explique bem a um procedimento feito às pressas, e gosto quando a paciente sai sabendo o que esperar, quanto tempo cada coisa leva e quais são os riscos, mesmo quando decide não fazer nada.
 
 *O que eu mais ouço na consulta é o medo de ficar com o rosto diferente. Eu levo esse medo a sério: é por isso que o plano começa pela conversa e que cada etapa tem o seu tempo.* `[A CONFIRMAR: frase escrita para ela; trocar por uma fala real]`
 
 **Formação (factual):**
-- Medicina, Universidade Municipal de São Caetano do Sul (USCS), 2021
-- Registro no CRM-SP nº 227636, desde 14/12/2021, situação regular
+- Medicina, Universidade Municipal de São Caetano do Sul ([universidade]), 2021
+- Registro no CRM-SP nº 123456* (fictício)
 - `[A CONFIRMAR: cursos livres e congressos, com instituição e ano (R2: sem adjetivos)]`
-- Residência em andamento: **não citada** no protótipo (decisão 🟡 1)
+- Formação complementar em andamento: **não citada** no protótipo (decisão 🟡 1)
 
 **Verifique:** Você pode conferir o meu registro na busca pública de médicos do Conselho Federal de Medicina. → https://portal.cfm.org.br/busca-medicos
 **Fora do consultório:** `[A CONFIRMAR: uma ou duas linhas pessoais que ela queira dividir]`
@@ -536,8 +536,8 @@ Escolhi trabalhar com calma. Prefiro uma consulta que explique bem a um procedim
 
 ## Perguntas frequentes `/perguntas-frequentes/`
 
-**Title:** Perguntas frequentes | Dra. Mariana Santiago, médica na Av. Paulista
-**Description:** Valor da consulta, primeira consulta, prazos, cuidados, riscos, retorno, gestação e procedimentos feitos em outro lugar: respostas da Dra. Mariana Santiago.
+**Title:** Perguntas frequentes | Dra. Helena Duarte, médica na Av. Paulista
+**Description:** Valor da consulta, primeira consulta, prazos, cuidados, riscos, retorno, gestação e procedimentos feitos em outro lugar: respostas da Dra. Helena Duarte.
 
 **H1:** Perguntas frequentes
 **Apoio:** Se a sua dúvida não estiver aqui, mande pelo WhatsApp.
@@ -570,14 +570,14 @@ Escolhi trabalhar com calma. Prefiro uma consulta que explique bem a um procedim
 
 ## Agendar `/agendar/`
 
-**Title:** Agendar consulta | Dra. Mariana Santiago, médica na Av. Paulista
-**Description:** Agende sua consulta com a Dra. Mariana Passos Santiago pelo WhatsApp ou escolha um horário na agenda online. Terças e sextas até 21h e sábados.
+**Title:** Agendar consulta | Dra. Helena Duarte, médica na Av. Paulista
+**Description:** Agende sua consulta com a Dra. Helena Duarte pelo WhatsApp ou escolha um horário na agenda online. Terças e sextas até 21h e sábados.
 
 **H1:** Agendar consulta
 **Apoio:** O jeito mais rápido é pelo WhatsApp. Você manda uma mensagem e recebe os horários disponíveis. `[A CONFIRMAR: quem responde e em quanto tempo]`
 **Botão principal:** Abrir o WhatsApp
 **Estado carregando:** Abrindo o WhatsApp…
-**Estado erro (não abriu):** "Não conseguimos abrir o WhatsApp por aqui. Mande uma mensagem para (11) 3192-2635." + botão **Copiar número** (→ "Número copiado") + link **Abrir o WhatsApp Web**
+**Estado erro (não abriu):** "Não conseguimos abrir o WhatsApp por aqui. Mande uma mensagem para (11) 0000-0000." + botão **Copiar número** (→ "Número copiado") + link **Abrir o WhatsApp Web**
 
 **Bloco agenda online:**
 **H2:** Prefere escolher o horário sozinha?
@@ -595,18 +595,18 @@ Escolhi trabalhar com calma. Prefiro uma consulta que explique bem a um procedim
 
 ## Obrigado `/obrigado/`
 
-**Title:** Obrigado | Dra. Mariana Santiago (noindex)
+**Title:** Obrigado | Dra. Helena Duarte (noindex)
 
 **Versão WhatsApp (padrão):**
 **H1:** Sua mensagem está a caminho
 **Texto:** O WhatsApp abriu em outra aba. Envie a mensagem e você recebe os horários disponíveis em seguida, dentro do horário de atendimento. `[A CONFIRMAR: prazo de resposta]`
-**Se o WhatsApp não abriu:** Mande uma mensagem para (11) 3192-2635.
+**Se o WhatsApp não abriu:** Mande uma mensagem para (11) 0000-0000.
 
 **Versão agenda (`?origem=agenda`):**
 **H1:** Sua consulta está marcada
 **Texto:** A confirmação chega no seu e-mail, com data, horário e endereço. Se precisar remarcar, use o link do e-mail ou fale pelo WhatsApp com 24 horas de antecedência.
 
-**Bloco comum:** Para a consulta: leve exames recentes, se tiver, e a lista dos seus medicamentos. Av. Paulista, 1048, 18º andar, a uma quadra do metrô Trianon-Masp.
+**Bloco comum:** Para a consulta: leve exames recentes, se tiver, e a lista dos seus medicamentos. Av. Paulista, a uma quadra do metrô Trianon-Masp.
 **Links:** Voltar para o início · Como funciona a consulta
 
 ---
@@ -624,7 +624,7 @@ Redigidos na **Etapa 11**, a partir do SCHEMA.md e do R15, com revisão jurídic
 
 | # | Tema | Decisão |
 | --- | --- | --- |
-| 1 | Residência em Dermatologia | **Não citar no protótipo.** A Sobre usa graduação, ano do CRM e link de verificação do CFM. Se a Dra. quiser citar, só depois de consulta escrita à Codame do Cremesp |
+| 1 | formação complementar em andamento | **Não citar no protótipo.** A Sobre usa graduação, ano do CRM e link de verificação do CFM. Se a Dra. quiser citar, só depois de consulta escrita à Codame do Cremesp |
 | 2 | Retorno de 15 dias | **"O retorno, cerca de 15 dias depois, já faz parte do procedimento."** Sem "grátis" nem "sem custo". Confirmar com a Dra. que o retorno é incluído |
 | 3 | Frase de fechamento da home | **Reescrita:** *"Antes de qualquer procedimento, eu quero entender o que incomoda você. Daí em diante, decidimos juntas, no seu tempo."* Fala de método, não de resultado. A frase de resultado do Instagram ("o melhor resultado é aquele em que…") não é usada |
 | 4 | Link para o perfil do Google | **Sem link no protótipo, mas previsto.** "Abrir no mapa" aponta para o endereço. O código ganha um campo opcional (`NEXT_PUBLIC_GOOGLE_PERFIL_URL`): vazio, nada aparece; preenchido, surge em "Onde e quando" e no rodapé um link discreto "Ver no Google", sem nota, estrelas nem avaliações. Só preencher depois do ajuste do perfil (pendência 11a: nome sem "Dermatologia Estética") |
@@ -637,7 +637,7 @@ Conferência feita em 22/10/2026 sobre todo o texto acima: busca pelo léxico do
 
 | Regra | Resultado | Onde conferir |
 | --- | --- | --- |
-| R1 Identificação | OK. Nome e "MÉDICA: CRM-SP 227636" em duas linhas iguais na home, na Sobre e no rodapé | Elementos globais; Home; Sobre |
+| R1 Identificação | OK. Nome e "MÉDICA: CRM-SP 123456*" em duas linhas iguais na home, na Sobre e no rodapé | Elementos globais; Home; Sobre |
 | R2 Especialidade | OK. Nenhuma ocorrência no texto do site. "Dermatology" só aparece em nomes de revista, que ficam nos links das fontes (não no texto visível) | Busca do léxico |
 | R3 Doença | OK com nota educativa (decisão 🟡 6). Acne, melasma e rosácea aparecem só como "precisam de diagnóstico médico… conte na consulta" | Procedimentos (índice); Peelings |
 | R4 Promessa | OK. Todo prazo em faixa, com "varia de pessoa para pessoa"; "Ninguém pode garantir como cada pessoa vai responder"; cada página tem indicação, cuidados, complicações e quando não é indicado. Frase de fechamento reescrita (decisão 3) | Páginas de procedimento; FAQ 7 |

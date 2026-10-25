@@ -7,8 +7,8 @@ import { telefoneVisivel, whatsappHref } from "@/lib/site";
 
 // RASCUNHO PARA REVISÃO JURÍDICA (responsável, advogado; depois a Dra.). Harness: R4 (atividade-meio), R11 (site não consulta).
 export const metadata: Metadata = metadados({
-  titulo: "Termos de uso | Dra. Mariana Santiago",
-  descricao: "Condições de uso do site da Dra. Mariana Passos Santiago, médica (CRM-SP 227636).",
+  titulo: "Termos de uso | Dra. Helena Duarte",
+  descricao: "Condições de uso do site da Dra. Helena Duarte, médica na Av. Paulista.",
   caminho: "/termos/",
 });
 
@@ -18,8 +18,8 @@ export default function Termos() {
       <Migalhas itens={[["Termos de uso", "/termos/"]]} />
       <PaginaLegal titulo="Termos de uso" atualizacao="22 de outubro de 2026">
         <p>
-          Estes termos valem para o uso deste site, mantido pela Dra. Mariana Passos Santiago, médica (CRM-SP 227636), com
-          consultório na Av. Paulista, 1048, 18º andar, Bela Vista, São Paulo/SP. Ao usar o site, você concorda com eles.
+          Estes termos valem para o uso deste site, mantido pela Dra. Helena Duarte, médica (CRM-SP 123456*), com
+          consultório na Av. Paulista, Bela Vista, São Paulo/SP. Ao usar o site, você concorda com eles.
         </p>
 
         <h2 id="finalidade">Para que serve o site</h2>
@@ -61,7 +61,7 @@ export default function Termos() {
 
         <h2 id="propriedade">Textos e imagens</h2>
         <p>
-          Os textos, a identidade visual e as imagens do site pertencem à Dra. Mariana Passos Santiago ou são usados com
+          Os textos, a identidade visual e as imagens do site pertencem à Dra. Helena Duarte ou são usados com
           autorização ou licença. As imagens de ambiente foram geradas com ferramenta de inteligência artificial e não mostram
           pacientes nem resultados de procedimentos. Você pode compartilhar links do site, mas não pode copiar o conteúdo para uso
           comercial sem autorização.

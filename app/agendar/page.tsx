@@ -8,8 +8,8 @@ import { horarios } from "@/lib/site";
 
 // RASCUNHO (COPY.md). [A CONFIRMAR]: quem responde o WhatsApp e em quanto tempo.
 export const metadata: Metadata = metadados({
-  titulo: "Agendar consulta | Dra. Mariana Santiago, médica na Av. Paulista",
-  descricao: "Agende sua consulta com a Dra. Mariana Passos Santiago pelo WhatsApp ou escolha um horário na agenda online. Terças e sextas até 21h e sábados.",
+  titulo: "Agendar consulta | Dra. Helena Duarte, médica na Av. Paulista",
+  descricao: "Agende sua consulta com a Dra. Helena Duarte pelo WhatsApp ou escolha um horário na agenda online. Terças e sextas até 21h e sábados.",
   caminho: "/agendar/",
 });
 
@@ -48,7 +48,7 @@ export default function Agendar() {
               </div>
             ))}
           </dl>
-          <p className="border-t border-border pt-3 text-muted-foreground">Av. Paulista, 1048, 18º andar. A uma quadra do metrô Trianon-Masp.</p>
+          <p className="border-t border-border pt-3 text-muted-foreground">Av. Paulista, a uma quadra do metrô Trianon-Masp.</p>
         </div>
       </section>
 

@@ -27,17 +27,18 @@ h1{font-weight:300;font-size:64px;line-height:1.06;letter-spacing:-.02em;max-wid
 .regua{display:flex;align-items:center;width:420px;margin-top:36px}.regua i{width:10px;height:10px;background:#c9a35f}.regua b{flex:1;height:1px;background:#c9a35f}
 .id{font-size:26px;line-height:1.4;font-weight:400}
 .onde{font-size:22px;color:#ebd4ad;margin-top:14px}
+.nota{font-size:18px;color:#efeeea;opacity:.75;margin-top:10px}
 </style>
 <div class="og"><div class="foto"></div><div class="veu"></div>
 <div><h1>Procedimentos estéticos faciais, planejados no seu&nbsp;tempo</h1><div class="regua"><i></i><b></b></div></div>
-<div><p class="id">Dra. Mariana Passos Santiago<br>MÉDICA: CRM-SP 227636</p><p class="onde">Consultório na Av. Paulista, 1048, São Paulo</p></div>
+<div><p class="id">Dra. Helena Duarte<br>MÉDICA: CRM-SP 123456*</p><p class="onde">Consultório na Av. Paulista, São Paulo</p><p class="nota">* Projeto de portfólio: médica e consultório fictícios</p></div>
 </div>`;
 
-// Mesmo monograma do cabeçalho: "M" em Libre Caslon itálico.
+// Mesmo monograma do cabeçalho: "H" em Libre Caslon itálico.
 const icone = (lado) => `<style>${css}
 .ic{width:${lado}px;height:${lado}px;background:#1c1813;display:grid;place-items:center}
 .ic span{font-family:Caslon,serif;font-style:italic;color:#efeeea;font-size:${lado * 0.66}px;line-height:1;transform:translate(-${lado * 0.01}px,${lado * 0.03}px)}
-</style><div class="ic"><span>M</span></div>`;
+</style><div class="ic"><span>H</span></div>`;
 
 const navegador = await chromium.launch({
   executablePath: process.env.CHROMIUM ?? "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",

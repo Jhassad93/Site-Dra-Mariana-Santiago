@@ -3,7 +3,7 @@ import { ReguaDoTempo, ReguaOrnamento } from "@/components/marca/regua";
 import { CardCompacto, CardProcedimento } from "@/components/marca/cards";
 import { Acordeao, IdentificacaoR1, VozDaDra } from "@/components/marca/blocos";
 import { whatsappHref, horarios } from "@/lib/site";
-import { FundoMidia, Imagem, temMidia } from "@/components/marca/midia";
+import { FundoMidia, temMidia } from "@/components/marca/midia";
 import {
   comoTrabalho,
   faqHome,
@@ -46,7 +46,7 @@ export function Hero() {
         </div>
         <div className="mt-8 flex flex-col gap-3 border-t border-areia/20 pt-5 sm:mt-10 sm:flex-row sm:items-end sm:justify-between sm:gap-6 sm:pt-6">
           <div className="grid gap-2">
-            <p className="hidden font-voz text-2xl italic leading-none text-areia sm:block">Mariana Santiago</p>
+            <p className="hidden font-voz text-2xl italic leading-none text-areia sm:block">Helena Duarte</p>
             <IdentificacaoR1 sobre="escuro" />
           </div>
           <p className="max-w-[34ch] text-sm text-gesso sm:text-right">{hero.horario}</p>
@@ -69,7 +69,7 @@ export function OndeQuandoCelular() {
             </div>
           ))}
         </dl>
-        <p className="text-muted-foreground">Av. Paulista, 1048, 18º andar. A uma quadra do metrô Trianon-Masp.</p>
+        <p className="text-muted-foreground">Av. Paulista, a uma quadra do metrô Trianon-Masp.</p>
       </div>
     </section>
   );
@@ -203,7 +203,7 @@ export function OndeQuando() {
         <div className="grid gap-8 lg:col-span-8 lg:grid-cols-2">
           <div className="grid content-start gap-3">
             <p className="text-lg">
-              Av. Paulista, 1048, 18º andar
+              Av. Paulista
               <br />
               Bela Vista, São Paulo
             </p>
@@ -246,7 +246,7 @@ export function Fechamento() {
             Agende sua consulta
           </h2>
           <VozDaDra comIdentificacao={false}>{fechamento.frase}</VozDaDra>
-          <p className="mt-8 font-voz text-xl italic leading-none text-tinta">Mariana Santiago</p>
+          <p className="mt-8 font-voz text-xl italic leading-none text-tinta">Helena Duarte</p>
           <IdentificacaoR1 className="mt-3" />
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3" data-cta>
             <Botao href={whatsappHref} externo>
@@ -264,15 +264,7 @@ export function Fechamento() {
 }
 
 export function FotoDra() {
-  // Foto do Instagram: SÓ na prévia privada (NEXT_PUBLIC_FOTO_DRA_PREVIA=1 no .env.local, nunca no site publicado)
-  if (process.env.NEXT_PUBLIC_FOTO_DRA_PREVIA === "1" && temMidia("dra-previa")) {
-    return (
-      <div className="size-full overflow-hidden rounded-t-[var(--radius-card)]">
-        <Imagem slot="dra-previa" alt="Dra. Mariana Passos Santiago" sizes="(min-width: 1024px) 420px, 90vw" className="object-top" />
-      </div>
-    );
-  }
-  // Sem a foto: o vídeo 3 (mãos escrevendo o plano) com a capa, recortado para mostrar as mãos
+  // Vídeo 3 (mãos escrevendo o plano) com a capa, recortado para mostrar as mãos
   if (temMidia("fechamento")) {
     return (
       <div className="relative size-full overflow-hidden rounded-t-[var(--radius-card)] [&_img]:object-[72%_50%] [&_video]:object-[72%_50%]">

@@ -1,4 +1,4 @@
-# Licenças de terceiros — Dra. Mariana Santiago
+# Licenças de terceiros — Dra. Helena Duarte
 
 Preenchido durante o projeto com cada componente de terceiros efetivamente usado. Este arquivo alimenta o Anexo III do contrato.
 

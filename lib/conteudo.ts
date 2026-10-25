@@ -5,7 +5,7 @@ export const hero = {
   titulo: "Procedimentos estéticos faciais, planejados no seu\u00a0tempo",
   apoio:
     "Antes de qualquer procedimento, uma consulta para entender o que incomoda você. Se fizer sentido seguir, você sai com um plano: o que fazer, quando, quais cuidados e quais riscos.",
-  horario: "Terças e sextas até 21h, sábados pela manhã. Av. Paulista, 1048.",
+  horario: "Terças e sextas até 21h, sábados pela manhã. Av. Paulista.",
 };
 
 export const comoTrabalho = {
@@ -109,9 +109,9 @@ export const faqHome = [
 export const ondeQuando = {
   titulo: "Onde e quando",
   texto:
-    "Av. Paulista, 1048, 18º andar, a uma quadra do metrô Trianon-Masp. Atendo às terças e sextas, das 13h às 21h, e aos sábados, das 8h às 14h, horários pensados para quem trabalha durante o dia.",
+    "Av. Paulista, a uma quadra do metrô Trianon-Masp. Atendo às terças e sextas, das 13h às 21h, e aos sábados, das 8h às 14h, horários pensados para quem trabalha durante o dia.",
   comoChegar: "O prédio tem estacionamento no subsolo.",
-  mapa: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Av. Paulista, 1048, São Paulo, SP"),
+  mapa: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Av. Paulista, São Paulo, SP"),
 };
 
 export const fechamento = {
