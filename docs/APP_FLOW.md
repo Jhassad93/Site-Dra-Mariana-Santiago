@@ -107,7 +107,7 @@ flowchart TD
 | --- | --- | --- |
 | **404** | Qualquer rota inexistente | Visual do site, mensagem curta, botões "Voltar à página inicial" e "Agendar consulta" (item 1 do checklist de produção) |
 | **Carregando** | /agendar, depois do clique | O botão muda para "Abrindo o WhatsApp…" por até 2 s antes de ir para /obrigado. Não há formulário nem chamada a servidor no protótipo, então não há outros estados de carregamento. Imagens com tamanho reservado para evitar saltos de layout |
-| **Erro** | /agendar | Se a nova aba não abrir (pop-up bloqueado, desktop sem WhatsApp), aparecem o número (11) 0000-0000 com botão "copiar" e o link wa.me. O caminho nunca termina sem saída |
+| **Erro** | /agendar | Se a nova aba não abrir (pop-up bloqueado, desktop sem WhatsApp), aparecem o número (11) 1234-5678 com botão "copiar" e o link wa.me. O caminho nunca termina sem saída |
 | **Erro genérico** | Qualquer página | Página de erro com mensagem genérica (item 11 do checklist de segurança) e links para home e Agendar |
 | **Carregando (agenda online)** | /agendar | A agenda só é carregada depois do clique em "Ver horários disponíveis", o que evita cookies de terceiros antes da escolha da paciente. Enquanto carrega, aparece um esqueleto com a altura reservada |
 | **Erro (agenda online)** | /agendar | Falha ao carregar: link para abrir a agenda em nova aba + WhatsApp. Sem horários: convite para o WhatsApp. Horário tomado na confirmação: o serviço pede outro horário |

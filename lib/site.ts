@@ -39,7 +39,7 @@ export const redes: readonly { href: string; rotulo: string }[] = [];
 // Data da última revisão dos textos educativos (visível nas páginas de procedimento e no guia: AEO, item 11).
 export const revisaoTextos = "22 de outubro de 2026";
 
-export const telefoneVisivel = "(11) 0000-0000"; // fictício
+export const telefoneVisivel = "(11) 1234-5678"; // fictício
 
 // WhatsApp: número e mensagem neutra vêm do ambiente (não são segredos). R12: a mensagem não pede queixa.
 // Sem número (portfólio): modo demonstração; os botões levam a /agendar e o "Abrir o WhatsApp" simula o envio.

@@ -577,7 +577,7 @@ Escolhi trabalhar com calma. Prefiro uma consulta que explique bem a um procedim
 **Apoio:** O jeito mais rápido é pelo WhatsApp. Você manda uma mensagem e recebe os horários disponíveis. `[A CONFIRMAR: quem responde e em quanto tempo]`
 **Botão principal:** Abrir o WhatsApp
 **Estado carregando:** Abrindo o WhatsApp…
-**Estado erro (não abriu):** "Não conseguimos abrir o WhatsApp por aqui. Mande uma mensagem para (11) 0000-0000." + botão **Copiar número** (→ "Número copiado") + link **Abrir o WhatsApp Web**
+**Estado erro (não abriu):** "Não conseguimos abrir o WhatsApp por aqui. Mande uma mensagem para (11) 1234-5678." + botão **Copiar número** (→ "Número copiado") + link **Abrir o WhatsApp Web**
 
 **Bloco agenda online:**
 **H2:** Prefere escolher o horário sozinha?
@@ -600,7 +600,7 @@ Escolhi trabalhar com calma. Prefiro uma consulta que explique bem a um procedim
 **Versão WhatsApp (padrão):**
 **H1:** Sua mensagem está a caminho
 **Texto:** O WhatsApp abriu em outra aba. Envie a mensagem e você recebe os horários disponíveis em seguida, dentro do horário de atendimento. `[A CONFIRMAR: prazo de resposta]`
-**Se o WhatsApp não abriu:** Mande uma mensagem para (11) 0000-0000.
+**Se o WhatsApp não abriu:** Mande uma mensagem para (11) 1234-5678.
 
 **Versão agenda (`?origem=agenda`):**
 **H1:** Sua consulta está marcada

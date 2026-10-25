@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { indexar, siteUrl } from "@/lib/seo";
+import { indexar } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
@@ -22,6 +22,5 @@ export default function robots(): MetadataRoute.Robots {
       ...treino.map((userAgent) => ({ userAgent, disallow: "/" })),
       { userAgent: "*", allow: "/", disallow: "/obrigado/" },
     ],
-    sitemap: `${siteUrl}/sitemap.xml`,
   };
 }

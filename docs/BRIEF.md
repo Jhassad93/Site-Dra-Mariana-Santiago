@@ -70,7 +70,7 @@ Estratégia comercial: **construir o site primeiro, oferecer pronto à lead e fa
 ## Entidade (manter idêntico em todos os canais)
 - Nome: **Dra. Helena Duarte**; no bloco de identificação, "Dra. Helena Duarte · MÉDICA: CRM-SP 123456\*" (R1). \* Registro fictício, explicado no rodapé do site.
 - Endereço: Av. Paulista, Bela Vista, São Paulo/SP (sem número, para não apontar para um prédio real).
-- Telefone/WhatsApp: (11) 0000-0000 (fictício).
+- Telefone/WhatsApp: (11) 1234-5678 (fictício).
 - Área de atendimento: São Paulo (presencial).
 - Horários: terça e sexta, 13h–21h; sábado, 8h–14h.
 - Redes: nenhuma no portfólio (perfis inventados poderiam existir de verdade).
